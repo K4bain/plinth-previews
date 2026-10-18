@@ -54,6 +54,7 @@ body {
 ::selection { background: color-mix(in srgb, var(--accent) 24%, transparent); }
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.btn-primary:focus-visible { outline-color: var(--accent-ink); }
 img { display: block; }
 .skip {
   position: absolute; left: 1rem; top: 1rem; z-index: 80;
@@ -445,7 +446,7 @@ h2 {
 <section class="trust sec" aria-label="Reviews">
   <div class="wrap trust-grid">
     <div class="trust-score">
-      <p class="eyebrow">Kind words</p>
+      <h2 class="eyebrow">Kind words</h2>
       <p class="trust-num num">5.0</p>
       <div class="trust-stars" role="img" aria-label="Rated 5.0 out of 5 on Google">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
