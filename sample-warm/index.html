@@ -174,6 +174,31 @@ em { font-style: italic; }
 }
 .statement em { color: var(--gold); }
 
+.trust-grid { display: grid; gap: 2.4rem; }
+@media (min-width: 900px) {
+  .trust-grid { grid-template-columns: minmax(0, 16rem) minmax(0, 1fr); gap: clamp(3rem, 6vw, 5.4rem); align-items: start; }
+}
+.trust-num {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(3.4rem, 10vw, 4.8rem); line-height: .95; letter-spacing: -.02em; margin: .15rem 0 0;
+}
+.trust-stars { display: flex; gap: .32rem; color: var(--gold); margin-top: .7rem; }
+.trust-stars svg { width: 1.08rem; height: 1.08rem; }
+.trust-src { margin: .75rem 0 0; color: var(--muted); }
+.trust-src a { color: var(--gold-ink); font-weight: 600; text-decoration: none; }
+.trust-src a:hover { text-decoration: underline; }
+.trust-quotes { display: grid; gap: 1.7rem; }
+.quote { margin: 0; display: grid; gap: .6rem; }
+.quote + .quote { border-top: 1px solid var(--hairline); padding-top: 1.7rem; }
+.quote blockquote { margin: 0; }
+.quote blockquote p {
+  margin: 0; max-width: 50ch; font-family: var(--font-display); font-style: italic;
+  font-weight: 400; font-size: 1.24rem; line-height: 1.42; letter-spacing: -.008em; text-wrap: pretty;
+}
+.quote figcaption {
+  font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint);
+}
+
 h2 {
   font-family: var(--font-display); font-weight: 500; font-size: 1.9rem;
   line-height: 1.12; letter-spacing: -.012em; text-wrap: balance; margin: 0 0 .6rem;
@@ -415,6 +440,45 @@ h2 {
     <p>Cuts, colour, blow-dries &amp; <em>treatments</em></p>
   </div>
 </section>
+
+
+<section class="trust sec" aria-label="Reviews">
+  <div class="wrap trust-grid">
+    <div class="trust-score">
+      <p class="eyebrow">Kind words</p>
+      <p class="trust-num num">5.0</p>
+      <div class="trust-stars" role="img" aria-label="Rated 5.0 out of 5 on Google">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
+      </div>
+      <p class="trust-src"><span class="num">12</span> reviews on <a href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Google</a></p>
+    </div>
+    <div class="trust-quotes">
+      
+      <figure class="quote">
+        <blockquote><p>&ldquo;I had a last minute bouncy blowdry by Lorna and it looked fabulous, and lasted several days too!&rdquo;</p></blockquote>
+        <figcaption>Olivia B. &middot; Google</figcaption>
+      </figure>
+      
+      
+      <figure class="quote">
+        <blockquote><p>&ldquo;Very friendly, fab hair products, great hairdresser, easily accessible, parking nearby, what&#39;s not to like&rdquo;</p></blockquote>
+        <figcaption>Valerie D. &middot; Google</figcaption>
+      </figure>
+      
+      
+      <figure class="quote">
+        <blockquote><p>&ldquo;Brilliant hairdressers never go anywhere else&rdquo;</p></blockquote>
+        <figcaption>Lorraine H. &middot; Google</figcaption>
+      </figure>
+      
+    </div>
+  </div>
+</section>
+
 
 <section class="zig zig-a sec">
   <div class="wrap">
