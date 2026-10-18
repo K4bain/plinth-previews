@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F1E5D0">
+<title>Belle Amie Hair Salon — Hairdressers in Ossett</title>
+<meta name="description" content="Belle Amie Hair Salon — Hairdressing on Towngate, Ossett. Call 07747 706506.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239C4A28'/%3E%3Cpath d='M10 24v-7a6 6 0 0 1 12 0v7' fill='none' stroke='%23F1E5D0' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Karla:wght@400;500;600&display=swap">
+<style>
+/* theme:start */
+:root {
+  --ground: #F1E5D0;
+  --ground-deep: #EADFCB;
+  --surface: #FFFDF8;
+  --ink: #2E231B;
+  --muted: #5C4C3D;
+  --faint: #6E5D4A;
+  --hairline: #E3D5BC;
+  --accent: #9C4A28;
+  --accent-deep: #8B3F1F;
+  --accent-ink: #FBF3E8;
+  --clay: #E7CDB9;
+  --gold: #B8864B;
+  --gold-ink: #8C5A26;
+}
+/* theme:end */
+:root {
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-text: "Karla", system-ui, "Segoe UI", Roboto, sans-serif;
+  --r-lg: 22px;
+  --r-media: 20px;
+  --shadow-card: 0 26px 52px -30px rgb(46 35 27 / .38);
+  --shadow-media: 0 30px 60px -34px rgb(46 35 27 / .45);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scrollbar-color: color-mix(in srgb, var(--accent) 35%, var(--hairline)) transparent; }
+html, body { margin: 0; }
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  caret-color: var(--accent);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: color-mix(in srgb, var(--accent) 24%, transparent); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+img { display: block; }
+.skip {
+  position: absolute; left: 1rem; top: 1rem; z-index: 80;
+  background: var(--surface); color: var(--ink); padding: .7rem 1rem;
+  border-radius: 10px; text-decoration: none; transform: translateY(-200%);
+}
+.skip:focus { transform: translateY(0); }
+.wrap { max-width: 1080px; margin-inline: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+@media (min-width: 720px) { .wrap { padding-left: 2rem; padding-right: 2rem; } }
+.sec { padding-block: clamp(3rem, 7vw, 5.2rem); }
+.num { font-variant-numeric: tabular-nums; }
+em { font-style: italic; }
+
+.preview-bar {
+  background: var(--ink); color: #F3EADB; text-align: center;
+  font-size: .82rem; letter-spacing: .02em; padding: .55rem 1.25rem;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: .85rem 1.65rem; border-radius: 999px;
+  font-family: var(--font-text); font-size: 1rem; font-weight: 500;
+  letter-spacing: .01em; line-height: 1.2; text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: var(--accent-deep); }
+.btn-ghost { border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); color: var(--ink); }
+.btn-ghost:hover { background: var(--surface); border-color: color-mix(in srgb, var(--ink) 45%, transparent); }
+.btn-cream { background: var(--accent-ink); color: var(--accent-deep); }
+.btn-cream:hover { background: #fff; }
+.btn-sm { min-height: 44px; padding: .55rem 1.15rem; font-size: .95rem; }
+
+.topbar { padding-top: 1.15rem; }
+.topbar .wrap { display: flex; align-items: center; gap: 1rem; }
+.wordmark {
+  display: inline-flex; align-items: center; gap: .55rem; min-width: 0;
+  font-family: var(--font-display); font-weight: 500; font-size: 1.18rem;
+  letter-spacing: -.01em; text-decoration: none; color: var(--ink);
+}
+.wordmark .mark { width: 1.05rem; height: 1.05rem; color: var(--accent); flex: none; }
+.wm-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nav { display: none; margin-inline: auto; gap: 1.7rem; }
+@media (min-width: 880px) { .nav { display: flex; } }
+.nav a { text-decoration: none; font-size: .98rem; font-weight: 500; color: var(--muted); transition: color .18s ease; }
+.nav a:hover { color: var(--accent); }
+.topbar .actions { margin-left: auto; flex: none; }
+@media (max-width: 599px) {
+  .topbar .actions .btn { min-height: 44px; padding: .5rem 1.05rem; font-size: .92rem; }
+}
+.util { display: none; }
+@media (min-width: 880px) {
+  .util { display: block; }
+  .util .wrap {
+    display: flex; align-items: center; gap: 1.1rem;
+    padding-top: .85rem; padding-bottom: 1.05rem;
+    font-size: .93rem; color: var(--muted);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .util .sep { opacity: .45; }
+  .util a { color: var(--muted); font-weight: 600; text-decoration: none; }
+  .util a:hover { color: var(--accent); }
+}
+
+.hero { position: relative; }
+.hero-media {
+  position: relative; height: clamp(400px, 58vh, 500px);
+  overflow: hidden; background: var(--clay);
+}
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+.hero-media::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(196deg, rgb(46 35 27 / 0) 46%, rgb(46 35 27 / .34) 100%);
+}
+@media (min-width: 880px) { .hero-media { height: clamp(480px, 72vh, 640px); } }
+.hero-float { position: relative; margin-top: -4.4rem; padding-bottom: clamp(2.6rem, 6vw, 4.2rem); }
+@media (min-width: 600px) { .hero-float { margin-top: -5rem; } }
+.hero-card {
+  width: min(35rem, 100%);
+  background: var(--surface);
+  border-radius: var(--r-lg); box-shadow: var(--shadow-card);
+  padding: 1.8rem 1.5rem 2rem;
+}
+@media (min-width: 600px) { .hero-card { padding: 2.2rem 2.2rem 2.3rem; } }
+@media (min-width: 880px) { .hero-float { display: flex; } .hero-card { margin-right: auto; } }
+.eyebrow {
+  margin: 0 0 .65rem; font-size: .78rem; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--faint);
+}
+.hero h1 {
+  font-family: var(--font-display); font-weight: 500; font-size: 2.35rem;
+  line-height: 1.04; letter-spacing: -.015em; text-wrap: balance; margin: 0;
+}
+.hero h1 em { color: var(--gold-ink); }
+@media (min-width: 600px) { .hero h1 { font-size: 2.8rem; } }
+@media (min-width: 1024px) { .hero h1 { font-size: 3.3rem; } }
+.hero-line { margin: .95rem 0 0; max-width: 42ch; color: var(--muted); }
+.cta-row { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: .7rem; }
+.hero-call { margin: 1rem 0 0; font-size: .95rem; color: var(--faint); }
+.hero-call a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.hero-call a:hover { text-decoration: underline; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-card { animation: settle .7s cubic-bezier(.22, 1, .36, 1) .15s both; }
+  @keyframes settle {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+.statement { background: var(--ink); color: #F3EADB; text-align: center; padding: clamp(3.4rem, 9vw, 5.8rem) 0; }
+.statement p {
+  margin: 0 auto; max-width: 22ch;
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(2.1rem, 6.4vw, 4.1rem); line-height: 1.06;
+  letter-spacing: -.015em; text-wrap: balance;
+}
+.statement em { color: var(--gold); }
+
+h2 {
+  font-family: var(--font-display); font-weight: 500; font-size: 1.9rem;
+  line-height: 1.12; letter-spacing: -.012em; text-wrap: balance; margin: 0 0 .6rem;
+}
+@media (min-width: 600px) { h2 { font-size: 2.15rem; } }
+@media (min-width: 1024px) { h2 { font-size: 2.4rem; } }
+
+.zig .wrap { display: grid; gap: 2.2rem; align-items: center; }
+@media (min-width: 900px) {
+  .zig .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(3rem, 6vw, 5.4rem); }
+  .zig-rev .zig-media { order: 2; }
+}
+.zig-copy p { color: var(--muted); max-width: 46ch; margin: .5rem 0 0; }
+.zig-copy .btn { margin-top: 1.4rem; }
+.frame { position: relative; }
+.frame img {
+  position: relative; z-index: 1; width: 100%;
+  border-radius: var(--r-media); box-shadow: var(--shadow-media);
+  object-fit: cover;
+}
+.frame::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  border: 1px solid var(--gold); border-radius: var(--r-media);
+  transform: translate(16px, 16px);
+}
+.zig-media { width: min(30rem, 100%); position: relative; }
+.zig-rev .zig-media { margin-left: auto; }
+.zig-media img { aspect-ratio: 4 / 5; }
+.zig-c .zig-media { width: min(34rem, 100%); }
+.zig-c .zig-media img { aspect-ratio: 4 / 3; }
+.zig-dot {
+  position: absolute; z-index: 0; width: 4.6rem; height: 4.6rem;
+  border-radius: 50%; background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+.zig-a .zig-dot { left: -2rem; top: 2.4rem; }
+.zig-c .zig-dot { right: -1.6rem; top: -2rem; }
+
+.duo { padding-block: 0 clamp(3rem, 7vw, 5.2rem); }
+.duo .wrap { display: grid; gap: 1.2rem; }
+@media (min-width: 760px) { .duo .wrap { grid-template-columns: 1.35fr 1fr; gap: 1.6rem; align-items: start; } }
+.duo img { width: 100%; border-radius: var(--r-media); object-fit: cover; box-shadow: var(--shadow-media); }
+.duo .d1 img { aspect-ratio: 16 / 10; }
+.duo .d2 { margin-top: 3.2rem; }
+.duo .d2 img { aspect-ratio: 4 / 5; }
+@media (max-width: 759px) {
+  .duo .d2 { margin-top: 0; width: 72%; margin-left: auto; }
+  .duo .d2 img { aspect-ratio: 4 / 5; }
+}
+
+.services .wrap { display: grid; grid-template-columns: 1fr; gap: 1.8rem; }
+@media (min-width: 900px) {
+  .services .wrap { grid-template-columns: minmax(0, .8fr) minmax(0, 1.25fr); gap: 3.5rem; }
+  .svc-intro { position: sticky; top: 2rem; align-self: start; }
+}
+.svc-intro p { color: var(--muted); max-width: 32ch; margin: .4rem 0 0; }
+.chip {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border: 1px dashed color-mix(in srgb, var(--ink) 32%, transparent);
+  border-radius: 999px; padding: .38rem .9rem;
+  font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--gold-ink);
+}
+.svc-intro .chip { margin-top: 1.2rem; }
+.svc { list-style: none; margin: 0; padding: 0; }
+.svc li { padding: 1.3rem 0 1.35rem; border-top: 1px solid var(--hairline); }
+.svc li:last-child { border-bottom: 1px solid var(--hairline); }
+.svc-head { display: flex; align-items: baseline; gap: .95rem; }
+.svc-no {
+  font-family: var(--font-display); font-weight: 500; font-size: .95rem;
+  color: var(--accent); width: 1.4ch; flex: none;
+}
+.svc h3 { margin: 0; font-family: var(--font-display); font-weight: 500; font-size: 1.35rem; letter-spacing: -.01em; }
+.svc-price {
+  margin-left: auto; flex: none; padding-left: 1rem;
+  font-family: var(--font-display); font-weight: 500; font-size: 1.02rem; color: var(--faint);
+}
+.svc p { margin: .4rem 0 0; padding-left: calc(1.4ch + .95rem); color: var(--muted); }
+
+.visit .wrap { display: grid; grid-template-columns: 1fr; gap: 2.4rem; }
+@media (min-width: 900px) { .visit .wrap { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 4rem; align-items: start; } }
+.hours { border-collapse: collapse; margin-top: 1.3rem; width: 100%; max-width: 21rem; }
+.hours th { text-align: left; font-weight: 500; color: var(--muted); }
+.hours td { text-align: right; }
+.hours th, .hours td { padding: .46rem 0; border-bottom: 1px solid var(--hairline); font-size: 1rem; }
+.visit .chip { margin-top: 1rem; }
+.visit-address { margin: 1.4rem 0 0; color: var(--muted); }
+.visit-phone {
+  display: inline-block; margin-top: .9rem;
+  font-family: var(--font-display); font-weight: 500; font-size: 1.75rem;
+  letter-spacing: -.01em; color: var(--ink); text-decoration: none;
+}
+.visit-phone:hover { color: var(--accent); }
+.visit .cta-row { margin-top: 1.4rem; }
+.map-frame { position: relative; }
+.map-frame iframe {
+  position: relative; z-index: 1; display: block; width: 100%; aspect-ratio: 4 / 3;
+  border: 0; border-radius: var(--r-media); box-shadow: var(--shadow-media);
+  filter: sepia(.16) saturate(.88) contrast(.96);
+}
+.map-frame::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  border: 1px solid var(--gold); border-radius: var(--r-media);
+  transform: translate(16px, 16px);
+}
+.map-note { margin: .9rem 0 0; font-size: .93rem; color: var(--faint); }
+.map-note a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.map-note a:hover { text-decoration: underline; }
+
+.faq details { border-top: 1px solid var(--hairline); padding: 1.15rem 0; }
+.faq details:last-of-type { border-bottom: 1px solid var(--hairline); }
+.faq summary {
+  cursor: pointer; list-style: none; display: flex; align-items: center; gap: 1rem;
+  font-family: var(--font-display); font-weight: 500; font-size: 1.24rem;
+  letter-spacing: -.01em; line-height: 1.25;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; margin-left: auto; flex: none;
+  font-size: 1.5rem; line-height: 1; color: var(--gold-ink);
+  transition: transform .18s ease;
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: .7rem 0 0; color: var(--muted); max-width: 64ch; }
+.faq .chip { margin-top: 1.2rem; }
+
+.cards { display: grid; grid-template-columns: 1fr; gap: 1.1rem; margin-top: 1.8rem; }
+@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+.card {
+  display: flex; flex-direction: column; gap: .4rem; min-height: 100%;
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: var(--r-lg); padding: 1.5rem 1.5rem 1.4rem;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
+.card .k { font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+.card .v { font-family: var(--font-display); font-weight: 500; font-size: 1.2rem; letter-spacing: -.01em; }
+.card .go { margin-top: auto; padding-top: .9rem; color: var(--accent); font-weight: 600; font-size: .93rem; }
+
+.closing { background: var(--ink); color: #F3EADB; text-align: center; padding: clamp(3.4rem, 9vw, 5.6rem) 0; }
+.closing h2 {
+  margin: 0 auto 1.5rem; max-width: 18ch; color: #F3EADB;
+  font-size: clamp(2rem, 5.6vw, 3.4rem);
+}
+.closing h2 em { color: var(--gold); }
+.closing .hero-call { color: #D8C9B4; }
+.closing .hero-call a { color: #F3EADB; }
+
+.site-footer { background: var(--ground-deep); color: var(--ink); padding: 3.4rem 0 2rem; }
+.foot-grid { display: grid; grid-template-columns: 1fr; gap: 2.2rem; }
+@media (min-width: 760px) { .foot-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.4rem; } }
+.foot-wordmark { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--font-display); font-weight: 500; font-size: 1.3rem; letter-spacing: -.01em; }
+.foot-wordmark .mark { width: 1.15rem; height: 1.15rem; color: var(--accent); flex: none; }
+.foot-note { margin: .8rem 0 0; color: var(--muted); max-width: 30ch; font-size: .97rem; }
+.foot-col h3 { margin: 0 0 .85rem; font-family: var(--font-text); font-weight: 600; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+.foot-col a, .foot-col span { display: block; margin: .3rem 0; text-decoration: none; color: var(--ink); font-size: .98rem; }
+.foot-col a:hover { text-decoration: underline; }
+.foot-bottom {
+  margin-top: 2.9rem; border-top: 1px solid var(--hairline);
+  padding-top: 1.2rem; display: flex; flex-wrap: wrap; justify-content: space-between;
+  gap: .6rem 1.4rem; font-size: .9rem; color: var(--muted);
+}
+
+.dock { display: none; position: fixed; inset: auto 0 0 0; z-index: 60; }
+@media (max-width: 759px) {
+  body:has(.dock .btn) { padding-bottom: 4.9rem; }
+  .dock {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: .5rem; padding: .65rem 1rem;
+    padding-bottom: calc(.65rem + env(safe-area-inset-bottom, 0px));
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    backdrop-filter: blur(8px); border-top: 1px solid var(--hairline);
+    opacity: 0; visibility: hidden; transform: translateY(12px);
+    transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s;
+  }
+  .dock.is-visible {
+    opacity: 1; visibility: visible; transform: none;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+  .dock .btn { width: 100%; min-height: 48px; }
+}
+@media (max-width: 759px) and (prefers-reduced-motion: reduce) { .dock { transition: none; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Belle Amie Hair Salon","telephone":"+447747706506","email":"emmamartgreer@hotmail.co.uk","address":{"@type":"PostalAddress","streetAddress":"39 Towngate","addressLocality":"Ossett","postalCode":"WF5 9BL","addressCountry":"GB"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar" role="note">Unofficial preview prepared by Plinth · Not yet live</div>
+
+<header class="topbar" id="top">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Belle Amie Hair Salon home">
+      <svg class="mark" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 16v-5a5 5 0 0 1 10 0v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span class="wm-name">Belle Amie Hair Salon</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">Good to know</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-primary btn-sm num" href="tel:+447747706506">07747 706506</a>
+    </div>
+  </div>
+  <div class="util">
+    <div class="wrap">
+      <span>39 Towngate, Ossett WF5 9BL</span>
+      <span class="sep" aria-hidden="true">·</span><a class="num" href="tel:+447747706506">07747 706506</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-media" aria-hidden="true">
+    <img src="assets/hero.jpg" alt="" fetchpriority="high" decoding="async">
+  </div>
+  <div class="wrap hero-float">
+    <div class="hero-card">
+      <p class="eyebrow">Towngate · Ossett</p>
+      <h1>Hairdressers in <em>Ossett</em></h1>
+      <p class="hero-line">Cuts, colour, blow-dries and treatments — with the kettle on and the radio low.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+447747706506">Call to book</a>
+        <a class="btn btn-primary" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
+        <a class="btn btn-ghost" href="#services">See services</a>
+      </div>
+      <p class="hero-call">or call <a href="tel:+447747706506"><span class="num">07747 706506</span></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <p>Cuts, colour, blow-dries &amp; <em>treatments</em></p>
+  </div>
+</section>
+
+<section class="zig zig-a sec">
+  <div class="wrap">
+    <div class="zig-media">
+      <div class="frame"><img src="assets/colour.jpg" alt="Colour being applied to a client's hair, section by section" loading="lazy" decoding="async"></div>
+      <div class="zig-dot" aria-hidden="true"></div>
+    </div>
+    <div class="zig-copy">
+      <p class="eyebrow">Colour</p>
+      <h2>From a quick tone-up to a full change</h2>
+      <p>Covering the first greys, going lighter or trying something entirely new: colour is mixed and applied to suit your hair.</p>
+      <a class="btn btn-ghost" href="#services">See the price list</a>
+    </div>
+  </div>
+</section>
+
+<section class="zig zig-rev sec">
+  <div class="wrap">
+    <div class="zig-media">
+      <div class="frame"><img src="assets/cut.jpg" alt="A stylist combing and trimming a client's hair" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="zig-copy">
+      <p class="eyebrow">Cutting</p>
+      <h2>Cuts &amp; restyles that suit real life</h2>
+      <p>Shapes that work with your hair's natural texture, and with the minutes you actually have in the morning.</p>
+    </div>
+  </div>
+</section>
+
+<section class="duo" aria-hidden="true">
+  <div class="wrap">
+    <div class="d1"><img src="assets/room.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="d2"><img src="assets/detail.jpg" alt="" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<section class="zig zig-rev zig-c sec">
+  <div class="wrap">
+    <div class="zig-media">
+      <div class="frame"><img src="assets/finish.jpg" alt="A client's hair being blow-dried and styled" loading="lazy" decoding="async"></div>
+      <div class="zig-dot" aria-hidden="true"></div>
+    </div>
+    <div class="zig-copy">
+      <p class="eyebrow">Finishing</p>
+      <h2>Blow-dries &amp; occasion hair</h2>
+      <p>Smooth, bouncy or pinned up, so you leave with a finish that survives the walk home and the photographs.</p>
+      <a class="btn btn-ghost" href="#visit">Plan your visit</a>
+    </div>
+  </div>
+</section>
+
+<section class="services sec" id="services">
+  <div class="wrap">
+    <div class="svc-intro">
+      <h2>Services &amp; prices</h2>
+      <p>Call to book any of the services below.</p>
+      <span class="chip">Sample prices — confirmed with you first</span>
+    </div>
+    <ul class="svc">
+      <li>
+        <div class="svc-head"><span class="svc-no">1</span><h3>Cuts &amp; styling</h3><span class="svc-price num">from £20</span></div>
+        <p>Cut, wash and finish.</p>
+      </li>
+      <li>
+        <div class="svc-head"><span class="svc-no">2</span><h3>Colour</h3><span class="svc-price num">from £45</span></div>
+        <p>Full colour, highlights and toning.</p>
+      </li>
+      <li>
+        <div class="svc-head"><span class="svc-no">3</span><h3>Blow-dries &amp; up-dos</h3><span class="svc-price num">from £18</span></div>
+        <p>Everyday finishes and occasion hair.</p>
+      </li>
+      <li>
+        <div class="svc-head"><span class="svc-no">4</span><h3>Treatments</h3><span class="svc-price num">from £15</span></div>
+        <p>Conditioning and repair treatments.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="visit sec" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Visit</h2>
+      <span class="chip">Sample opening hours — to be confirmed</span>
+      <table class="hours">
+        <tbody>
+          <tr><th scope="row">Monday</th><td>Closed</td></tr>
+          <tr><th scope="row">Tuesday – Friday</th><td class="num">9:30 – 18:00</td></tr>
+          <tr><th scope="row">Saturday</th><td class="num">9:00 – 17:00</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <p class="visit-address">39 Towngate<br>Ossett WF5 9BL</p>
+      <a class="visit-phone num" href="tel:+447747706506">07747 706506</a>
+      <div class="cta-row">
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL&amp;output=embed" title="Map showing Belle Amie Hair Salon at 39 Towngate, Ossett" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <p class="map-note">Find us on <a href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Google Maps</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="faq sec" id="faq">
+  <div class="wrap">
+    <h2>Good to know</h2>
+    <details>
+      <summary>How do I book?</summary>
+      <p>Get in touch by phone or email: that's the quickest way to check availability and find a time that suits.</p>
+    </details>
+    <details>
+      <summary>Can I just walk in?</summary>
+      <p>Booking ahead is the safest way to get the time you want — get in touch to check what's free today.</p>
+    </details>
+    <details>
+      <summary>What should I bring to my first visit?</summary>
+      <p>Arrive with dry hair unless you're told otherwise, and bring any inspiration photos for a colour or a restyle.</p>
+    </details>
+    <details>
+      <summary>I'm not sure what I want yet</summary>
+      <p>A quick chat before your appointment (or at the start of it) is the easiest way to land on the right cut, colour or treatment.</p>
+    </details>
+    <span class="chip">General guidance — the salon confirms the details</span>
+  </div>
+</section>
+
+<section class="sec" id="find">
+  <div class="wrap">
+    <h2>Find us</h2>
+    <div class="cards">
+      <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">
+        <span class="k">Google</span>
+        <span class="v">Reviews &amp; location</span>
+        <span class="go">Read reviews →</span>
+      </a>
+      <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">
+        <span class="k">Directions</span>
+        <span class="v">Towngate, Ossett</span>
+        <span class="go">Open in Maps →</span>
+      </a>
+      
+      <a class="card" href="mailto:emmamartgreer@hotmail.co.uk">
+        <span class="k">Email</span>
+        <span class="v">emmamartgreer@hotmail.co.uk</span>
+        <span class="go">Send a message →</span>
+      </a>
+      
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>Ready when <em>you</em> are.</h2>
+    <a class="btn btn-cream" href="tel:+447747706506">Call to book</a>
+    <a class="btn btn-cream" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
+    <p class="hero-call"><a class="num" href="tel:+447747706506">07747 706506</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-wordmark">
+          <svg class="mark" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 16v-5a5 5 0 0 1 10 0v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Belle Amie Hair Salon
+        </span>
+        <p class="foot-note">Hairdressing in Ossett.</p>
+      </div>
+      <div class="foot-col">
+        <h3>Visit</h3>
+        <span>39 Towngate</span>
+        <span>Ossett WF5 9BL</span>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Directions</a>
+      </div>
+      <div class="foot-col">
+        <h3>Hours (sample)</h3>
+        <span class="num">Tue – Fri 9:30 – 18:00</span>
+        <span class="num">Sat 9:00 – 17:00</span>
+        <span>Sun &amp; Mon closed</span>
+      </div>
+      <div class="foot-col">
+        <h3>Contact</h3>
+        <a class="num" href="tel:+447747706506">07747 706506</a>
+        <a href="mailto:emmamartgreer@hotmail.co.uk">emmamartgreer@hotmail.co.uk</a>
+        <span>Get in touch to book your next appointment.</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Belle Amie Hair Salon</span>
+      <span>Unofficial preview prepared by Plinth · Not yet live</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="btn btn-primary" href="tel:+447747706506">Call to book</a>
+  <a class="btn btn-primary" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
+</div>
+
+<script>
+(function () {
+  var dock = document.querySelector('.dock');
+  var hero = document.querySelector('.hero');
+  if (!dock || !dock.querySelector('.btn') || !hero || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    dock.classList.toggle('is-visible', !entries[0].isIntersecting);
+  });
+  io.observe(hero);
+})();
+</script>
+
+</body>
+</html>
