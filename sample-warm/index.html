@@ -90,7 +90,7 @@ em { font-style: italic; }
 .btn-cream:hover { background: #fff; }
 .btn-sm { min-height: 44px; padding: .55rem 1.15rem; font-size: .95rem; }
 
-.topbar { padding-top: 1.15rem; }
+.topbar { padding-top: 1.15rem; padding-bottom: 1.2rem; }
 .topbar .wrap { display: flex; align-items: center; gap: 1rem; }
 .wordmark {
   display: inline-flex; align-items: center; gap: .55rem; min-width: 0;
@@ -105,20 +105,7 @@ em { font-style: italic; }
 .nav a:hover { color: var(--accent); }
 .topbar .actions { margin-left: auto; flex: none; }
 @media (max-width: 599px) {
-  .topbar .actions .btn { min-height: 44px; padding: .5rem 1.05rem; font-size: .92rem; }
-}
-.util { display: none; }
-@media (min-width: 880px) {
-  .util { display: block; }
-  .util .wrap {
-    display: flex; align-items: center; gap: 1.1rem;
-    padding-top: .85rem; padding-bottom: 1.05rem;
-    font-size: .93rem; color: var(--muted);
-    border-bottom: 1px solid var(--hairline);
-  }
-  .util .sep { opacity: .45; }
-  .util a { color: var(--muted); font-weight: 600; text-decoration: none; }
-  .util a:hover { color: var(--accent); }
+  .topbar .actions { display: none; }
 }
 
 .hero { position: relative; }
@@ -142,10 +129,6 @@ em { font-style: italic; }
 }
 @media (min-width: 600px) { .hero-card { padding: 2.2rem 2.2rem 2.3rem; } }
 @media (min-width: 880px) { .hero-float { display: flex; } .hero-card { margin-right: auto; } }
-.eyebrow {
-  margin: 0 0 .65rem; font-size: .78rem; font-weight: 600;
-  letter-spacing: .16em; text-transform: uppercase; color: var(--faint);
-}
 .hero h1 {
   font-family: var(--font-display); font-weight: 500; font-size: 2.35rem;
   line-height: 1.04; letter-spacing: -.015em; text-wrap: balance; margin: 0;
@@ -155,9 +138,6 @@ em { font-style: italic; }
 @media (min-width: 1024px) { .hero h1 { font-size: 3.3rem; } }
 .hero-line { margin: .95rem 0 0; max-width: 42ch; color: var(--muted); }
 .cta-row { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: .7rem; }
-.hero-call { margin: 1rem 0 0; font-size: .95rem; color: var(--faint); }
-.hero-call a { color: var(--accent); font-weight: 600; text-decoration: none; }
-.hero-call a:hover { text-decoration: underline; }
 @media (prefers-reduced-motion: no-preference) {
   .hero-card { animation: settle .7s cubic-bezier(.22, 1, .36, 1) .15s both; }
   @keyframes settle {
@@ -193,11 +173,11 @@ em { font-style: italic; }
 .quote + .quote { border-top: 1px solid var(--hairline); padding-top: 1.7rem; }
 .quote blockquote { margin: 0; }
 .quote blockquote p {
-  margin: 0; max-width: 50ch; font-family: var(--font-display); font-style: italic;
-  font-weight: 400; font-size: 1.24rem; line-height: 1.42; letter-spacing: -.008em; text-wrap: pretty;
+  margin: 0; max-width: 54ch; font-family: var(--font-display);
+  font-weight: 400; font-size: 1.3rem; line-height: 1.5; letter-spacing: -.006em; text-wrap: pretty;
 }
 .quote figcaption {
-  font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint);
+  font-size: .85rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--faint);
 }
 
 h2 {
@@ -256,14 +236,6 @@ h2 {
   .svc-intro { position: sticky; top: 2rem; align-self: start; }
 }
 .svc-intro p { color: var(--muted); max-width: 32ch; margin: .4rem 0 0; }
-.chip {
-  display: inline-flex; align-items: center; gap: .5rem;
-  border: 1px dashed color-mix(in srgb, var(--ink) 32%, transparent);
-  border-radius: 999px; padding: .38rem .9rem;
-  font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
-  color: var(--gold-ink);
-}
-.svc-intro .chip { margin-top: 1.2rem; }
 .svc { list-style: none; margin: 0; padding: 0; }
 .svc li { padding: 1.3rem 0 1.35rem; border-top: 1px solid var(--hairline); }
 .svc li:last-child { border-bottom: 1px solid var(--hairline); }
@@ -285,6 +257,13 @@ h2 {
 .hours th { text-align: left; font-weight: 500; color: var(--muted); }
 .hours td { text-align: right; }
 .hours th, .hours td { padding: .46rem 0; border-bottom: 1px solid var(--hairline); font-size: 1rem; }
+.chip {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border: 1px dashed color-mix(in srgb, var(--ink) 32%, transparent);
+  border-radius: 999px; padding: .38rem .9rem;
+  font-size: .82rem; font-weight: 600; letter-spacing: .01em;
+  color: var(--gold-ink);
+}
 .visit .chip { margin-top: 1rem; }
 .visit-address { margin: 1.4rem 0 0; color: var(--muted); }
 .visit-phone {
@@ -326,29 +305,12 @@ h2 {
 .faq details p { margin: .7rem 0 0; color: var(--muted); max-width: 64ch; }
 .faq .chip { margin-top: 1.2rem; }
 
-.cards { display: grid; grid-template-columns: 1fr; gap: 1.1rem; margin-top: 1.8rem; }
-@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 980px) { .cards { grid-template-columns: repeat(3, 1fr); } }
-.card {
-  display: flex; flex-direction: column; gap: .4rem; min-height: 100%;
-  background: var(--surface); border: 1px solid var(--hairline);
-  border-radius: var(--r-lg); padding: 1.5rem 1.5rem 1.4rem;
-  text-decoration: none;
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
-.card .k { font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
-.card .v { font-family: var(--font-display); font-weight: 500; font-size: 1.2rem; letter-spacing: -.01em; }
-.card .go { margin-top: auto; padding-top: .9rem; color: var(--accent); font-weight: 600; font-size: .93rem; }
-
 .closing { background: var(--ink); color: #F3EADB; text-align: center; padding: clamp(3.4rem, 9vw, 5.6rem) 0; }
 .closing h2 {
   margin: 0 auto 1.5rem; max-width: 18ch; color: #F3EADB;
   font-size: clamp(2rem, 5.6vw, 3.4rem);
 }
 .closing h2 em { color: var(--gold); }
-.closing .hero-call { color: #D8C9B4; }
-.closing .hero-call a { color: #F3EADB; }
 
 .site-footer { background: var(--ground-deep); color: var(--ink); padding: 3.4rem 0 2rem; }
 .foot-grid { display: grid; grid-template-columns: 1fr; gap: 2.2rem; }
@@ -407,12 +369,6 @@ h2 {
       <a class="btn btn-primary btn-sm num" href="tel:+447747706506">07747 706506</a>
     </div>
   </div>
-  <div class="util">
-    <div class="wrap">
-      <span>39 Towngate, Ossett WF5 9BL</span>
-      <span class="sep" aria-hidden="true">·</span><a class="num" href="tel:+447747706506">07747 706506</a>
-    </div>
-  </div>
 </header>
 
 <main id="main">
@@ -423,22 +379,19 @@ h2 {
   </div>
   <div class="wrap hero-float">
     <div class="hero-card">
-      <p class="eyebrow">Towngate · Ossett</p>
       <h1>Hairdressers in <em>Ossett</em></h1>
-      <p class="hero-line">Cuts, colour, blow-dries and treatments — with the kettle on and the radio low.</p>
+      <p class="hero-line">Cuts, colour, blow&#8209;dries and treatments on Towngate in Ossett.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="tel:+447747706506">Call to book</a>
-        <a class="btn btn-primary" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
         <a class="btn btn-ghost" href="#services">See services</a>
       </div>
-      <p class="hero-call">or call <a href="tel:+447747706506"><span class="num">07747 706506</span></a></p>
     </div>
   </div>
 </section>
 
 <section class="statement">
   <div class="wrap">
-    <p>Cuts, colour, blow-dries &amp; <em>treatments</em></p>
+    <p>Cuts, colour, blow&#8209;dries &amp; <em>treatments</em></p>
   </div>
 </section>
 
@@ -446,7 +399,6 @@ h2 {
 <section class="trust sec" aria-label="Reviews">
   <div class="wrap trust-grid">
     <div class="trust-score">
-      <h2 class="eyebrow">Kind words</h2>
       <p class="trust-num num">5.0</p>
       <div class="trust-stars" role="img" aria-label="Rated 5.0 out of 5 on Google">
         <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>
@@ -488,7 +440,6 @@ h2 {
       <div class="zig-dot" aria-hidden="true"></div>
     </div>
     <div class="zig-copy">
-      <p class="eyebrow">Colour</p>
       <h2>From a quick tone-up to a full change</h2>
       <p>Covering the first greys, going lighter or trying something entirely new: colour is mixed and applied to suit your hair.</p>
       <a class="btn btn-ghost" href="#services">See the price list</a>
@@ -502,8 +453,7 @@ h2 {
       <div class="frame"><img src="assets/cut.jpg" alt="A stylist combing and trimming a client's hair" loading="lazy" decoding="async"></div>
     </div>
     <div class="zig-copy">
-      <p class="eyebrow">Cutting</p>
-      <h2>Cuts &amp; restyles that suit real life</h2>
+      <h2>Cuts &amp; styling that suit real life</h2>
       <p>Shapes that work with your hair's natural texture, and with the minutes you actually have in the morning.</p>
     </div>
   </div>
@@ -523,8 +473,7 @@ h2 {
       <div class="zig-dot" aria-hidden="true"></div>
     </div>
     <div class="zig-copy">
-      <p class="eyebrow">Finishing</p>
-      <h2>Blow-dries &amp; occasion hair</h2>
+      <h2>Blow&#8209;dries &amp; up-dos</h2>
       <p>Smooth, bouncy or pinned up, so you leave with a finish that survives the walk home and the photographs.</p>
       <a class="btn btn-ghost" href="#visit">Plan your visit</a>
     </div>
@@ -534,25 +483,24 @@ h2 {
 <section class="services sec" id="services">
   <div class="wrap">
     <div class="svc-intro">
-      <h2>Services &amp; prices</h2>
+      <h2>Services</h2>
       <p>Call to book any of the services below.</p>
-      <span class="chip">Sample prices — confirmed with you first</span>
     </div>
     <ul class="svc">
       <li>
-        <div class="svc-head"><span class="svc-no">1</span><h3>Cuts &amp; styling</h3><span class="svc-price num">from £20</span></div>
+        <div class="svc-head"><span class="svc-no">1</span><h3>Cuts &amp; styling</h3><span class="svc-price">On request</span></div>
         <p>Cut, wash and finish.</p>
       </li>
       <li>
-        <div class="svc-head"><span class="svc-no">2</span><h3>Colour</h3><span class="svc-price num">from £45</span></div>
+        <div class="svc-head"><span class="svc-no">2</span><h3>Colour</h3><span class="svc-price">On request</span></div>
         <p>Full colour, highlights and toning.</p>
       </li>
       <li>
-        <div class="svc-head"><span class="svc-no">3</span><h3>Blow-dries &amp; up-dos</h3><span class="svc-price num">from £18</span></div>
+        <div class="svc-head"><span class="svc-no">3</span><h3>Blow-dries &amp; up-dos</h3><span class="svc-price">On request</span></div>
         <p>Everyday finishes and occasion hair.</p>
       </li>
       <li>
-        <div class="svc-head"><span class="svc-no">4</span><h3>Treatments</h3><span class="svc-price num">from £15</span></div>
+        <div class="svc-head"><span class="svc-no">4</span><h3>Treatments</h3><span class="svc-price">On request</span></div>
         <p>Conditioning and repair treatments.</p>
       </li>
     </ul>
@@ -590,7 +538,7 @@ h2 {
 <section class="faq sec" id="faq">
   <div class="wrap">
     <h2>Good to know</h2>
-    <details>
+    <details open>
       <summary>How do I book?</summary>
       <p>Get in touch by phone or email: that's the quickest way to check availability and find a time that suits.</p>
     </details>
@@ -610,39 +558,10 @@ h2 {
   </div>
 </section>
 
-<section class="sec" id="find">
-  <div class="wrap">
-    <h2>Find us</h2>
-    <div class="cards">
-      <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">
-        <span class="k">Google</span>
-        <span class="v">Reviews &amp; location</span>
-        <span class="go">Read reviews →</span>
-      </a>
-      <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">
-        <span class="k">Directions</span>
-        <span class="v">Towngate, Ossett</span>
-        <span class="go">Open in Maps →</span>
-      </a>
-      
-      <a class="card" href="mailto:emmamartgreer@hotmail.co.uk">
-        <span class="k">Email</span>
-        <span class="v">emmamartgreer@hotmail.co.uk</span>
-        <span class="go">Send a message →</span>
-      </a>
-      
-      
-      
-    </div>
-  </div>
-</section>
-
 <section class="closing">
   <div class="wrap">
     <h2>Ready when <em>you</em> are.</h2>
-    <a class="btn btn-cream" href="tel:+447747706506">Call to book</a>
-    <a class="btn btn-cream" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
-    <p class="hero-call"><a class="num" href="tel:+447747706506">07747 706506</a></p>
+    <a class="btn btn-cream num" href="tel:+447747706506">Call 07747 706506</a>
   </div>
 </section>
 
@@ -686,7 +605,7 @@ h2 {
 
 <div class="dock">
   <a class="btn btn-primary" href="tel:+447747706506">Call to book</a>
-  <a class="btn btn-primary" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
+  <a class="btn btn-ghost" href="mailto:emmamartgreer@hotmail.co.uk">Email to book</a>
 </div>
 
 <script>
