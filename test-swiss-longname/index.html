@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F4F4F0">
+<title>The Golden Scissors Hair and Beauty Lounge — Hairdressers in Batley</title>
+<meta name="description" content="The Golden Scissors Hair and Beauty Lounge — Hairdressing on Commercial Street, Batley. Cut, colour and form, without the noise.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Crect x='18' y='7' width='7' height='18' fill='%23E63329'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* theme:start */
+:root {
+  --paper: #F4F4F0;
+  --white: #FCFCFA;
+  --ink: #111111;
+  --red: #C92A20;
+  --red-on-dark: #FF7A6D;
+  --grey: #D8D8D2;
+  --muted: #6C6C66;
+}
+/* theme:end */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Archivo", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+::selection { background: var(--red); color: var(--white); }
+.wrap { width: min(1320px, 100%); margin-inline: auto; padding-inline: clamp(18px, 3.2vw, 44px); }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: "IBM Plex Mono", monospace; font-size: .66rem; letter-spacing: .02em; text-transform: uppercase; }
+
+.skip-link { position: absolute; left: -9999px; z-index: 100; padding: 12px 16px; background: var(--red); color: var(--white); }
+.skip-link:focus { left: 12px; top: 12px; }
+
+.preview-bar {
+  padding: 6px 14px;
+  background: var(--ink);
+  color: var(--white);
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.site-head { border-bottom: 1px solid var(--ink); }
+.head-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 72px; gap: 20px; }
+.brand { max-width: 100%; font-size: 1.05rem; font-weight: 700; letter-spacing: -.02em; text-decoration: none; text-transform: uppercase; }
+.nav { display: flex; gap: 22px; }
+.nav a { font-size: .7rem; font-weight: 500; text-decoration: none; }
+.nav a:hover { color: var(--red); }
+.head-right { display: flex; justify-content: end; align-items: center; gap: 14px; }
+.head-phone { font-family: "IBM Plex Mono", monospace; font-size: .62rem; text-decoration: none; }
+.head-book { padding: 8px 12px; background: var(--red); color: var(--white); font-size: .62rem; font-weight: 600; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+.head-book:hover { background: var(--ink); }
+
+.hero { padding-block: clamp(26px, 4vw, 44px) 0; }
+.hero-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-bottom: 16px; border-bottom: 1px solid var(--ink); }
+.hero-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(14px, 2vw, 24px); padding-block: clamp(22px, 3.4vw, 38px); align-items: end; }
+.hero-copy { grid-column: 1 / span 8; }
+.hero h1 {
+  margin: 0;
+  font-size: clamp(4rem, 11vw, 10rem);
+  font-weight: 700;
+  line-height: .83;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+}
+.hero h1 .thin { font-weight: 300; }
+.hero h1 .red { color: var(--red); }
+.hero-sub { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 760px; margin-top: 30px; }
+.hero-sub p { margin: 0; font-size: .84rem; }
+.hero-sub p:first-child { font-weight: 500; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.btn { display: inline-block; padding: 10px 14px; background: var(--ink); color: var(--white); border: 1px solid var(--ink); font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+.btn:hover { background: var(--red); border-color: var(--red); }
+.btn-out { background: transparent; color: var(--ink); }
+.btn-out:hover { background: var(--ink); color: var(--white); }
+.hero-fig { grid-column: 9 / span 4; margin: 0; }
+.hero-fig img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1) contrast(1.08); }
+.hero-fig figcaption { display: flex; justify-content: space-between; gap: 12px; padding-top: 7px; border-top: 1px solid var(--ink); margin-top: 7px; color: var(--muted); font-family: "IBM Plex Mono", monospace; font-size: .52rem; text-transform: uppercase; }
+.hero-fig figcaption span:last-child { text-align: right; }
+.hero-index { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px solid var(--ink); color: var(--muted); }
+
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--ink); }
+.fact { padding: 20px clamp(14px, 2vw, 26px); border-left: 1px solid var(--ink); }
+.fact:first-child { border-left: 0; padding-left: 0; }
+.fact h2 { margin: 0 0 4px; font-size: .92rem; font-weight: 600; }
+.fact p { margin: 0; color: var(--muted); font-size: .74rem; }
+.fact .mono { display: block; margin-bottom: 12px; color: var(--red); }
+
+.statement { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(14px, 2vw, 24px); padding-block: clamp(52px, 7vw, 94px); }
+.statement h2 { grid-column: 1 / span 9; margin: 0; font-size: clamp(2.4rem, 5.4vw, 4.8rem); font-weight: 300; line-height: .98; letter-spacing: -.045em; }
+.statement h2 b { font-weight: 700; }
+.statement .side { grid-column: 10 / span 3; align-self: end; }
+.statement .side p { margin: 0 0 14px; color: var(--muted); font-size: .76rem; }
+.statement .side .red-square { width: 46px; height: 46px; background: var(--red); }
+
+.menu { background: var(--white); border-block: 1px solid var(--ink); }
+.menu-inner { padding-block: clamp(44px, 6vw, 76px); }
+.menu-head { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; align-items: baseline; margin-bottom: 26px; }
+.menu-head h2 { grid-column: 1 / span 5; margin: 0; font-size: clamp(2.1rem, 4.4vw, 3.5rem); font-weight: 700; line-height: .92; letter-spacing: -.05em; text-transform: uppercase; }
+.menu-head p { grid-column: 8 / span 5; margin: 0; color: var(--muted); font-size: .8rem; }
+.svc { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+.svc li { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.8fr) auto; gap: 20px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--grey); }
+.svc li:hover { background: var(--paper); }
+.svc h3 { margin: 0; font-size: 1.12rem; font-weight: 600; letter-spacing: -.015em; }
+.svc p { margin: 0; color: var(--muted); font-size: .78rem; }
+.svc-price { font-family: "IBM Plex Mono", monospace; font-size: .66rem; font-weight: 500; white-space: nowrap; }
+.menu-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; margin-top: 18px; }
+.menu-foot p { margin: 0; color: var(--muted); font-size: .64rem; max-width: 52ch; }
+
+.craft { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(14px, 2vw, 24px); padding-block: clamp(48px, 6vw, 80px); align-items: start; }
+.craft-copy { grid-column: 1 / span 6; padding-top: 14px; }
+.craft-copy h2 { margin: 0 0 24px; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 300; line-height: .96; letter-spacing: -.05em; }
+.craft-copy h2 b { font-weight: 700; }
+.craft-copy p { max-width: 48ch; margin: 0 0 14px; font-size: .86rem; }
+.craft-list { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--ink); }
+.craft-list li { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--grey); }
+.craft-list b { color: var(--red); font-size: .72rem; font-weight: 600; }
+.craft-list strong { display: block; font-size: .82rem; font-weight: 600; }
+.craft-list span { color: var(--muted); font-size: .72rem; }
+.craft-visual { grid-column: 8 / span 5; }
+.craft-visual img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; filter: grayscale(1) contrast(1.12); }
+.craft-block { margin-top: 16px; padding: 18px; background: var(--red); color: var(--white); }
+.craft-block p { margin: 0 0 12px; font-size: 1.15rem; font-weight: 500; line-height: 1.2; }
+.craft-block span { font-family: "IBM Plex Mono", monospace; font-size: .56rem; text-transform: uppercase; }
+
+.gallery { padding-bottom: clamp(48px, 6vw, 80px); }
+.gallery-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); margin-bottom: 18px; }
+.gallery-head h2 { margin: 0; font-size: 1.3rem; font-weight: 600; letter-spacing: -.02em; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 2vw, 22px); }
+.gallery-grid figure { margin: 0; }
+.gallery-grid img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; filter: grayscale(1); }
+.gallery-grid figcaption { display: flex; justify-content: space-between; gap: 10px; padding-top: 6px; border-top: 1px solid var(--ink); margin-top: 6px; font-family: "IBM Plex Mono", monospace; font-size: .54rem; color: var(--muted); text-transform: uppercase; }
+
+.trust { background: var(--ink); color: var(--white); }
+.trust-inner { padding-block: clamp(46px, 6vw, 78px); }
+.trust-head { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; align-items: end; padding-bottom: 20px; border-bottom: 1px solid #4A4A46; }
+.trust-head h2 { grid-column: 1 / span 6; margin: 0; font-size: clamp(2rem, 4.2vw, 3.4rem); font-weight: 300; line-height: .96; letter-spacing: -.045em; }
+.trust-score { grid-column: 10 / span 3; text-align: right; }
+.trust-score b { display: block; color: var(--red); font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 700; line-height: .8; letter-spacing: -.04em; }
+.trust-score span { font-family: "IBM Plex Mono", monospace; font-size: .56rem; color: #B8B8B0; text-transform: uppercase; }
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); }
+.quote { padding: 24px clamp(16px, 2.2vw, 28px) 0; border-left: 1px solid #4A4A46; }
+.quote:first-child { padding-left: 0; border-left: 0; }
+.quote blockquote { margin: 0 0 14px; font-size: .86rem; line-height: 1.55; }
+.quote cite { font-family: "IBM Plex Mono", monospace; font-size: .56rem; font-style: normal; color: #B8B8B0; text-transform: uppercase; }
+.trust-note { margin: 24px 0 0; color: #8E8E86; font-family: "IBM Plex Mono", monospace; font-size: .54rem; text-transform: uppercase; }
+
+.visit { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(20px, 3vw, 34px); padding-block: clamp(48px, 6vw, 80px); }
+.visit-copy { grid-column: 1 / span 6; }
+.visit h2 { margin: 0 0 20px; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 700; line-height: .92; letter-spacing: -.05em; text-transform: uppercase; }
+.visit address { margin: 0 0 14px; font-style: normal; font-size: .9rem; line-height: 1.55; }
+.contact-line { margin: 0 0 20px; font-size: .78rem; overflow-wrap: anywhere; }
+.contact-line a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.hours { width: 100%; max-width: 400px; border-collapse: collapse; font-size: .74rem; }
+.hours th, .hours td { padding: 7px 0; border-bottom: 1px solid var(--grey); text-align: left; font-weight: 400; }
+.hours td { text-align: right; color: var(--muted); }
+.sample-chip { display: inline-block; margin: 10px 0 0; font-family: "IBM Plex Mono", monospace; font-size: .52rem; color: var(--muted); text-transform: uppercase; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.visit-panel { grid-column: 8 / span 5; background: var(--red); color: var(--white); padding: clamp(22px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; min-height: 360px; }
+.visit-panel .mono { color: #FFD4D0; }
+.visit-panel h3 { margin: 14px 0 10px; font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 600; line-height: 1; letter-spacing: -.03em; }
+.visit-panel p { margin: 0 0 18px; max-width: 34ch; font-size: .8rem; }
+.visit-panel a { color: var(--white); font-size: .72rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.65); align-self: start; padding-bottom: 2px; }
+.visit-panel a:hover { border-color: var(--white); }
+
+.faq { border-top: 1px solid var(--ink); }
+.faq-inner { padding-block: clamp(42px, 5vw, 68px); display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(16px, 2.4vw, 28px); }
+.faq h2 { grid-column: 1 / span 4; margin: 0; font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 300; line-height: .98; letter-spacing: -.04em; }
+.faq h2 b { font-weight: 700; }
+.faq-list { grid-column: 6 / span 7; border-top: 1px solid var(--ink); }
+.faq details { border-bottom: 1px solid var(--grey); }
+.faq summary { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; font-size: .8rem; font-weight: 500; cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: "IBM Plex Mono", monospace; color: var(--red); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 14px; max-width: 60ch; color: var(--muted); font-size: .74rem; }
+
+.site-foot { border-top: 1px solid var(--ink); padding: 24px 0 18px; }
+.foot-top { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; align-items: end; padding-bottom: 16px; border-bottom: 1px solid var(--ink); }
+.foot-wordmark { grid-column: 1 / span 7; margin: 0; font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 700; line-height: .9; letter-spacing: -.04em; text-transform: uppercase; }
+.foot-links { grid-column: 9 / span 4; display: flex; flex-wrap: wrap; justify-content: end; gap: 16px; font-size: .66rem; }
+.foot-links a { text-decoration: none; }
+.foot-links a:hover { color: var(--red); }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 12px; }
+.foot-bottom p { margin: 0; max-width: 58ch; color: var(--muted); font-family: "IBM Plex Mono", monospace; font-size: .52rem; line-height: 1.5; text-transform: uppercase; }
+.mobile-bar { display: none; }
+
+@media (max-width: 960px) {
+  .hero-copy { grid-column: 1 / -1; }
+  .hero-fig { grid-column: 1 / -1; max-width: 520px; }
+  .statement h2 { grid-column: 1 / -1; }
+  .statement .side { grid-column: 1 / -1; margin-top: 18px; display: flex; gap: 16px; align-items: center; }
+  .statement .side p { margin: 0; }
+  .menu-head h2, .menu-head p { grid-column: 1 / -1; }
+  .craft-copy, .craft-visual { grid-column: 1 / -1; }
+  .craft-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .craft-block { margin-top: 0; }
+  .trust-head h2 { grid-column: 1 / span 8; }
+  .trust-score { grid-column: 10 / span 3; }
+  .quotes { grid-template-columns: 1fr; }
+  .quote { padding: 18px 0; border-left: 0; border-top: 1px solid #4A4A46; }
+  .quote:first-child { border-top: 0; padding-top: 0; }
+  .visit-copy, .visit-panel { grid-column: 1 / -1; }
+  .faq h2, .faq-list { grid-column: 1 / -1; }
+  .foot-wordmark { grid-column: 1 / -1; }
+  .foot-links { grid-column: 1 / -1; justify-content: start; }
+}
+@media (max-width: 700px) {
+  .head-inner { grid-template-columns: 1fr auto; min-height: 60px; }
+  .nav { display: none; }
+  .brand { font-size: .92rem; }
+  .head-phone { display: none; }
+  .hero h1 { font-size: clamp(3.4rem, 16vw, 5.8rem); }
+  .hero-sub { grid-template-columns: 1fr; gap: 10px; }
+  .facts { grid-template-columns: 1fr; }
+  .fact { border-left: 0; border-top: 1px solid var(--ink); padding: 14px 0; }
+  .fact:first-child { border-top: 0; }
+  .svc li { grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .svc p { grid-column: 1 / -1; }
+  .menu-foot { flex-direction: column; }
+  .craft-visual { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid figure:nth-child(3) { display: none; }
+  .trust-head h2, .trust-score { grid-column: 1 / -1; text-align: left; }
+  .trust-score { margin-top: 12px; }
+  .visit-panel { min-height: 280px; }
+  body { padding-bottom: 52px; }
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); }
+  .mobile-bar a { padding: 14px 10px; color: var(--white); text-align: center; font-size: .68rem; font-weight: 600; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+  .mobile-bar a:only-child { grid-column: 1 / -1; }
+  .mobile-call { border-right: 1px solid #4A4A46; }
+  .mobile-book { background: var(--red); }
+}
+/* qa: legibility floor */
+.red-square { font-size: 48px; }
+.mono { font-size: 12px; }
+.preview-bar { font-size: 11px; letter-spacing: .02em; text-transform: none; }
+.nav a, .head-phone, .head-book { font-size: 12px; }
+.btn { font-size: 12px; }
+.hero-fig figcaption { font-size: 12px; }
+.hero-index { font-size: 12px; text-transform: none; }
+.fact, .fact:first-child { padding-left: 12px; }
+.fact p { font-size: 13px; }
+.menu { padding: 12px; }
+.menu-foot p { font-size: 12px; }
+.svc p { font-size: 13px; }
+.svc-price { font-size: 12px; }
+.craft-list b { font-size: 12px; }
+.craft-list span { font-size: 13px; }
+.craft-block p { line-height: 1.35; }
+.craft-block span { font-size: 12px; }
+.craft-copy h2 { letter-spacing: -.03em; }
+.gallery-grid figcaption { font-size: 12px; }
+.trust { padding: 12px; }
+.trust-score b { color: var(--red-on-dark); }
+.trust-score span { font-size: 12px; text-transform: none; }
+.quotes { padding-top: 12px; }
+.quote, .quote:first-child { padding-left: 12px; padding-top: 12px; }
+.quote cite { font-size: 12px; text-transform: none; }
+.trust-note { font-size: 12px; text-transform: none; }
+.hours { font-size: 13px; }
+.sample-chip { font-size: 12px; text-transform: none; }
+.visit-panel a { font-size: 12px; }
+.faq { padding-top: 12px; }
+.faq-list { padding-top: 12px; }
+.faq details p { font-size: 13px; }
+.foot-links { font-size: 12px; }
+.foot-bottom p { font-size: 12px; text-transform: none; }
+.mobile-bar a { font-size: 12px; }
+.hero h1 { font-size: 144px; }
+
+@media (max-width: 960px) { .hero h1 { font-size: clamp(4rem, 11vw, 7rem); } }
+@media (max-width: 700px) { .hero h1 { font-size: clamp(3.4rem, 16vw, 5.8rem); } }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"The Golden Scissors Hair and Beauty Lounge","telephone":"+441924442211","address":{"@type":"PostalAddress","streetAddress":"118 Commercial Street","addressLocality":"Batley","postalCode":"WF17 5DP","addressCountry":"GB"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth · Not yet live</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">The Golden Scissors Hair and Beauty Lounge</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#craft">Craft</a>
+      <a href="#salon">Salon</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="head-right">
+      <a class="head-phone num" href="tel:+441924442211">01924 442211</a>
+      <a class="head-book" href="#visit">Book</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap hero" id="top">
+    <div class="hero-meta">
+      <span class="mono">Hairdressing / Batley</span>
+      <span class="mono">Commercial Street / WF17 5DP</span>
+      <span class="mono">Cut — Colour — Form</span>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Hair,<br><span class="thin">reduced</span><br>to <span class="red">form.</span></h1>
+        <div class="hero-sub">
+          <p>A cut is a structure. Colour is a decision. Everything else is noise.</p>
+          <p>We work with the hair you have, the routine you keep and the shape that survives both. Batley, by appointment.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+441924442211">Book a chair</a>
+          <a class="btn btn-out" href="#menu">The menu</a>
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <img src="assets/portrait.jpg" width="1200" height="1500" alt="A stylist cutting a client's hair in profile." fetchpriority="high">
+        <figcaption><span>Fig. 01</span><span>Section by section</span></figcaption>
+      </figure>
+    </div>
+    <div class="hero-index mono">
+      <span>Established locally — independently run</span>
+      <span>One chair at a time</span>
+    </div>
+  </section>
+
+  <section class="wrap facts" aria-label="The salon in short">
+    <div class="fact"><span class="mono">Cut</span><h2>Structure first</h2><p>Shape, weight and line, cut for the way your hair actually falls.</p></div>
+    <div class="fact"><span class="mono">Colour</span><h2>Decided in person</h2><p>No colour quote without seeing the hair. Tone, lift and fade are planned together.</p></div>
+    <div class="fact"><span class="mono">Care</span><h2>Repeatable at home</h2><p>A finish you can recreate, not a styling trick that only works in the chair.</p></div>
+  </section>
+
+  <section class="wrap statement">
+    <h2>The best haircut is not the one that <b>changes you</b> most. It is the one that makes the <b>most of you.</b></h2>
+    <div class="side">
+      <div class="red-square" aria-hidden="true"></div>
+      <p>Less trend. More useful. A shape that holds its line between appointments.</p>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap menu-inner">
+      <div class="menu-head">
+        <h2>The<br>menu</h2>
+        <p>Starting points only. The salon confirms the final price once it has seen length, density and previous colour. Nothing is quoted blind.</p>
+      </div>
+      <ul class="svc">
+        <li><h3>Cuts &amp; styling</h3><p>Cut, wash and finish, built around your routine.</p><span class="svc-price">On request</span></li>
+        <li><h3>Colour</h3><p>Full colour, highlights and toning, quoted in person.</p><span class="svc-price">On request</span></li>
+        <li><h3>Blow-dries</h3><p>Everyday finishes and occasion hair.</p><span class="svc-price">On request</span></li>
+        <li><h3>Treatments</h3><p>Conditioning and repair for hair that needs it.</p><span class="svc-price">On request</span></li>
+      </ul>
+      <div class="menu-foot">
+        <p>Not sure what to book? Say so. The consultation is part of the appointment.</p>
+        <a class="btn btn-out" href="#visit">Plan a visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap craft" id="craft">
+    <div class="craft-copy">
+      <h2>Cut for the <b>head in the chair.</b></h2>
+      <p>A photo is a starting point, not a specification. We look at density, growth pattern, the cowlick you hate and the amount of time you will spend styling. Then we agree the shape.</p>
+      <p>Colour is planned in layers: the tone now, the fade later, the next appointment before it is needed. The result should still look deliberate six weeks on.</p>
+      <ul class="craft-list">
+        <li><b>01</b><div><strong>Consultation</strong><span>Shape, upkeep and honest styling time, agreed first.</span></div></li>
+        <li><b>02</b><div><strong>Construction</strong><span>Cut dry or wet as the hair demands, checked as it falls.</span></div></li>
+        <li><b>03</b><div><strong>Finish</strong><span>The product is minimal. The technique is yours to keep.</span></div></li>
+      </ul>
+    </div>
+    <div class="craft-visual">
+      <img src="assets/tools.jpg" width="1200" height="800" alt="A row of scissors hanging at the styling station." loading="lazy">
+      <div class="craft-block">
+        <p>“If it does not work at home, it is not the right cut.”</p>
+        <span>The working rule</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap gallery" id="salon">
+    <div class="gallery-head">
+      <h2>The salon, in three frames</h2>
+      <span class="mono">Space / tools / detail</span>
+    </div>
+    <div class="gallery-grid">
+      <figure><img src="assets/chair.jpg" width="1200" height="900" alt="The styling chair and mirror station." loading="lazy"><figcaption><span>01</span><span>Station</span></figcaption></figure>
+      <figure><img src="assets/tools.jpg" width="1200" height="800" alt="Hairdressing scissors hanging in a row." loading="lazy"><figcaption><span>02</span><span>Tools</span></figcaption></figure>
+      <figure><img src="assets/portrait.jpg" width="1200" height="1500" alt="A cut being checked in the mirror." loading="lazy"><figcaption><span>03</span><span>Detail</span></figcaption></figure>
+    </div>
+  </section>
+
+  
+
+  <section class="wrap visit" id="visit">
+    <div class="visit-copy">
+      <h2>Visit</h2>
+      <address>The Golden Scissors Hair and Beauty Lounge<br>118 Commercial Street<br>Batley WF17 5DP</address>
+      <p class="contact-line"><a class="num" href="tel:+441924442211">01924 442211</a></p>
+      <table class="hours">
+        <caption style="position:absolute;left:-9999px">Sample opening hours</caption>
+        <tbody>
+          <tr><th scope="row">Tuesday – Friday</th><td>9:30–18:00</td></tr>
+          <tr><th scope="row">Saturday</th><td>9:00–17:00</td></tr>
+          <tr><th scope="row">Sunday – Monday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <span class="sample-chip">Sample hours — confirmed at booking</span>
+      <div class="visit-actions">
+        <a class="btn" href="tel:+441924442211">Call the salon</a>
+        <a class="btn btn-out" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Golden%20Scissors%20Hair%20and%20Beauty%20Lounge%2C%20118%20Commercial%20Street%2C%20Batley%20WF17%205DP" target="_blank" rel="noopener">Directions</a>
+      </div>
+    </div>
+    <aside class="visit-panel">
+      <span class="mono">Appointments / Batley</span>
+      <div>
+        <h3>One chair.<br>No queue.</h3>
+        <p>The diary is kept small on purpose. Contact the salon directly to check availability and confirm a time.</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Golden%20Scissors%20Hair%20and%20Beauty%20Lounge%2C%20118%20Commercial%20Street%2C%20Batley%20WF17%205DP" target="_blank" rel="noopener">Open in maps ↗</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-inner">
+      <h2>Questions,<br><b>answered.</b></h2>
+      <div class="faq-list">
+        <details><summary>How do I book?</summary><p>Contact the salon directly. That is the fastest way to check the diary and confirm a time.</p></details>
+        <details><summary>Do you take walk-ins?</summary><p>When the diary allows. Booking ahead is the safest way to get the chair and time you want.</p></details>
+        <details><summary>Can I bring a reference photo?</summary><p>Yes — bring it to talk about shape, length or colour rather than to copy another head exactly.</p></details>
+        <details><summary>What is the cancellation policy?</summary><p>Ask when you book. The salon confirms its own notice period and any deposit.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="foot-wordmark">The Golden Scissors Hair and Beauty Lounge</p>
+      <div class="foot-links">
+        <a href="#menu">Menu</a>
+        <a href="#craft">Craft</a>
+        <a href="#visit">Visit</a>
+        
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Unofficial preview prepared by Plinth. Not yet live. The Golden Scissors Hair and Beauty Lounge / Hairdressing / Batley.</p>
+      <p>Photography from Pexels under the free license: 3992873, 1319460, 3993308.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="mobile-call" href="tel:+441924442211">Call</a>
+  <a class="mobile-book" href="#visit">Book</a>
+</div>
+</body>
+</html>
