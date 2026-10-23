@@ -4,463 +4,493 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#1B1613">
+<meta name="theme-color" content="#0B2B24">
 <title>M1 Nails &amp; Beauty — Nail &amp; beauty salons in Wakefield</title>
-<meta name="description" content="M1 Nails &amp; Beauty — Nails &amp; beauty on Trinity Walk, Wakefield. Call 07883 143359.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B1613'/%3E%3Cpath d='M7 25C10 14 14 10 25 7' stroke='%23D6AD66' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://api.fontshare.com">
-<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=melodrama@500&f[]=switzer@400,500&display=swap">
+<meta name="description" content="M1 Nails &amp; Beauty — Nail care on Trinity Walk, Wakefield. Considered cuts, colour and finishing in a calm, unhurried salon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B2B24'/%3E%3Cpath d='M16 4 28 16 16 28 4 16Z' fill='none' stroke='%23C7A35B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&family=Poiret+One&display=swap">
 <style>
 /* theme:start */
 :root {
-  --ground: hsl(24 16% 9%);
-  --ground-deep: hsl(24 16% 6.5%);
-  --surface: hsl(24 14% 14%);
-  --ink: hsl(38 30% 93%);
-  --muted: hsl(32 14% 72%);
-  --hairline: hsl(28 14% 22%);
-  --accent: hsl(350 48% 64%);
-  --accent-deep: hsl(350 46% 56%);
-  --accent-ink: hsl(350 40% 10%);
-  --strand-a: hsl(38 30% 60%);
+  --night: #3A1418;
+  --night-2: #4C1D22;
+  --gold: #D2AE72;
+  --gold-soft: #FFFFFF;
+  --champagne: #ECE7DB;
+  --cream: #FFFFFF;
+  --ink: #2E1B1B;
+  --muted: #665A52;
+  --line: #DDC6B4;
+  --gold-text: #785426;
 }
 /* theme:end */
-:root {
-  --font-display: "Melodrama", "Iowan Old Style", Georgia, serif;
-  --font-text: "Switzer", "Helvetica Neue", Arial, sans-serif;
-  --r: 4px;
-}
+
 *, *::before, *::after { box-sizing: border-box; }
-html { scrollbar-color: hsl(28 12% 32%) transparent; }
-html, body { margin: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 body {
-  background: var(--ground);
+  margin: 0;
+  background: var(--cream);
   color: var(--ink);
-  font-family: var(--font-text);
-  font-size: 1.0625rem;
+  font-family: "Jost", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-::selection { background: var(--accent); color: var(--accent-ink); }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
-.btn-primary:focus-visible { outline-color: var(--accent-ink); }
-input, textarea { caret-color: var(--accent); }
+::selection { background: var(--gold); color: var(--night); }
+.wrap { width: min(1240px, 100%); margin-inline: auto; padding-inline: clamp(18px, 3.6vw, 46px); }
+.num { font-variant-numeric: tabular-nums; }
 
-.skip {
-  position: absolute; left: 1rem; top: 1rem; z-index: 80;
-  background: var(--surface); color: var(--ink); padding: .7rem 1rem;
-  border-radius: var(--r); text-decoration: none; transform: translateY(-200%);
-}
-.skip:focus { transform: translateY(0); }
+.skip-link { position: absolute; left: -9999px; z-index: 100; padding: 12px 16px; background: var(--gold); color: var(--night); }
+.skip-link:focus { left: 12px; top: 12px; }
+
 .preview-bar {
-  background: var(--surface); color: var(--muted); text-align: center;
-  font-size: .8rem; letter-spacing: .02em; padding: .55rem 1.25rem;
-  border-bottom: 1px solid var(--hairline);
-}
-
-.wrap { max-width: 1060px; margin-inline: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
-@media (min-width: 720px) { .wrap { padding-left: 2rem; padding-right: 2rem; } }
-.ic { flex: none; display: block; }
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .55rem;
-  min-height: 52px;
-  padding: .85rem 1.45rem;
-  border-radius: var(--r);
-  font-family: var(--font-text);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: .005em;
-  line-height: 1.2;
-  text-decoration: none;
-  transition: background-color .18s ease, border-color .18s ease, color .18s ease, transform .12s ease;
-}
-.btn:active { transform: translateY(1px); }
-.btn-primary { background: var(--accent); color: var(--accent-ink); }
-.btn-primary:hover { background: var(--accent-deep); }
-.btn-ghost { background: transparent; color: var(--ink); border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent); }
-.btn-ghost:hover { background: var(--surface); border-color: color-mix(in srgb, var(--ink) 52%, transparent); }
-.btn .num { font-variant-numeric: tabular-nums; }
-
-.topbar { padding-block: 1.2rem; }
-.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.wordmark {
-  font-family: var(--font-display);
+  padding: 7px 14px;
+  background: var(--gold);
+  color: var(--night);
+  text-align: center;
+  font-size: 10px;
   font-weight: 500;
-  font-size: 1.12rem;
-  letter-spacing: .035em;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  line-height: 1.2;
-  text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.head-call {
-  display: none;
-  align-items: center;
-  gap: .45rem;
-  font-weight: 500;
-  font-size: .95rem;
-  text-decoration: none;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  transition: color .18s ease;
-}
-.head-call:hover { color: var(--accent); }
-@media (min-width: 760px) { .head-call { display: inline-flex; } }
 
-.hero { position: relative; overflow: clip; padding: clamp(4rem, 10vw, 7rem) 0 clamp(4.5rem, 11vw, 8rem); }
-.strand { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.strand path {
-  fill: none;
-  stroke-linecap: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
+.hero-shell { background: var(--night); color: var(--cream); position: relative; overflow: hidden; }
+.site-head { position: relative; z-index: 3; border-bottom: 1px solid rgba(199,163,91,.38); }
+.head-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 82px; }
+.head-side { width: 180px; font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); }
+.head-side:last-child { text-align: right; }
+.head-side a { text-decoration: none; }
+.brand {
+  max-width: 52%;
+  color: var(--cream);
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.35rem);
+  letter-spacing: .08em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.strand .a { stroke: var(--accent); stroke-width: 1.3; opacity: .7; }
-.strand .b { stroke: var(--strand-a); stroke-width: 1.2; opacity: .35; }
-.strand .c { stroke: var(--ink); stroke-width: 1; opacity: .14; }
-.strand .d { stroke: var(--strand-a); stroke-width: 1.2; opacity: .32; }
-.strand .e { stroke: var(--ink); stroke-width: 1; opacity: .1; }
-.strand .f { stroke: var(--ink); stroke-width: 1; opacity: .07; }
-@media (prefers-reduced-motion: no-preference) {
-  .strand path { animation: draw 1.7s cubic-bezier(.16, 1, .3, 1) both; }
-  .strand path:nth-of-type(2) { animation-delay: .12s; }
-  .strand path:nth-of-type(3) { animation-delay: .22s; }
-  .strand path:nth-of-type(4) { animation-delay: .32s; }
-  .strand path:nth-of-type(5) { animation-delay: .42s; }
-  .strand path:nth-of-type(6) { animation-delay: .52s; }
-  @keyframes draw {
-    from { stroke-dashoffset: 1; }
-    to { stroke-dashoffset: 0; }
-  }
-}
-.hero .wrap { position: relative; }
+.brand span { display: block; margin-top: 5px; color: var(--gold); font-family: "Jost", sans-serif; font-size: .52rem; letter-spacing: .32em; }
+.nav-row { display: flex; justify-content: center; gap: clamp(18px, 3vw, 38px); padding: 13px 0 15px; border-top: 1px solid rgba(199,163,91,.18); }
+.nav-row a { color: var(--cream); font-size: .64rem; letter-spacing: .2em; text-decoration: none; text-transform: uppercase; }
+.nav-row a:hover { color: var(--gold); }
+
+.hero { position: relative; z-index: 2; display: grid; grid-template-columns: 1.03fr .97fr; gap: clamp(30px, 5vw, 74px); align-items: center; padding: clamp(44px, 7vw, 96px) 0 clamp(52px, 8vw, 110px); }
+.hero-copy { position: relative; }
+.overline { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; color: var(--gold-soft); font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; }
+.overline::before { content: ""; width: 42px; height: 1px; background: var(--gold); }
 .hero h1 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(2.9rem, 8vw, 5.1rem);
-  line-height: 1.03;
-  letter-spacing: -.008em;
-  margin: 0;
-  max-width: 16ch;
-  overflow-wrap: break-word;
-}
-.hero h1 em { font-style: italic; color: var(--accent); }
-.hero .sub {
-  margin: 1.25rem 0 0;
-  max-width: 40ch;
-  font-size: 1.12rem;
+  margin: 0 0 22px;
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: clamp(3.4rem, 7.6vw, 6.6rem);
   font-weight: 400;
-  color: var(--muted);
-}
-.cta-row { margin-top: 2.2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
-@media (max-width: 400px) {
-  .cta-row .btn { flex: 1 1 100%; }
-}
-
-section h2 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 2.1rem;
-  line-height: 1.1;
-  letter-spacing: -.015em;
-  margin: 0 0 clamp(1.4rem, 3.5vw, 2rem);
-}
-.services { padding-block: clamp(3.8rem, 9vw, 5.8rem); }
-.svc { list-style: none; margin: 0; padding: 0; max-width: 680px; }
-.svc li { padding: 1.5rem 0 1.55rem; border-top: 1px solid var(--hairline); }
-.svc li:last-child { border-bottom: 1px solid var(--hairline); }
-.svc h3 { margin: 0; font-family: var(--font-text); font-size: 1.3rem; font-weight: 500; letter-spacing: -.01em; }
-.svc p { margin: .35rem 0 0; color: var(--muted); }
-
-.band {
-  background: var(--ground-deep);
-  padding-top: 4.4rem;
-  padding-bottom: 4.4rem;
-  border-block: 1px solid var(--hairline);
-}
-.band .btn { margin-top: 1.5rem; }
-
-.trust { padding-block: clamp(3.8rem, 9vw, 5.8rem); }
-.score { display: flex; flex-wrap: wrap; align-items: flex-end; gap: .4rem 1.3rem; margin: 0 0 clamp(1.9rem, 4.5vw, 2.8rem); }
-.score-num {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(3.1rem, 9.5vw, 4.4rem); line-height: .92; letter-spacing: -.03em;
-}
-.score-meta { display: grid; gap: .5rem; padding-bottom: .3rem; }
-.stars { display: flex; gap: .28rem; color: var(--accent); }
-.stars svg { width: 1.05rem; height: 1.05rem; }
-.score-src { margin: 0; color: var(--muted); font-size: .98rem; }
-.score-src a {
-  color: var(--ink); font-weight: 500; text-decoration: underline;
-  text-decoration-thickness: 2px; text-underline-offset: .16em;
-  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
-  transition: text-decoration-color .18s ease;
-}
-.score-src a:hover { text-decoration-color: var(--accent); }
-.quotes { display: grid; gap: 1.6rem; }
-.quote { margin: 0; border-top: 1px solid var(--hairline); padding-top: 1.3rem; }
-.quote blockquote { margin: 0; }
-.quote blockquote p { margin: 0; font-size: 1.05rem; line-height: 1.6; text-wrap: pretty; }
-.quote figcaption { margin-top: .65rem; font-size: .82rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-@media (min-width: 880px) {
-  .quotes { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.6rem, 3.2vw, 2.4rem); }
-}
-@media (min-width: 800px) {
-  .band { padding-top: 5.4rem; padding-bottom: 5.4rem; }
-  section h2 { font-size: 2.6rem; }
-}
-
-.visit { padding-block: clamp(3.8rem, 9vw, 5.8rem); }
-.visit-grid { display: grid; gap: clamp(2.2rem, 6vw, 3.5rem); }
-@media (min-width: 880px) { .visit-grid { grid-template-columns: 1fr 1.15fr; align-items: start; } }
-.visit address {
-  font-style: normal;
-  font-size: 1.16rem;
-  font-weight: 500;
-  line-height: 1.75;
-  font-variant-numeric: tabular-nums;
-}
-.hours-line { margin: 1.2rem 0 0; color: var(--muted); line-height: 1.9; font-variant-numeric: tabular-nums; }
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  margin-top: .9rem;
-  border: 1px dashed color-mix(in srgb, var(--ink) 30%, transparent);
-  border-radius: 999px;
-  padding: .32rem .85rem;
-  font-size: .8rem;
-  font-weight: 500;
+  line-height: .96;
   letter-spacing: .01em;
-  color: var(--muted);
 }
-.actions { margin: 0; padding: 0; }
-.actions a {
-  display: flex;
-  align-items: center;
-  gap: .9rem;
-  padding: 1.1rem .2rem;
-  border-top: 1px solid var(--hairline);
+.hero h1 em { display: block; color: var(--gold); font-style: normal; }
+.hero-copy > p { max-width: 43ch; margin: 0 0 28px; color: #D8DED4; font-size: .98rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  background: var(--gold);
+  color: var(--night);
+  border: 1px solid var(--gold);
+  font-family: "Jost", sans-serif;
+  font-size: .64rem;
+  font-weight: 500;
+  letter-spacing: .18em;
   text-decoration: none;
-  transition: background-color .16s ease;
+  text-transform: uppercase;
 }
-.actions a:last-child { border-bottom: 1px solid var(--hairline); }
-.actions a:hover { background: var(--surface); }
-.actions .ic { color: var(--accent); }
-.actions .label { font-weight: 500; }
-.actions .value {
-  margin-left: auto;
-  color: var(--muted);
-  font-size: 1rem;
-  text-align: right;
-  overflow-wrap: anywhere;
-}
-.actions .value.num { font-variant-numeric: tabular-nums; }
-.actions .go {
-  color: var(--muted);
-  opacity: .45;
-  transition: opacity .16s ease, transform .16s ease, color .16s ease;
-}
-.actions a:hover .go { opacity: 1; transform: translate(2px, -2px); color: var(--accent); }
+.btn:hover { background: var(--gold-soft); border-color: var(--gold-soft); }
+.btn-ghost { background: transparent; color: var(--cream); }
+.btn-ghost:hover { background: rgba(199,163,91,.12); color: var(--gold); border-color: var(--gold); }
+.hero-small { margin: 0; color: var(--gold-soft); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; }
 
-footer { border-top: 1px solid var(--hairline); padding: 2.2rem 0 2.6rem; }
-.foot-name { margin: 0; font-weight: 600; font-size: .95rem; }
-.foot-name span { color: var(--muted); font-weight: 400; }
-.foot-credit { margin: .55rem 0 0; color: var(--muted); font-size: .9rem; }
+.hero-fig { position: relative; margin: 0; padding: 16px; }
+.hero-fig::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--gold);
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  transform: translate(14px, -14px);
+}
+.hero-fig img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  filter: sepia(.22) saturate(.82) contrast(1.02);
+}
+.hero-fig figcaption { margin-top: 10px; color: var(--gold-soft); font-size: .58rem; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
 
+.ornament { display: flex; align-items: center; justify-content: center; gap: 14px; color: var(--gold); }
+.ornament::before, .ornament::after { content: ""; width: 58px; height: 1px; background: currentColor; }
+.ornament span { font-size: .8rem; }
+
+.statement { padding: clamp(50px, 7vw, 84px) 0; text-align: center; }
+.statement p {
+  max-width: 840px;
+  margin: 0 auto 26px;
+  font-family: "Poiret One", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.7rem, 3.6vw, 2.9rem);
+  line-height: 1.22;
+}
+.statement p em { color: var(--gold); font-style: normal; }
+.statement .ornament { margin-bottom: 24px; }
+.statement small { display: block; margin-top: 10px; color: var(--muted); font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; }
+
+.menu-section { background: var(--champagne); border-block: 1px solid var(--line); }
+.menu-inner { padding-block: clamp(52px, 7vw, 88px); }
+.sec-head { text-align: center; margin-bottom: clamp(30px, 4vw, 46px); }
+.sec-head h2 { margin: 0 0 12px; font-family: "Poiret One", "Trebuchet MS", sans-serif; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 400; letter-spacing: .02em; line-height: 1; }
+.sec-head p { max-width: 56ch; margin: 0 auto; color: var(--muted); font-size: .86rem; }
+.svc { list-style: none; margin: 0 auto; padding: 0; max-width: 980px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(34px, 5vw, 72px); }
+.svc li { padding: 18px 0 20px; border-top: 1px solid var(--line); }
+.svc-row { display: flex; align-items: baseline; gap: 10px; }
+.svc h3 { margin: 0; font-family: "Poiret One", "Trebuchet MS", sans-serif; font-size: 1.55rem; font-weight: 400; letter-spacing: .02em; }
+.dots { flex: 1; height: 1px; border-bottom: 1px dotted var(--muted); transform: translateY(-5px); }
+.svc-price { color: var(--gold); font-size: .68rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.svc p { margin: 4px 0 0; color: var(--muted); font-size: .78rem; }
+.menu-foot { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 34px; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); text-align: center; }
+.menu-foot p { margin: 0; max-width: 52ch; color: var(--muted); font-size: .74rem; }
+.menu-foot .btn { padding: 10px 18px; }
+
+.craft { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(30px, 5vw, 70px); align-items: center; padding-block: clamp(54px, 8vw, 100px); }
+.craft-fig { position: relative; margin: 0; padding: 12px; }
+.craft-fig::before { content: ""; position: absolute; inset: 0; border: 1px solid var(--gold); }
+.craft-fig img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: sepia(.28) saturate(.72); }
+.craft-fig figcaption { margin-top: 9px; color: var(--muted); font-size: .58rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
+.craft-copy h2 { margin: 0 0 16px; font-family: "Poiret One", "Trebuchet MS", sans-serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 400; line-height: 1.02; }
+.craft-copy > p { max-width: 48ch; margin: 0 0 14px; color: #3C4A42; font-size: .92rem; }
+.craft-list { list-style: none; margin: 24px 0 0; padding: 0; }
+.craft-list li { display: grid; grid-template-columns: 38px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+.craft-list b { color: var(--gold); font-family: "Poiret One", sans-serif; font-size: 1.15rem; font-weight: 400; }
+.craft-list strong { display: block; font-family: "Jost", sans-serif; font-size: .84rem; font-weight: 500; letter-spacing: .03em; }
+.craft-list span { color: var(--muted); font-size: .76rem; }
+
+.trust { background: var(--night); color: var(--cream); position: relative; overflow: hidden; }
+.trust::before {
+  content: "“";
+  position: absolute;
+  left: 4%;
+  top: -3%;
+  font-family: "Poiret One", serif;
+  font-size: 24rem;
+  line-height: 1;
+  color: rgba(199,163,91,.1);
+  pointer-events: none;
+}
+.trust-inner { position: relative; z-index: 1; padding-block: clamp(54px, 7vw, 92px); }
+.trust .sec-head h2 { color: var(--cream); }
+.trust .sec-head p { color: var(--gold-soft); }
+.trust-score { margin: 0 0 26px; text-align: center; }
+.trust-score b { display: block; color: var(--gold); font-family: "Poiret One", sans-serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; line-height: .9; }
+.trust-score span { display: block; margin-top: 6px; color: #C8D0C6; font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; }
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-block: 1px solid rgba(199,163,91,.34); }
+.quote { padding: 24px clamp(18px, 2.4vw, 30px); border-left: 1px solid rgba(199,163,91,.34); }
+.quote:first-child { border-left: 0; padding-left: 0; }
+.quote blockquote { margin: 0 0 14px; color: var(--cream); font-family: "Jost", sans-serif; font-size: .88rem; font-weight: 300; font-style: italic; line-height: 1.55; }
+.quote cite { color: var(--gold-soft); font-size: .58rem; font-style: normal; letter-spacing: .14em; text-transform: uppercase; }
+.trust-note { margin: 18px 0 0; color: #AEB9AE; font-size: .58rem; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
+
+.gallery { padding-block: clamp(44px, 6vw, 76px); }
+.gallery-grid { display: grid; grid-template-columns: .9fr 1.1fr .9fr; gap: clamp(14px, 2.4vw, 28px); align-items: end; }
+.gallery-fig { margin: 0; }
+.gallery-fig:first-child img { aspect-ratio: 3 / 4; border-radius: 50% 50% 0 0 / 28% 28% 0 0; }
+.gallery-fig:nth-child(2) img { aspect-ratio: 4 / 5; }
+.gallery-fig:nth-child(3) img { aspect-ratio: 3 / 4; border-radius: 50% 50% 0 0 / 28% 28% 0 0; }
+.gallery-fig img { width: 100%; object-fit: cover; filter: sepia(.25) saturate(.78); }
+.gallery-fig figcaption { margin-top: 8px; color: var(--muted); font-size: .58rem; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
+
+.visit { background: var(--night-2); color: var(--cream); }
+.visit-inner { padding-block: clamp(52px, 7vw, 88px); display: grid; grid-template-columns: 1.02fr .98fr; gap: clamp(30px, 5vw, 70px); align-items: start; }
+.visit h2 { margin: 0 0 6px; font-family: "Poiret One", sans-serif; font-size: clamp(2.6rem, 5.4vw, 4.6rem); font-weight: 400; line-height: 1; }
+.visit .rule { width: 74px; height: 1px; margin: 16px 0 22px; background: var(--gold); }
+.visit address { margin: 0 0 14px; color: #D8DED4; font-style: normal; font-size: .92rem; line-height: 1.65; }
+.contact-line { margin: 0 0 20px; color: #D8DED4; font-size: .8rem; overflow-wrap: anywhere; }
+.contact-line a { color: var(--gold-soft); text-decoration: none; border-bottom: 1px solid rgba(199,163,91,.55); }
+.hours { width: 100%; max-width: 380px; border-collapse: collapse; font-size: .76rem; }
+.hours th, .hours td { padding: 7px 0; border-bottom: 1px solid rgba(199,163,91,.28); text-align: left; font-weight: 300; }
+.hours td { text-align: right; color: var(--gold-soft); }
+.sample-chip { display: inline-block; margin: 10px 0 0; color: #AEB9AE; font-size: .56rem; letter-spacing: .1em; text-transform: uppercase; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.visit-card { border: 1px solid var(--gold); padding: clamp(22px, 3.4vw, 36px); }
+.visit-card h3 { margin: 0 0 10px; font-family: "Poiret One", sans-serif; font-size: 1.9rem; font-weight: 400; }
+.visit-card p { margin: 0 0 18px; color: #C8D0C6; font-size: .82rem; }
+.contact-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(199,163,91,.34); }
+.contact-list li { border-bottom: 1px solid rgba(199,163,91,.34); }
+.contact-list a { display: flex; justify-content: space-between; gap: 18px; padding: 13px 0; font-size: .76rem; text-decoration: none; }
+.contact-list a:hover { color: var(--gold); }
+.contact-list span { color: #AEB9AE; text-align: right; overflow-wrap: anywhere; }
+.visit-note { margin: 16px 0 0; color: #AEB9AE; font-size: .68rem; }
+
+.faq { padding-block: clamp(48px, 6vw, 76px); }
+.faq-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(30px, 5vw, 70px); }
+.faq h2 { margin: 0; font-family: "Poiret One", sans-serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.05; }
+.faq-intro { max-width: 32ch; margin: 14px 0 0; color: var(--muted); font-size: .78rem; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { display: flex; justify-content: space-between; gap: 18px; padding: 15px 0; font-size: .82rem; font-weight: 400; letter-spacing: .02em; cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--gold); font-size: 1.15rem; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 16px; max-width: 62ch; color: var(--muted); font-size: .76rem; }
+
+.site-foot { background: var(--night); color: var(--cream); padding: 38px 0 22px; }
+.foot-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 22px; padding-bottom: 16px; border-bottom: 1px solid rgba(199,163,91,.34); }
+.foot-wordmark { margin: 0; font-family: "Poiret One", sans-serif; font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 400; letter-spacing: .06em; text-transform: uppercase; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; }
+.foot-links a { text-decoration: none; }
+.foot-links a:hover { color: var(--gold); }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; padding-top: 14px; }
+.foot-bottom p { margin: 0; max-width: 56ch; color: #AEB9AE; font-size: .58rem; line-height: 1.5; }
 .mobile-bar { display: none; }
-@media (max-width: 759px) {
-  body { padding-bottom: calc(5.6rem + env(safe-area-inset-bottom)); }
-  .mobile-bar {
-    display: flex;
-    gap: .6rem;
-    position: fixed;
-    inset-inline: 0;
-    bottom: 0;
-    z-index: 50;
-    padding: .7rem clamp(1rem, 4vw, 1.25rem);
-    padding-bottom: calc(.7rem + env(safe-area-inset-bottom));
-    background: var(--surface);
-    border-top: 1px solid var(--hairline);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(12px);
-    transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s;
-  }
-  .mobile-bar.is-visible {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    transition: opacity .25s ease, transform .25s ease;
-  }
-  .mobile-bar .btn { flex: 1; min-height: 50px; padding-inline: .9rem; }
+
+@media (max-width: 920px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-fig { max-width: 520px; margin-inline: auto; }
+  .craft { grid-template-columns: 1fr; }
+  .craft-fig { max-width: 460px; margin-inline: auto; }
+  .quotes { grid-template-columns: 1fr; }
+  .quote { padding: 18px 0; border-left: 0; border-top: 1px solid rgba(199,163,91,.34); }
+  .quote:first-child { border-top: 0; padding-top: 0; }
+  .visit-inner { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-fig:first-child { display: none; }
 }
-@media (max-width: 759px) and (prefers-reduced-motion: reduce) {
-  .mobile-bar { transition: none; }
+@media (max-width: 700px) {
+  .head-top { min-height: 66px; }
+  .head-side:first-child { display: none; }
+  .head-side { width: auto; font-size: .56rem; }
+  .brand { max-width: 68%; font-size: 1.35rem; }
+  .brand span { font-size: .45rem; letter-spacing: .24em; }
+  .nav-row { gap: 16px; overflow-x: auto; justify-content: flex-start; padding-bottom: 12px; scrollbar-width: none; }
+  .nav-row::-webkit-scrollbar { display: none; }
+  .nav-row a { font-size: .56rem; white-space: nowrap; }
+  .hero h1 { font-size: clamp(3rem, 14vw, 4.6rem); }
+  .hero-fig::before { transform: translate(8px, -8px); }
+    .svc { grid-template-columns: 1fr; }
+  .statement p { font-size: 1.6rem; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-fig:nth-child(3) { display: none; }
+  .visit-card { padding: 20px 16px; }
+  body { padding-bottom: 52px; }
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; background: var(--night); border-top: 1px solid var(--gold); }
+  .mobile-bar a { padding: 14px 10px; color: var(--cream); text-align: center; font-size: .64rem; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+  .mobile-bar a:only-child { grid-column: 1 / -1; }
+  .mobile-call { border-right: 1px solid rgba(199,163,91,.34); color: var(--gold-soft); }
+  .mobile-book { background: var(--gold); color: var(--night); }
 }
-@media (prefers-reduced-motion: no-preference) {
-  html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
+/* legibility + contrast pass */
+.preview-bar, .overline, .head-side, .brand span, .nav-row a, .btn, .hero-small, .hero-fig figcaption, .statement small, .svc-price, .craft-fig figcaption, .trust-score span, .quote cite, .trust-note, .gallery-fig figcaption, .sample-chip, .visit-note, .foot-links, .mobile-bar a { font-size: 12px; }
+.hours, .contact-list a, .menu-foot p, .visit-card p, .contact-line { font-size: 12.5px; }
+.svc p, .craft-list span, .faq-intro, .faq details p { font-size: 13px; }
+.preview-bar, .overline, .hero-small, .hero-fig figcaption, .statement small, .trust-score span, .quote cite, .trust-note, .craft-fig figcaption, .gallery-fig figcaption, .sample-chip { text-transform: none; letter-spacing: .04em; }
+.hero-copy > p, .visit address, .contact-line, .visit-card p, .contact-list span, .visit-note, .trust-score span, .trust-note, .sample-chip, .foot-bottom p { color: #FFFFFF; }
+.svc-price, .craft-list b, .statement p em, .faq summary::after { color: var(--gold-text); }
+.statement p { line-height: 1.35; }
+.hero-shell { padding: 12px; }
+.menu-section, .trust, .visit { padding: 12px; }
+.quote { padding-top: 12px; padding-bottom: 12px; padding-left: 12px; }
+.quote:first-child { padding-left: 12px; padding-top: 12px; }
+.contact-list, .faq-list { padding-top: 12px; }
+.mobile-bar .mobile-book { color: var(--night); }
+.foot-bottom p { font-size: 12px; }
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NailSalon","name":"M1 Nails & Beauty","telephone":"+447883143359","email":"m1nailsandbeauty48@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Unit G48, Trinity Walk","addressLocality":"Wakefield","postalCode":"WF1 1QR","addressCountry":"GB"}}
 </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar" role="note">Unofficial preview prepared by Plinth · Not yet live</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth · Not yet live</div>
 
-<header class="topbar" id="top">
-  <div class="wrap">
-    <a class="wordmark" href="#top">M1 Nails &amp; Beauty</a>
-    
-    <a class="head-call" href="tel:+447883143359">
-      <svg class="ic" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l1.5 3.6-2 1.5a13.2 13.2 0 0 0 6.4 6.4l1.5-2L19 15v3a2 2 0 0 1-2.2 2A16.2 16.2 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
-      <span class="num">07883 143359</span>
-    </a>
-    
-  </div>
-</header>
+<div class="hero-shell" id="top">
+  <header class="site-head">
+    <div class="wrap head-top">
+      <div class="head-side">Wakefield<br>WF1 1QR</div>
+      <a class="brand" href="#top">M1 Nails &amp; Beauty<span>Nail care</span></a>
+      <div class="head-side"><a class="num" href="tel:+447883143359">07883 143359</a></div>
+    </div>
+    <nav class="wrap nav-row" aria-label="Primary">
+      <a href="#menu">The menu</a>
+      <a href="#craft">The craft</a>
+      <a href="#gallery">The salon</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">Questions</a>
+    </nav>
+  </header>
+
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <p class="overline">Nail care · Trinity Walk</p>
+      <h1>The art<br>of the<br><em>finish.</em></h1>
+      <p>Manicures, gel extensions, pedicures and beauty treatments in Trinity Walk, Wakefield. Careful prep, clean shaping and a finish that lasts.</p>
+      <div class="hero-cta">
+        <a class="btn num" href="tel:+447883143359">Book · 07883 143359</a>
+        <a class="btn btn-ghost" href="#menu">Explore the menu</a>
+      </div>
+      <p class="hero-small" style="margin-top:18px">Unit G48, Trinity Walk · Wakefield · By appointment</p>
+    </div>
+    <figure class="hero-fig">
+      <img src="assets/hero.jpg" width="1200" height="1600" alt="Close-up of glossy nail polish being applied during a manicure." fetchpriority="high">
+      <figcaption>Nails &amp; beauty, finished cleanly.</figcaption>
+    </figure>
+  </section>
+</div>
+
 <main id="main">
-  <section class="hero">
-    <svg class="strand" viewBox="0 0 1200 620" preserveAspectRatio="none" aria-hidden="true">
-      <path class="a" pathLength="1" vector-effect="non-scaling-stroke" d="M-60 585C260 520 640 608 1260 500"/>
-      <path class="b" pathLength="1" vector-effect="non-scaling-stroke" d="M-40 70C300 30 800 110 1240 55"/>
-      <path class="c" pathLength="1" vector-effect="non-scaling-stroke" d="M-60 300C320 260 760 365 1260 240"/>
-      <path class="d" pathLength="1" vector-effect="non-scaling-stroke" d="M-40 552C360 496 820 585 1250 498"/>
-      <path class="e" pathLength="1" vector-effect="non-scaling-stroke" d="M-60 80C380 40 760 125 1260 60"/>
-      <path class="f" pathLength="1" vector-effect="non-scaling-stroke" d="M-20 565C340 525 700 605 1230 525"/>
-    </svg>
-    <div class="wrap">
-      <h1>Nail &amp; beauty salons <em>in Wakefield</em></h1>
-      <p class="sub">Nails &amp; beauty on Trinity Walk, Wakefield.</p>
-      <div class="cta-row">
-        
-        <a class="btn btn-primary" href="tel:+447883143359">
-          <svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l1.5 3.6-2 1.5a13.2 13.2 0 0 0 6.4 6.4l1.5-2L19 15v3a2 2 0 0 1-2.2 2A16.2 16.2 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
-          <span>Call <span class="num">07883 143359</span></span>
-        </a>
-        
-        <a class="btn btn-ghost" href="#visit">
-          <span>Find us</span>
-          <svg class="ic" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.5v15"/><path d="m6.5 13.5 5.5 6 5.5-6"/></svg>
-        </a>
+  <section class="statement wrap">
+    <div class="ornament"><span>◆</span></div>
+    <p>Good nail and beauty work should look <em>effortless</em>, not overdone — clean cuticles, balanced shape and colour that wears gracefully.</p>
+    <small>The house view · Wakefield</small>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="wrap menu-inner">
+      <div class="sec-head">
+        <h2>The menu</h2>
+        <p>Starting points, confirmed at the table. Extensions, nail art, infills and beauty add-ons are confirmed before we begin.</p>
+      </div>
+      <ul class="svc">
+        <li><div class="svc-row"><h3>Manicures</h3><span class="dots" aria-hidden="true"></span><span class="svc-price">from £15</span></div><p>Shape, cuticle care and polish.</p></li>
+        <li><div class="svc-row"><h3>Gel &amp; acrylics</h3><span class="dots" aria-hidden="true"></span><span class="svc-price">from £28</span></div><p>Long-wear gel, extensions and infills.</p></li>
+        <li><div class="svc-row"><h3>Nail art</h3><span class="dots" aria-hidden="true"></span><span class="svc-price">from £5</span></div><p>Hand-painted art and detailing.</p></li>
+        <li><div class="svc-row"><h3>Pedicures</h3><span class="dots" aria-hidden="true"></span><span class="svc-price">from £22</span></div><p>Foot care, shape and polish.</p></li>
+      </ul>
+      <div class="menu-foot">
+        <p>Not sure what to book? Say so when you call. The consultation is part of the appointment.</p>
+        <a class="btn" href="#visit">Plan your visit</a>
       </div>
     </div>
   </section>
 
-  <section class="services" id="services">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc">
-        <li>
-          <h3>Manicures</h3>
-          <p>Shape, cuticle care and polish.</p>
-        </li>
-        <li>
-          <h3>Gel &amp; acrylics</h3>
-          <p>Long-wear gel, extensions and infills.</p>
-        </li>
-        <li>
-          <h3>Nail art</h3>
-          <p>Hand-painted art and detailing.</p>
-        </li>
-        <li>
-          <h3>Pedicures</h3>
-          <p>Foot care, shape and polish.</p>
-        </li>
+  <section class="wrap craft" id="craft">
+    <figure class="craft-fig">
+      <img src="assets/chair.jpg" width="1200" height="1200" alt="A nail technician performing a manicure at the beauty bar." loading="lazy">
+      <figcaption>The nail table · Wakefield</figcaption>
+    </figure>
+    <div class="craft-copy">
+      <h2>Precision, without the performance.</h2>
+      <p>Every set starts with proper nail and cuticle preparation. We shape to suit your hands — almond, square, coffin or short natural — before laying down base and colour.</p>
+      <p>From classic gel manicures and spa pedicures to acrylic extensions and brow or lash care, the focus is on neat, durable work.</p>
+      <ul class="craft-list">
+        <li><b>I</b><div><strong>Careful prep</strong><span>Cuticle work, gentle filing and a smooth, healthy base on every nail.</span></div></li>
+        <li><b>II</b><div><strong>Choose the shape</strong><span>Length, tip profile and colour shade agreed before the first coat.</span></div></li>
+        <li><b>III</b><div><strong>Built to last</strong><span>Even curing, clean edges and cuticle oil so your set stays glossy.</span></div></li>
       </ul>
     </div>
   </section>
 
   
 
-  
-  <section class="band">
-    <div class="wrap">
-      <h2>Book by phone</h2>
-      <a class="btn btn-primary" href="tel:+447883143359">
-        <svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l1.5 3.6-2 1.5a13.2 13.2 0 0 0 6.4 6.4l1.5-2L19 15v3a2 2 0 0 1-2.2 2A16.2 16.2 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
-        <span class="num">Call 07883 143359</span>
-      </a>
+  <section class="wrap gallery" id="gallery">
+    <div class="sec-head">
+      <h2>The salon</h2>
+      <p>Quiet corners, good light, and enough time to do the job properly.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="gallery-fig">
+        <img src="assets/hero.jpg" width="1200" height="1600" alt="Glossy manicure colour application." loading="lazy">
+        <figcaption>Shape</figcaption>
+      </figure>
+      <figure class="gallery-fig">
+        <img src="assets/detail.jpg" width="1200" height="800" alt="Detailed nail shaping and cuticle care." loading="lazy">
+        <figcaption>Detail</figcaption>
+      </figure>
+      <figure class="gallery-fig">
+        <img src="assets/chair.jpg" width="1200" height="1200" alt="Manicure session in progress." loading="lazy">
+        <figcaption>Room</figcaption>
+      </figure>
     </div>
   </section>
-  
 
   <section class="visit" id="visit">
-    <div class="wrap">
-      <h2>Visit</h2>
-      <div class="visit-grid">
-        <div>
-          <address>Unit G48, Trinity Walk<br>Wakefield<br>WF1 1QR</address>
-          <p class="hours-line"><span class="num">Tue – Fri 9:30 – 18:00</span><br><span class="num">Sat 9:00 – 17:00</span><br>Sun &amp; Mon closed</p>
-          <span class="chip">Sample opening hours — to be confirmed</span>
+    <div class="wrap visit-inner">
+      <div>
+        <h2>Visit.</h2>
+        <div class="rule"></div>
+        <address>M1 Nails &amp; Beauty<br>Unit G48, Trinity Walk<br>Wakefield WF1 1QR</address>
+        <p class="contact-line"><a class="num" href="tel:+447883143359">07883 143359</a> · <a href="mailto:m1nailsandbeauty48@gmail.com">m1nailsandbeauty48@gmail.com</a></p>
+        <table class="hours">
+          <caption style="position:absolute;left:-9999px">Sample opening hours</caption>
+          <tbody>
+            <tr><th scope="row">Tuesday – Friday</th><td>9:30–18:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>9:00–17:00</td></tr>
+            <tr><th scope="row">Sunday – Monday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <span class="sample-chip">Sample hours — confirmed at booking</span>
+        <div class="visit-actions">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=M1%20Nails%20%26%20Beauty%2C%20Unit%20G48%20Trinity%20Walk%2C%20Wakefield%20WF1%201QR" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ghost" href="tel:+447883143359">Call the salon</a>
         </div>
-        <div class="actions">
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=M1%20Nails%20%26%20Beauty%2C%20Unit%20G48%20Trinity%20Walk%2C%20Wakefield%20WF1%201QR" target="_blank" rel="noopener">
-            <svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-3.9-3.6-6-6.7-6-9.7a6 6 0 1 1 12 0c0 3-2.1 6.1-6 9.7z"/><circle cx="12" cy="11.2" r="2.1"/></svg>
-            <span class="label">Get directions</span>
-            <span class="value">WF1 1QR</span>
-            <svg class="ic go" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 16.5 16.5 7.5"/><path d="M9.5 7.5h7v7"/></svg>
-          </a>
-          
-          <a href="tel:+447883143359">
-            <svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l1.5 3.6-2 1.5a13.2 13.2 0 0 0 6.4 6.4l1.5-2L19 15v3a2 2 0 0 1-2.2 2A16.2 16.2 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
-            <span class="label">Call</span>
-            <span class="value num">07883 143359</span>
-          </a>
-          
-          
-          <a href="mailto:m1nailsandbeauty48@gmail.com">
-            <svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.4 7.5 5.5 7.5-5.5"/></svg>
-            <span class="label">Email</span>
-            <span class="value">m1nailsandbeauty48@gmail.com</span>
-          </a>
-          
-        </div>
+      </div>
+      <aside class="visit-card">
+        <h3>Appointments</h3>
+        <p>The diary is kept small on purpose. Contact the salon to find a time, ask about a service or check a price.</p>
+        <ul class="contact-list">
+          <li><a href="tel:+447883143359">Call <span class="num">07883 143359</span></a></li>
+          <li><a href="mailto:m1nailsandbeauty48@gmail.com">Email <span>m1nailsandbeauty48@gmail.com</span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=M1%20Nails%20%26%20Beauty%2C%20Unit%20G48%20Trinity%20Walk%2C%20Wakefield%20WF1%201QR" target="_blank" rel="noopener">Directions <span>WF1 1QR</span></a></li>
+        </ul>
+        <p class="visit-note">Unofficial preview. The salon confirms availability, prices and policies directly.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <div>
+        <h2>Questions,<br>answered.</h2>
+        <p class="faq-intro">The useful details, without a wall of policy text.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary>How do I book?</summary><p>Contact the salon directly. That is the fastest way to check the diary and confirm a time.</p></details>
+        <details><summary>What if I have gel or acrylics on already?</summary><p>Let us know when you book or arrive so we can allow time for a safe soak-off or infill.</p></details>
+        <details><summary>Can I bring a nail design photo?</summary><p>Yes. Show us any shade, French tip or nail art reference at the start of your appointment.</p></details>
+        <details><summary>What if I need to cancel?</summary><p>Ask when you book. The salon confirms its own notice period and any deposit.</p></details>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="site-foot">
   <div class="wrap">
-    <p class="foot-name">M1 Nails &amp; Beauty <span>· Unit G48, Trinity Walk, Wakefield WF1 1QR</span></p>
-    <p class="foot-credit">Website preview prepared by Plinth. Not yet live.</p>
+    <div class="foot-top">
+      <p class="foot-wordmark">M1 Nails &amp; Beauty</p>
+      <div class="foot-links">
+        <a href="#menu">Menu</a>
+        <a href="#craft">Craft</a>
+        <a href="#visit">Visit</a>
+        <a href="mailto:m1nailsandbeauty48@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Unofficial preview prepared by Plinth. Not yet live. M1 Nails &amp; Beauty · Nail care · Wakefield.</p>
+      <p>Photography from Pexels under the free license: 6062564, 29877719, 22668317.</p>
+    </div>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  
-  <a class="btn btn-primary" href="tel:+447883143359">
-    <svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3l1.5 3.6-2 1.5a13.2 13.2 0 0 0 6.4 6.4l1.5-2L19 15v3a2 2 0 0 1-2.2 2A16.2 16.2 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
-    <span>Call</span>
-  </a>
-  
-  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=M1%20Nails%20%26%20Beauty%2C%20Unit%20G48%20Trinity%20Walk%2C%20Wakefield%20WF1%201QR" target="_blank" rel="noopener">
-    <svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-3.9-3.6-6-6.7-6-9.7a6 6 0 1 1 12 0c0 3-2.1 6.1-6 9.7z"/><circle cx="12" cy="11.2" r="2.1"/></svg>
-    <span>Directions</span>
-  </a>
-</nav>
-
-<script>
-(function () {
-  var bar = document.querySelector('.mobile-bar');
-  var hero = document.querySelector('.hero');
-  if (!bar || !bar.querySelector('.btn') || !hero || !('IntersectionObserver' in window)) return;
-  var io = new IntersectionObserver(function (entries) {
-    bar.classList.toggle('is-visible', !entries[0].isIntersecting);
-  });
-  io.observe(hero);
-})();
-</script>
+<div class="mobile-bar">
+  <a class="mobile-call" href="tel:+447883143359">Call</a>
+  <a class="mobile-book" href="#visit">Book</a>
+</div>
 </body>
 </html>

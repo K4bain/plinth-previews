@@ -4,837 +4,498 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>First Stop Pitchford Tyres - Tyre &amp; fitting centre in Ossett</title>
-<meta name="description" content="First Stop Pitchford Tyres - Tyres, balancing &amp; puncture repairs on Queen Street, Ossett. Address, phone and directions.">
-<meta property="og:title" content="First Stop Pitchford Tyres - Tyres, balancing &amp; puncture repairs in Ossett">
-<meta property="og:description" content="First Stop Pitchford Tyres - Tyres, balancing &amp; puncture repairs on Queen Street, Ossett. Address, phone and directions.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_GB">
-<meta name="theme-color" content="#eeede8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141618'/%3E%3Cpath d='M16 44L44 16M20 16h24v24' stroke='%23c8431f' stroke-width='6' fill='none'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0B0B0B">
+<title>First Stop Pitchford Tyres — Tyre &amp; fitting centre in Ossett</title>
+<meta name="description" content="First Stop Pitchford Tyres — Tyres, balancing &amp; puncture repairs on Queen Street, Ossett. Loud cuts, proper colour, no boring hair.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0B0B'/%3E%3Cpath d='M7 25 25 7M7 7l18 18' stroke='%23DFFF3D' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Chivo:wght@600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"TireShop","name":"First Stop Pitchford Tyres","description":"Tyres, balancing &amp; puncture repairs in Ossett.","telephone":"+441924265344","email":"pitchfordtyres@gmail.com","address":{"@type":"PostalAddress","streetAddress":"9 Queen Street","addressLocality":"Ossett","postalCode":"WF5 8AW","addressCountry":"GB"}}
-</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap">
 <style>
 /* theme:start */
 :root {
-  --paper: #e7efe9;
-  --paper-2: #d9e4dc;
-  --ink: #141c17;
-  --muted: #4c5950;
-  --accent: #245736;
-  --accent-ink: #f6faf7;
-  --line: #bfc9c1;
+  --paper: #EFF1E8;
+  --ink: #0B0B0B;
+  --acid: #DFFF3D;
+  --hot: #B12A14;
+  --muted: #6B6B63;
+  --line: #1A1A1A;
 }
 /* theme:end */
-:root {
-  --display: "Chivo", "Archivo", sans-serif;
-  --text: "Archivo", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --accent-bright: #f28c68;
-  --max: 1260px;
-  --pad: clamp(20px, 4.2vw, 54px);
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--text);
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: "Space Mono", ui-monospace, monospace;
+  font-size: 15px;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
-body::selection { background: var(--accent); color: var(--accent-ink); }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-h1, h2, h3, p { margin-top: 0; }
-p:last-child { margin-bottom: 0; }
+::selection { background: var(--hot); color: var(--paper); }
+.wrap { width: min(1280px, 100%); margin-inline: auto; padding-inline: clamp(18px, 3.6vw, 46px); }
 .num { font-variant-numeric: tabular-nums; }
-.wrap { width: min(var(--max), 100%); margin-inline: auto; padding-inline: var(--pad); }
-.skip {
-  position: absolute;
-  left: 16px;
-  top: 16px;
-  z-index: 100;
-  transform: translateY(-200%);
-  background: var(--ink);
-  color: var(--paper);
-  padding: 12px 16px;
-  font-family: var(--mono);
-  font-size: 12px;
-  text-decoration: none;
-}
-.skip:focus { transform: translateY(0); }
-a:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-}
+
+.skip-link { position: absolute; left: -9999px; z-index: 100; padding: 12px 16px; background: var(--acid); color: var(--ink); font-weight: 700; }
+.skip-link:focus { left: 12px; top: 12px; }
+
 .preview-bar {
-  background: var(--ink);
-  color: var(--paper);
-  text-align: center;
-  padding: 8px 16px;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .02em;
-}
-.site-head { border-bottom: 2px solid var(--ink); }
-.head-inner {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  min-height: 82px;
-}
-.brand {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  line-height: 1.05;
-  max-width: 58%;
-}
-.brand-name {
-  font-family: var(--display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  font-weight: 700;
-  letter-spacing: -.025em;
-  text-transform: uppercase;
-}
-.brand-meta {
-  margin-top: 4px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .03em;
-}
-.nav { display: flex; gap: clamp(18px, 2.5vw, 32px); margin-left: auto; }
-.nav a {
-  padding: 6px 0;
-  border-bottom: 2px solid transparent;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.nav a:hover { border-color: var(--accent); }
-.head-phone {
-  padding: 9px 14px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.head-phone:hover { background: var(--ink); color: var(--paper); }
-.hero {
+  padding: 7px 14px;
+  background: var(--acid);
+  color: var(--ink);
   border-bottom: 2px solid var(--ink);
-  padding: clamp(44px, 6.5vw, 88px) 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-align: center;
+  text-transform: uppercase;
 }
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: clamp(28px, 4.5vw, 68px);
-  align-items: stretch;
+
+.site-head { background: var(--ink); color: var(--paper); }
+.head-inner { display: flex; align-items: center; gap: 24px; min-height: 74px; }
+.brand {
+  max-width: 48%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-.hero-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.nav { display: flex; gap: 26px; margin-left: auto; }
+.nav a {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 4px 0;
+}
+.nav a:hover { color: var(--acid); border-color: var(--acid); }
+.head-act { display: flex; align-items: center; gap: 14px; }
+.head-phone { font-size: .8rem; text-decoration: none; }
+.head-phone:hover { color: var(--acid); }
+.book {
+  display: inline-block;
+  padding: 11px 16px;
+  background: var(--acid);
+  color: var(--ink);
+  border: 2px solid var(--acid);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.book:hover { background: var(--hot); border-color: var(--hot); color: var(--paper); }
+
+.hero { display: grid; grid-template-columns: 1.12fr .88fr; gap: clamp(24px, 4vw, 60px); align-items: end; padding: clamp(36px, 5vw, 64px) 0 clamp(40px, 6vw, 70px); }
+.kicker {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 5px 9px;
+  background: var(--ink);
+  color: var(--acid);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 .hero h1 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  font-weight: 700;
-  line-height: .9;
+  margin: 0 0 26px;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: clamp(4rem, 10.5vw, 9.2rem);
+  font-weight: 400;
+  line-height: .83;
   letter-spacing: -.045em;
   text-transform: uppercase;
 }
-.hero h1 span { display: block; }
-.hero h1 em { color: var(--accent); font-style: normal; }
-.hero-lede {
-  max-width: 44ch;
-  margin: 24px 0 28px;
-  color: var(--muted);
-  font-size: clamp(17px, 1.35vw, 19px);
-  line-height: 1.55;
+.hero h1 span { color: var(--hot); }
+.hero h1 em {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--ink);
+  font-style: normal;
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-copy p { max-width: 42ch; margin: 0 0 26px; font-size: .95rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  padding: 12px 20px;
-  border: 2px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .05em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.btn-primary { background: var(--ink); color: var(--paper); }
-.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-.btn-ghost { background: transparent; color: var(--ink); }
-.btn-ghost:hover { background: var(--paper-2); }
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
-  margin-top: 36px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.spec-board {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(24px, 3.2vw, 38px);
-  border: 2px solid var(--ink);
-  background: var(--paper-2);
-}
-.spec-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.spec-badge {
-  padding: 4px 9px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 500;
-}
-.spec-main { padding: 28px 0; }
-.spec-code {
-  margin: 0 0 8px;
-  font-family: var(--display);
-  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.03em;
-}
-.spec-sub {
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-.spec-rows {
-  display: grid;
-  gap: 10px;
-  margin: 0;
-  padding: 16px 0 0;
-  border-top: 1px solid var(--ink);
-  list-style: none;
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.spec-rows li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.spec-rows span:first-child { color: var(--muted); text-transform: uppercase; }
-.statement {
-  border-bottom: 1px solid var(--line);
-  padding: 84px 8px;
-}
-.statement-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: clamp(28px, 5vw, 76px);
-  align-items: end;
-  padding-block: 14px;
-}
-.statement h2 {
-  max-width: 18ch;
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.2rem, 4.5vw, 4.1rem);
-  font-weight: 600;
-  line-height: .98;
-  letter-spacing: -.035em;
-}
-.statement-copy {
-  max-width: 40ch;
-  margin: 0;
-  padding-top: 18px;
-  border-top: 2px solid var(--ink);
-  color: var(--muted);
-  font-size: 16px;
-}
-.bays { padding-block: clamp(56px, 7.5vw, 96px); }
-.section-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: clamp(28px, 4vw, 44px);
-}
-.section-head h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.3rem, 4.5vw, 4rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.section-head p {
-  max-width: 38ch;
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-.bay-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 2px solid var(--ink);
-}
-.bay {
-  padding: 28px 26px 32px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.bay:first-child { padding-left: 0; }
-.bay:last-child { padding-right: 0; border-right: 0; }
-.bay-bar { width: 100%; height: 8px; margin-bottom: 24px; background: var(--accent); }
-.bay:nth-child(2) .bay-bar { background: var(--ink); }
-.bay:nth-child(3) .bay-bar { background: var(--muted); }
-.bay h3 {
-  margin: 0 0 10px;
-  font-family: var(--display);
-  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
-  font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -.025em;
-}
-.bay p { max-width: 32ch; color: var(--muted); font-size: 16px; }
-.bay-list {
-  display: grid;
-  gap: 8px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.bay-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 8px;
-  border-top: 1px solid var(--line);
-}
-.banner {
+  display: inline-block;
+  padding: 13px 18px;
   background: var(--ink);
   color: var(--paper);
-  padding: 88px 8px;
-}
-.banner-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
-  gap: clamp(32px, 6vw, 92px);
-  align-items: end;
-  padding-block: 14px;
-}
-.banner h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  border: 2px solid var(--ink);
+  font-size: .78rem;
   font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:hover { background: var(--hot); border-color: var(--hot); color: var(--paper); }
+.btn-out { background: transparent; color: var(--ink); }
+.btn-out:hover { background: var(--ink); color: var(--paper); }
+.hero-meta { margin: 0; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.hero-media { position: relative; padding: 12px; background: var(--acid); border: 2px solid var(--ink); transform: rotate(1.4deg); }
+.hero-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1) contrast(1.25); }
+.hero-media figcaption { margin: 9px 2px 0; font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; }
+.sticker {
+  position: absolute;
+  right: -26px;
+  top: -30px;
+  display: grid;
+  place-items: center;
+  width: 112px;
+  height: 112px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--hot);
+  color: var(--paper);
+  font-size: .66rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: .05em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-11deg);
+}
+
+.ticker { overflow: hidden; padding: 10px 16px; background: var(--acid); border-block: 2px solid var(--ink); }
+.ticker-track { display: flex; flex-wrap: wrap; gap: 0; width: auto; justify-content: center; }
+.ticker span {
+  padding: 10px 0;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+.ticker span::after { content: " ✖ "; padding: 0 18px; color: var(--hot); }
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.section-title {
+  margin: 0 0 12px;
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: clamp(2.4rem, 5.5vw, 4.6rem);
   line-height: .9;
   letter-spacing: -.04em;
   text-transform: uppercase;
 }
-.banner h2 em { color: var(--accent-bright); font-style: normal; }
-.banner-side { max-width: 40ch; }
-.banner-side p {
-  color: var(--paper);
-  opacity: .84;
-  font-size: 16px;
-}
-.banner-side p.banner-mark {
-  margin: 26px 0 22px;
-  color: var(--accent-bright);
-  font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 5.8rem);
-  font-weight: 700;
-  line-height: .88;
-  letter-spacing: -.04em;
-  opacity: 1;
-}
-.banner-link {
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.banner-link:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
-.visit {
-  background: var(--paper-2);
-  border-bottom: 2px solid var(--ink);
-  padding: 88px 8px;
-}
-.visit-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-  gap: clamp(32px, 5vw, 76px);
-  align-items: start;
-  padding-block: 14px;
-}
-.visit h2 {
-  margin: 0 0 22px;
-  font-family: var(--display);
-  font-size: clamp(2.4rem, 4.8vw, 4.4rem);
-  font-weight: 700;
-  line-height: .94;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.visit address {
-  margin-bottom: 18px;
-  font-family: var(--display);
-  font-size: clamp(1.45rem, 2.3vw, 2rem);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.visit-lines {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 20px;
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.visit-lines a {
-  width: fit-content;
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--ink);
-  text-decoration: none;
-}
-.visit-lines a:hover { color: var(--accent); border-color: var(--accent); }
-.visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
-.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.map-frame {
-  min-height: 420px;
-  border: 2px solid var(--ink);
-  background: var(--paper);
-}
-.map-frame iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  border: 0;
-  filter: grayscale(.8) contrast(1.04);
-}
-.map-caption {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.shop-list { margin-top: 32px; }
-.shop-list-title {
-  margin-bottom: 10px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.svc {
-  margin: 0;
-  padding: 0;
-  border-top: 2px solid var(--ink);
-  list-style: none;
-}
-.svc li { padding: 14px 0; border-bottom: 1px solid var(--line); }
-.svc-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-}
-.svc h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.25; }
-.svc-price {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.svc p { margin: 4px 0 0; color: var(--muted); font-size: 16px; }
-.faq { padding-block: clamp(56px, 7.5vw, 96px); }
-.faq-grid {
-  display: grid;
-  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
-  gap: clamp(28px, 5vw, 76px);
-  align-items: start;
-}
-.faq h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.3rem, 4.5vw, 4rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.faq-list details:first-child { border-top: 2px solid var(--ink); }
+.section-intro { max-width: 50ch; margin: 0 0 clamp(28px, 4vw, 48px); font-size: .9rem; }
+.menu { background: var(--ink); color: var(--paper); }
+.menu .section-title { color: var(--acid); }
+.svc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(28px, 4vw, 64px); }
+.svc li { display: flex; justify-content: space-between; gap: 18px; padding: 20px 0; border-bottom: 1px solid #3A3A36; }
+.svc h3 { margin: 0; font-family: "Archivo Black", Impact, sans-serif; font-size: 1.3rem; font-weight: 400; text-transform: uppercase; letter-spacing: -.01em; }
+.svc p { margin: 5px 0 0; font-size: .78rem; color: #B9B9AE; }
+.svc-price { padding-top: 4px; color: var(--acid); font-size: .8rem; font-weight: 700; white-space: nowrap; }
+.menu-foot { display: flex; justify-content: space-between; gap: 30px; margin-top: 34px; padding-top: 20px; border-top: 2px solid var(--acid); font-size: .8rem; }
+.menu-foot p { margin: 0; max-width: 54ch; }
+.menu-foot .fine { max-width: 30ch; color: #B9B9AE; }
+
+.craft { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(26px, 4vw, 60px); align-items: start; }
+.craft-media { border: 2px solid var(--ink); padding: 10px; background: var(--paper); transform: rotate(-1.2deg); }
+.craft-media img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.2); }
+.craft-copy h2 { margin: 0 0 20px; font-family: "Archivo Black", Impact, sans-serif; font-size: clamp(2rem, 4vw, 3.4rem); line-height: .95; text-transform: uppercase; letter-spacing: -.03em; }
+.craft-copy p { max-width: 50ch; }
+.craft-list { list-style: none; margin: 26px 0 30px; padding: 0; border-top: 2px solid var(--ink); }
+.craft-list li { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.craft-list b { color: var(--hot); font-family: "Archivo Black", Impact, sans-serif; font-weight: 400; }
+.craft-list strong { display: block; font-size: .9rem; }
+.craft-list span { font-size: .78rem; color: var(--muted); }
+
+.colorband { background: var(--hot); color: var(--paper); }
+.colorband .section-title { color: var(--paper); }
+.colorband .section-intro { color: var(--paper); }
+.color-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(26px, 4vw, 60px); align-items: center; }
+.color-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.3); border: 2px solid var(--paper); }
+.color-list { list-style: none; margin: 28px 0 0; padding: 0; }
+.color-list li { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 2px solid rgba(244,241,232,.7); font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.color-list span { font-weight: 400; }
+
+.reviews { background: var(--acid); border-block: 2px solid var(--ink); }
+.review-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 34px; }
+.score { font-family: "Archivo Black", Impact, sans-serif; font-size: clamp(3.6rem, 9vw, 7rem); line-height: .8; letter-spacing: -.05em; }
+.score small { display: block; margin-top: 10px; font-family: "Space Mono", monospace; font-size: .72rem; font-weight: 400; letter-spacing: .04em; text-transform: uppercase; }
+.stars { font-size: 1.1rem; letter-spacing: .18em; }
+.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.review { margin: 0; padding: 20px; background: var(--paper); border: 2px solid var(--ink); }
+.review blockquote { margin: 0; font-size: .88rem; font-weight: 700; line-height: 1.45; }
+.review figcaption { margin-top: 16px; font-size: .67rem; text-transform: uppercase; letter-spacing: .07em; }
+.review figcaption span { display: block; margin-top: 2px; color: var(--muted); }
+.review-note { margin: 26px 0 0; font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; }
+
+.visit { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 70px); }
+.visit h2 { margin: 0 0 20px; font-family: "Archivo Black", Impact, sans-serif; font-size: clamp(2.4rem, 5vw, 4rem); line-height: .9; text-transform: uppercase; letter-spacing: -.04em; }
+.visit address { margin: 0 0 16px; font-style: normal; font-size: 1rem; line-height: 1.6; }
+.contact-line { margin: 0 0 22px; font-size: .82rem; overflow-wrap: anywhere; }
+.contact-line a { font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.hours { width: 100%; max-width: 380px; border-collapse: collapse; font-size: .8rem; }
+.hours th, .hours td { padding: 9px 0; border-bottom: 1px solid var(--line); text-align: left; }
+.hours td { text-align: right; }
+.sample-chip { display: inline-block; margin: 0 0 14px; padding: 5px 9px; background: var(--paper); border: 1px solid var(--ink); font-size: .64rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.visit-note { max-width: 42ch; margin: 16px 0 0; font-size: .72rem; color: var(--muted); }
+.visit-map { margin-top: 20px; }
+.visit-media { border: 2px solid var(--ink); padding: 10px; background: var(--acid); transform: rotate(1deg); }
+.visit-media img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.2); }
+.visit-media figcaption { margin-top: 8px; font-size: .64rem; text-transform: uppercase; letter-spacing: .06em; }
+.visit-card { align-self: start; padding: 24px; background: var(--ink); color: var(--paper); border: 2px solid var(--ink); }
+.visit-card h3 { margin: 0 0 10px; font-family: "Archivo Black", Impact, sans-serif; font-size: 1.4rem; font-weight: 400; text-transform: uppercase; }
+.visit-card p { margin: 0 0 18px; font-size: .78rem; color: #C9C9BE; }
+.contact-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--acid); }
+.contact-list li { border-bottom: 1px solid #3A3A36; }
+.contact-list a { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; font-size: .78rem; font-weight: 700; text-decoration: none; }
+.contact-list a:hover { color: var(--acid); }
+.contact-list span { color: #B9B9AE; font-weight: 400; text-align: right; overflow-wrap: anywhere; }
+
+.faq { background: var(--paper); }
+.faq-list { border-top: 2px solid var(--ink); }
 .faq details { border-bottom: 1px solid var(--line); }
-.faq summary {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 18px 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
-}
+.faq summary { display: flex; justify-content: space-between; gap: 20px; padding: 17px 0; font-size: .86rem; font-weight: 700; text-transform: uppercase; cursor: pointer; list-style: none; }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 16px;
-  line-height: 1;
-  content: "+";
+.faq summary::after { content: "+"; color: var(--hot); font-size: 1.2rem; line-height: 1; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 18px; max-width: 70ch; font-size: .82rem; }
+
+.site-foot { padding: 46px 0 24px; background: var(--ink); color: var(--paper); }
+.foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 30px; }
+.foot-grid h3 { margin: 0 0 10px; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--acid); }
+.foot-grid p { margin: 0 0 8px; font-size: .76rem; color: #C9C9BE; }
+.foot-grid a { color: var(--paper); text-decoration: none; border-bottom: 1px solid #55554E; }
+.foot-wordmark { margin: 0 0 8px; font-family: "Archivo Black", Impact, sans-serif; font-size: 1.3rem; text-transform: uppercase; }
+.foot-bottom { display: flex; justify-content: space-between; gap: 24px; margin-top: 36px; padding-top: 16px; border-top: 1px solid #3A3A36; }
+.foot-bottom p { margin: 0; max-width: 52ch; font-size: .62rem; color: #9A9A90; }
+
+.mobile-bar { display: none; }
+
+@media (max-width: 980px) {
+  .nav { display: none; }
+  .head-act { margin-left: auto; }
+  .hero, .craft, .color-grid, .visit { grid-template-columns: 1fr; }
+  .hero h1 { font-size: clamp(3.5rem, 15vw, 6rem); }
+  .svc { grid-template-columns: 1fr; }
+  .review-grid { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
 }
-.faq details[open] summary::after { content: "-"; }
-.faq details p {
-  max-width: 62ch;
-  padding: 0 0 20px;
-  color: var(--muted);
-  font-size: 16px;
-}
-.site-foot { background: var(--ink); color: var(--paper); padding-block: 32px; }
-.foot-top {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, .18);
-}
-.foot-name {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.03em;
-  text-transform: uppercase;
-}
-.foot-links { display: flex; flex-wrap: wrap; gap: 18px; }
-.foot-links a {
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.foot-links a:hover { color: var(--accent-bright); }
-.foot-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px 24px;
-  padding-top: 16px;
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  opacity: .78;
-}
-.mobile-bar {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 50;
-  display: none;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  background: var(--ink);
-  color: var(--paper);
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.mobile-bar a {
-  display: flex;
-  min-height: 58px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  border-right: 1px solid rgba(255, 255, 255, .18);
-  text-decoration: none;
-}
-.mobile-bar a:last-child { border-right: 0; }
-.mobile-bar span {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  opacity: .76;
-}
-.mobile-bar strong {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
+@media (max-width: 620px) {
+  .head-inner { min-height: 60px; gap: 12px; }
+  .brand { max-width: none; white-space: normal; font-size: 1rem; line-height: 1.05; }
+  .head-phone { display: none; }
+  .book { padding: 9px 11px; font-size: .66rem; }
+  .hero-media { transform: none; }
+  .sticker { right: -6px; top: -16px; width: 88px; height: 88px; font-size: .56rem; }
+  .menu-foot { flex-direction: column; gap: 12px; }
+  .color-list li { font-size: .74rem; }
+  .review { padding: 16px; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .foot-bottom { flex-direction: column; }
+  body { padding-bottom: 54px; }
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); border-top: 2px solid var(--acid); }
+  .mobile-bar a { padding: 14px 10px; text-align: center; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+  .mobile-bar a:only-child { grid-column: 1 / -1; }
+  .mobile-call { color: var(--acid); border-right: 1px solid #3A3A36; }
+  .mobile-book { background: var(--acid); color: var(--ink); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .ticker-track { animation: none; }
+  *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
 }
-@media (max-width: 920px) {
-  .nav, .head-phone { display: none; }
-  .head-inner { min-height: 72px; }
-  .brand { max-width: 100%; }
-  .hero-grid,
-  .statement-grid,
-  .banner-grid,
-  .visit-grid,
-  .faq-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .hero { padding: 36px 0 48px; }
-  .statement, .banner, .visit { padding: 60px 8px; }
-  .section-head { display: block; }
-  .section-head p { margin-top: 10px; }
-  .bay-grid { grid-template-columns: minmax(0, 1fr); }
-  .bay { padding: 22px 0 26px; border-right: 0; }
-  .map-frame, .map-frame iframe { min-height: 320px; }
-  .foot-top { display: block; }
-  .foot-links { margin-top: 16px; }
-  .mobile-bar { display: grid; }
-  body { padding-bottom: 58px; }
-}
-@media (max-width: 560px) {
-  .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
-  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
-  .foot-bottom { display: block; }
-  .foot-bottom span { display: block; margin-top: 6px; }
+/* legibility pass */
+.preview-bar { font-size: 12px; letter-spacing: .02em; text-transform: none; }
+.nav a, .book, .head-phone, .btn { font-size: 12.5px; }
+.hero-meta, .hero-media figcaption, .sticker, .review figcaption, .review-note, .sample-chip, .visit-media figcaption, .foot-bottom p { font-size: 12px; }
+.svc p, .svc-price, .craft-list span, .score small, .foot-grid p, .foot-grid h3 { font-size: 12.5px; }
+.menu-foot, .hours, .color-list li, .contact-line { font-size: 13px; }
+.visit-note, .visit-card p, .faq details p { font-size: 13px; }
+.hero-meta, .hero-media figcaption, .review-note, .sample-chip, .visit-media figcaption, .faq summary, .color-list li, .review figcaption, .score small { text-transform: none; }
+.hero-meta, .hero-media figcaption, .review figcaption, .review-note, .sample-chip, .visit-media figcaption, .sticker, .foot-grid h3 { letter-spacing: .02em; }
+.visit-card h3 { font-size: 24px; }
+.section { padding-top: 72px; padding-bottom: 72px; padding-left: 10px; padding-right: 10px; }
+.contact-list, .faq-list { padding-top: 10px; }
+@media (max-width: 620px) {
+  .sticker { width: 104px; height: 104px; }
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TireShop","name":"First Stop Pitchford Tyres","telephone":"+441924265344","email":"pitchfordtyres@gmail.com","address":{"@type":"PostalAddress","streetAddress":"9 Queen Street","addressLocality":"Ossett","postalCode":"WF5 8AW","addressCountry":"GB"}}
+</script>
 </head>
-<body id="top">
-<a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar">Unofficial preview prepared by Plinth &middot; Not yet live</div>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth · Not yet live</div>
+
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="#top">
-      <span class="brand-name">First Stop Pitchford Tyres</span>
-      <span class="brand-meta">Tyre &amp; fitting centre &middot; Ossett</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#work">Workshop</a>
-      <a href="#visit">Find us</a>
-      <a href="#faq">Questions</a>
+    <a class="brand" href="#top">First Stop Pitchford Tyres</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Tyres</a>
+      <a href="#colour">Sizes</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="head-phone num" href="tel:+441924265344">+44 1924 265344</a>
+    <div class="head-act">
+      <a class="head-phone num" href="tel:+441924265344">01924 265344</a>
+      <a class="book" href="#visit">Call the bay</a>
+    </div>
   </div>
 </header>
+
 <main id="main">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <div>
-          <h1 id="hero-title"><span>Pitchford</span><span><em>Tyres.</em></span></h1>
-          <p class="hero-lede">Local tyre bay at 9 Queen Street in Ossett for replacement tyres, wheel balancing, punctures and tread checks.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+441924265344">Call workshop</a>
-            <a class="btn btn-ghost" href="#visit">Directions &amp; map</a>
-          </div>
-        </div>
-        <div class="hero-meta">
-          <span>9 Queen Street, Ossett</span>
-          <span>WF5 8AW</span>
-          <span>Tyres, balancing &amp; puncture repairs</span>
-        </div>
+  <section class="hero wrap" id="top">
+    <div class="hero-copy">
+      <h1>Tyres<br>fitted<br><span>right</span><em>now.</em></h1>
+      <p>Car, van and 4x4 tyres supplied, fitted and balanced at 9 Queen Street, Ossett. Read the size off your sidewall and call the bay for immediate stock checks.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+441924265344">Call 01924 265344</a>
+        <a class="btn btn-out" href="#menu">Services &amp; fitting</a>
       </div>
-      <aside class="spec-board" aria-label="Workshop overview">
-        <div class="spec-top">
-          <span>Tyre &amp; fitting centre</span>
-          <span class="spec-badge">WF5</span>
-        </div>
-        <div class="spec-main">
-          <p class="spec-code">Queen Street</p>
-          <p class="spec-sub">Car, van and 4x4 tyres supplied and fitted.</p>
-        </div>
-        <ul class="spec-rows">
-          <li><span>Location</span><span>Queen Street, Ossett</span></li>
-          <li><span>Postcode</span><span class="num">WF5 8AW</span></li>
-          <li><span>Bookings</span><span>Direct by phone or visit</span></li>
-        </ul>
-      </aside>
+      <p class="hero-meta">9 Queen Street · WF5 8AW · Drive-in &amp; phone booking</p>
     </div>
+    <figure class="hero-media">
+      <span class="sticker">New valves &amp; balancing</span>
+      <img src="assets/hero.jpg" width="1200" height="1500" alt="A technician changing and fitting a car wheel in the tyre bay." fetchpriority="high">
+      <figcaption>9 Queen Street · Ossett WF5</figcaption>
+    </figure>
   </section>
-  
-  <section class="statement" aria-labelledby="statement-title">
-    <div class="wrap statement-grid">
-      <h2 id="statement-title">Check the size on the sidewall, call the bay, and get back on the road.</h2>
-      <p class="statement-copy">Budget, mid-range and branded tyres fitted and balanced on Queen Street in Ossett.</p>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>New Tyres</span><span>Wheel Balancing</span><span>Puncture Repairs</span><span>Tracking Checks</span><span>Cars · Vans · 4x4</span>
     </div>
-  </section>
-  
-  <section class="bays" id="work" aria-labelledby="work-title">
+  </div>
+
+  <section class="section menu" id="menu">
     <div class="wrap">
-      <div class="section-head">
-        <h2 id="work-title">In the tyre bay</h2>
-        <p>Tyre supply, fitting, balancing and safe puncture repairs.</p>
-      </div>
-      <div class="bay-grid">
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>New tyres fitted</h3>
-          <p>Everyday car, van and SUV tyres supplied, fitted with new valves and balanced.</p>
-          <ul class="bay-list">
-            <li><span>Ranges</span><span>Budget to premium</span></li>
-            <li><span>Size check</span><span>By phone</span></li>
-          </ul>
-        </article>
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>Puncture repairs</h3>
-          <p>Inspection and safe internal repairs where the tread and sidewall condition allow.</p>
-          <ul class="bay-list">
-            <li><span>Assessment</span><span>In bay</span></li>
-            <li><span>Balancing</span><span>Included</span></li>
-          </ul>
-        </article>
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>Balancing &amp; checks</h3>
-          <p>Wheel balancing, pressure checks and tread-depth inspections before long trips or MOTs.</p>
-          <ul class="bay-list">
-            <li><span>Location</span><span>9 Queen Street</span></li>
-            <li><span>Call first</span><span>01924 265344</span></li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section class="banner" aria-labelledby="banner-title">
-    <div class="wrap banner-grid">
-      <h2 id="banner-title">Check<br><em>your size</em><br>first.</h2>
-      <div class="banner-side">
-        <p>Read the tyre size off your sidewall (for example 205/55 R16) and call us to check stock and pricing.</p>
-        <p class="banner-mark" aria-hidden="true">WF5</p>
-        <a class="banner-link" href="#visit">Book or drop in</a>
-      </div>
-    </div>
-  </section>
-  <section class="visit" id="visit" aria-labelledby="visit-title">
-    <div class="wrap visit-grid">
-      <div class="visit-contact">
-        <h2 id="visit-title">Find the tyre bay.</h2>
-        <address>
-          <span>9 Queen Street</span><br>
-          <span>Ossett</span><br>
-          <span>WF5 8AW</span>
-        </address>
-        <div class="visit-lines">
-          <a class="num" href="tel:+441924265344">+44 1924 265344</a>
-          <a href="mailto:pitchfordtyres@gmail.com?subject=Workshop%20enquiry">pitchfordtyres@gmail.com</a>
-        </div>
-        <p class="visit-note">At 9 Queen Street, Ossett WF5 8AW. Call ahead with your tyre size to confirm stock on the rack.</p>
-        <div class="visit-actions">
-          <a class="btn btn-primary" href="tel:+441924265344">Call workshop</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=First%20Stop%20Pitchford%20Tyres%2C%209%20Queen%20Street%2C%20Ossett%20WF5%208AW" target="_blank" rel="noopener">Directions</a>
-        </div>
-        <div class="shop-list">
-          <p class="shop-list-title">Workshop work</p>
-          <ul class="svc">
-        <li>
-  <div class="svc-head"><h3>New tyres supplied &amp; fitted</h3><span class="svc-price">In bay</span></div>
-  <p>Everyday car, van and 4x4 tyres balanced and fitted on site.</p>
-</li>
-        <li>
-  <div class="svc-head"><h3>Puncture repairs &amp; balancing</h3><span class="svc-price">In bay</span></div>
-  <p>Wheel balancing, valve checks and safe puncture repairs.</p>
-</li>
-        <li>
-  <div class="svc-head"><h3>Wheel alignment &amp; checks</h3><span class="svc-price">In bay</span></div>
-  <p>Tread, pressure and tracking checks before long runs.</p>
-</li>
+      <h2 class="section-title">In the bay</h2>
+      <p class="section-intro">Budget, mid-range and premium branded tyres supplied and fitted on site, complete with new valves and digital wheel balancing.</p>
+      <ul class="svc">
+        <li><div><h3>New tyres supplied &amp; fitted</h3><p>Everyday car, van and 4x4 tyres balanced and fitted on site.</p></div><span class="svc-price num">In bay</span></li>
+        <li><div><h3>Puncture repairs &amp; balancing</h3><p>Wheel balancing, valve checks and safe puncture repairs.</p></div><span class="svc-price num">In bay</span></li>
+        <li><div><h3>Wheel alignment &amp; checks</h3><p>Tread, pressure and tracking checks before long runs.</p></div><span class="svc-price num">In bay</span></li>
       </ul>
-        </div>
-      </div>
-      <div>
-        <div class="map-frame">
-          <iframe title="Map showing First Stop Pitchford Tyres at 9 Queen Street, Ossett" src="https://www.google.com/maps?q=First%20Stop%20Pitchford%20Tyres%2C%209%20Queen%20Street%2C%20Ossett%20WF5%208AW&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p class="map-caption">9 Queen Street &middot; Ossett WF5 8AW</p>
+      <div class="menu-foot">
+        <p><strong>Need a price for your tyre size?</strong> Read the numbers off your sidewall (e.g. 205/55 R16) and call 01924 265344.</p>
+        <p class="fine">Call the bay with your registration or tyre size for exact stock and pricing.</p>
       </div>
     </div>
   </section>
-  <section class="faq" id="faq" aria-labelledby="faq-title">
-    <div class="wrap faq-grid">
-      <h2 id="faq-title">Good to know.</h2>
+
+  <section class="section wrap craft" id="craft">
+    <figure class="craft-media">
+      <img src="assets/floor.jpg" width="1200" height="800" alt="Close-up of a car tyre tread and alloy wheel." loading="lazy">
+      <figcaption>Budget, mid-range &amp; premium brands.</figcaption>
+    </figure>
+    <div class="craft-copy">
+      <h2>Safe grip. Straight answers.</h2>
+      <p>Whether you have picked up a nail on the motorway, failed an MOT on tread depth or need a full set of tyres before winter, we check the wheel properly and give you a straight price.</p>
+      <p>If a puncture can be safely repaired to British Standard inside the central tread area, we repair it — no pushing a new tyre when a safe repair will do.</p>
+      <ul class="craft-list">
+        <li><b>01</b><div><strong>Check your size</strong><span>Read the sidewall code (like 205/55 R16 91V) and call the bay.</span></div></li>
+        <li><b>02</b><div><strong>Drive into Queen St</strong><span>Quick turnaround on fitting, new valves and wheel balancing.</span></div></li>
+        <li><b>03</b><div><strong>Torque &amp; pressure set</strong><span>Wheel nuts torqued and pressures set before you roll out.</span></div></li>
+      </ul>
+      <a class="btn btn-out" href="#visit">Find the tyre bay</a>
+    </div>
+  </section>
+
+  <section class="section colorband" id="colour">
+    <div class="wrap color-grid">
+      <div>
+        <h2 class="section-title">Check your<br>sidewall<br>size.</h2>
+        <p class="section-intro">Look for the sequence of numbers on the side of your tyre — width, profile and rim diameter — and ring us to confirm rack stock or same-day ordering.</p>
+        <ul class="color-list">
+          <li>Budget &amp; economy tyres <span>Call with size</span></li>
+          <li>Mid-range &amp; touring <span>Call with size</span></li>
+          <li>Premium &amp; 4x4 brands <span>Call with size</span></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/colour.jpg" width="1200" height="1600" alt="Close-up of an alloy wheel and brake disc in the workshop." loading="lazy">
+        <figcaption style="margin-top:8px;font-size:12px;letter-spacing:.02em">Balanced and torqued properly.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  
+
+  <section class="section wrap visit" id="visit">
+    <div>
+      <h2>Come<br>through.</h2>
+      <address>First Stop Pitchford Tyres<br>9 Queen Street<br>Ossett WF5 8AW</address>
+      <p class="contact-line"><a class="num" href="tel:+441924265344">01924 265344</a> / <a href="mailto:pitchfordtyres@gmail.com">pitchfordtyres@gmail.com</a></p>
+      <span class="sample-chip">Sample hours — to be confirmed</span>
+      <table class="hours">
+        <caption style="position:absolute;left:-9999px">Opening hours</caption>
+        <tbody>
+          <tr><th scope="row">Mon – Fri</th><td>8:30–17:30</td></tr>
+          <tr><th scope="row">Saturday</th><td>8:30–13:00</td></tr>
+          
+          
+        </tbody>
+      </table>
+      <p class="visit-note">Call 01924 265344 to confirm today's bay times and tyre stock. This page is a preview.</p>
+      <p class="visit-map"><a class="btn btn-out" href="https://www.google.com/maps/search/?api=1&amp;query=First%20Stop%20Pitchford%20Tyres%2C%209%20Queen%20Street%2C%20Ossett%20WF5%208AW" target="_blank" rel="noopener">Get directions</a></p>
+      <figure class="visit-media">
+        <img src="assets/chair.jpg" width="1200" height="1200" alt="A tyre technician inspecting a car tyre in the garage." loading="lazy">
+        <figcaption>9 Queen Street, Ossett WF5 8AW.</figcaption>
+      </figure>
+    </div>
+    <aside class="visit-card">
+      <h3>Call the bay</h3>
+      <p>Have your tyre size or registration ready when you call for the fastest quote.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+441924265344">Call <span class="num">01924 265344</span></a></li>
+        <li><a href="mailto:pitchfordtyres@gmail.com">Email <span>pitchfordtyres@gmail.com</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=First%20Stop%20Pitchford%20Tyres%2C%209%20Queen%20Street%2C%20Ossett%20WF5%208AW" target="_blank" rel="noopener">Directions <span>WF5 8AW</span></a></li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <h2 class="section-title">Ask us</h2>
+      <p class="section-intro">The things people ask at the desk. If yours is not here, get in touch.</p>
       <div class="faq-list">
-        <details>
-          <summary>How do I check if you have my tyre size?</summary>
-          <p>Check the numbers on your tyre sidewall and call +44 1924 265344 so we can confirm stock or order times.</p>
-        </details>
-        <details>
-          <summary>Where are you based?</summary>
-          <p>9 Queen Street, Ossett WF5 8AW. The directions link above opens the map.</p>
-        </details>
-        <details>
-          <summary>Should I book ahead?</summary>
-          <p>Calling ahead is the quickest way to check bay availability and parts before bringing your vehicle in.</p>
-        </details>
-        
-        <details>
-          <summary>How do I get a quote?</summary>
-          <p>Call the workshop on the number above or bring the vehicle by so we can look at the job properly.</p>
-        </details>
-        
+        <details><summary>How do I check if my tyre size is in stock?</summary><p>Read the size off your tyre sidewall (for example 205/55 R16) and call 01924 265344.</p></details>
+        <details><summary>Can you repair a punctured tyre?</summary><p>We inspect the tyre internally first. If the puncture is in the safe repair zone and the sidewall is undamaged, we can repair and rebalance it.</p></details>
+        <details><summary>Do you fit van and 4x4 tyres?</summary><p>Yes — we supply and fit car, light commercial van and SUV/4x4 tyres across budget and branded ranges.</p></details>
+        <details><summary>Where in Ossett are you located?</summary><p>9 Queen Street, Ossett WF5 8AW. Click Get directions above for Google Maps.</p></details>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-top">
-      <p class="foot-name">First Stop Pitchford Tyres</p>
-      <div class="foot-links">
-        <a href="#work">Workshop</a>
-        <a href="#visit">Find us</a>
-        <a href="#faq">Questions</a>
-      </div>
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-wordmark">First Stop Pitchford Tyres</p>
+      <p>Unofficial preview prepared by Plinth. Not yet live.</p>
     </div>
-    <div class="foot-bottom">
-      <span>&copy; 2026 First Stop Pitchford Tyres</span>
-      <span>Website preview prepared by Plinth &middot; Not yet live</span>
+    <div>
+      <h3>Find us</h3>
+      <p>9 Queen Street<br>Ossett WF5 8AW</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=First%20Stop%20Pitchford%20Tyres%2C%209%20Queen%20Street%2C%20Ossett%20WF5%208AW" target="_blank" rel="noopener">Directions</a>
+    </div>
+    <div>
+      <h3>Say hello</h3>
+      <p><a class="num" href="tel:+441924265344">01924 265344</a><br><a href="mailto:pitchfordtyres@gmail.com">pitchfordtyres@gmail.com</a></p>
     </div>
   </div>
+  <div class="wrap foot-bottom">
+    <p>First Stop Pitchford Tyres · Tyres, balancing &amp; puncture repairs in Ossett.</p>
+    <p>Photography from Pexels under the free license: 3993466, 3992874, 3993309, 3993454.</p>
+  </div>
 </footer>
+
 <div class="mobile-bar">
-  <a href="tel:+441924265344"><span>Call</span><strong class="num">+44 1924 265344</strong></a>
-  <a href="#visit"><span>Visit</span><strong>Queen Street</strong></a>
+  <a class="mobile-call" href="tel:+441924265344">Call</a>
+  <a class="mobile-book" href="#visit">Find Bay</a>
 </div>
 </body>
 </html>

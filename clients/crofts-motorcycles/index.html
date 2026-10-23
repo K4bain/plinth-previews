@@ -4,837 +4,405 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Croft&#39;s Motorcycles - Motorcycle workshop in Ossett</title>
-<meta name="description" content="Croft&#39;s Motorcycles - Motorcycle servicing, repairs &amp; prep on Healey Road, Ossett. Address, phone and directions.">
-<meta property="og:title" content="Croft&#39;s Motorcycles - Motorcycle servicing, repairs &amp; prep in Ossett">
-<meta property="og:description" content="Croft&#39;s Motorcycles - Motorcycle servicing, repairs &amp; prep on Healey Road, Ossett. Address, phone and directions.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_GB">
-<meta name="theme-color" content="#eeede8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141618'/%3E%3Cpath d='M16 44L44 16M20 16h24v24' stroke='%23c8431f' stroke-width='6' fill='none'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0D0C0B">
+<title>Croft&#39;s Motorcycles — Motorcycle workshop in Ossett</title>
+<meta name="description" content="Croft&#39;s Motorcycles — Motorcycle servicing, repairs &amp; prep on Healey Road, Ossett. Low light, sharp lines and a salon appointment with a point of view.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0C0B'/%3E%3Cpath d='M16 6v20M8 12l8-6 8 6' stroke='%23EFE7DA' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Chivo:wght@600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MotorcycleRepair","name":"Croft's Motorcycles","description":"Motorcycle servicing, repairs &amp; prep in Ossett.","telephone":"+447791994709","email":"croftscompetitionmotorcycles@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Healey Road","addressLocality":"Ossett","postalCode":"WF5 8LN","addressCountry":"GB"}}
-</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">
 <style>
 /* theme:start */
 :root {
-  --paper: #eceff2;
-  --paper-2: #dfe4e9;
-  --ink: #16181a;
-  --muted: #52575c;
-  --accent: #9e3119;
-  --accent-ink: #fdf9f0;
-  --line: #c7cdd3;
+  --black: #0D0C0B;
+  --black-2: #151311;
+  --ivory: #EFE7DA;
+  --ivory-soft: #C9C0B2;
+  --oxblood: #6E1F24;
+  --line: #3A3530;
+  --muted: #8E8579;
 }
 /* theme:end */
-:root {
-  --display: "Chivo", "Archivo", sans-serif;
-  --text: "Archivo", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --accent-bright: #f28c68;
-  --max: 1260px;
-  --pad: clamp(20px, 4.2vw, 54px);
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--text);
-  font-size: 16px;
-  line-height: 1.6;
+  background: var(--black);
+  color: var(--ivory);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-body::selection { background: var(--accent); color: var(--accent-ink); }
+img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-h1, h2, h3, p { margin-top: 0; }
-p:last-child { margin-bottom: 0; }
+::selection { background: var(--oxblood); color: var(--ivory); }
+.wrap { width: min(1240px, 100%); margin-inline: auto; padding-inline: clamp(18px, 3.8vw, 48px); }
 .num { font-variant-numeric: tabular-nums; }
-.wrap { width: min(var(--max), 100%); margin-inline: auto; padding-inline: var(--pad); }
-.skip {
-  position: absolute;
-  left: 16px;
-  top: 16px;
-  z-index: 100;
-  transform: translateY(-200%);
-  background: var(--ink);
-  color: var(--paper);
-  padding: 12px 16px;
-  font-family: var(--mono);
-  font-size: 12px;
-  text-decoration: none;
-}
-.skip:focus { transform: translateY(0); }
-a:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-}
+.sans { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; }
+.caps { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-size: .68rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
+
+.skip-link { position: absolute; left: -9999px; z-index: 100; padding: 12px 16px; background: var(--oxblood); color: var(--ivory); }
+.skip-link:focus { left: 12px; top: 12px; }
+
 .preview-bar {
-  background: var(--ink);
-  color: var(--paper);
+  padding: 7px 14px;
+  background: var(--oxblood);
+  color: var(--ivory);
   text-align: center;
-  padding: 8px 16px;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .02em;
-}
-.site-head { border-bottom: 2px solid var(--ink); }
-.head-inner {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  min-height: 82px;
-}
-.brand {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  line-height: 1.05;
-  max-width: 58%;
-}
-.brand-name {
-  font-family: var(--display);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  font-weight: 700;
-  letter-spacing: -.025em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 10px;
+  letter-spacing: .18em;
   text-transform: uppercase;
 }
-.brand-meta {
-  margin-top: 4px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .03em;
-}
-.nav { display: flex; gap: clamp(18px, 2.5vw, 32px); margin-left: auto; }
-.nav a {
-  padding: 6px 0;
-  border-bottom: 2px solid transparent;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.nav a:hover { border-color: var(--accent); }
-.head-phone {
-  padding: 9px 14px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.head-phone:hover { background: var(--ink); color: var(--paper); }
-.hero {
-  border-bottom: 2px solid var(--ink);
-  padding: clamp(44px, 6.5vw, 88px) 0;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: clamp(28px, 4.5vw, 68px);
-  align-items: stretch;
-}
-.hero-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.hero h1 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  font-weight: 700;
-  line-height: .9;
-  letter-spacing: -.045em;
-  text-transform: uppercase;
-}
-.hero h1 span { display: block; }
-.hero h1 em { color: var(--accent); font-style: normal; }
-.hero-lede {
-  max-width: 44ch;
-  margin: 24px 0 28px;
-  color: var(--muted);
-  font-size: clamp(17px, 1.35vw, 19px);
-  line-height: 1.55;
-}
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.hero { position: relative; min-height: min(88vh, 900px); display: flex; flex-direction: column; justify-content: end; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero-bg { position: absolute; inset: 0; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; filter: grayscale(1) contrast(1.16) brightness(.72); }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,12,11,.72) 0%, rgba(13,12,11,.18) 34%, rgba(13,12,11,.82) 78%, var(--black) 100%); }
+.hero-head { position: absolute; z-index: 3; top: 0; left: 0; right: 0; }
+.head-inner { display: flex; align-items: center; gap: 26px; min-height: 78px; border-bottom: 1px solid rgba(239,231,218,.24); }
+.brand { max-width: 48%; font-family: "Cormorant Garamond", serif; font-size: 1.2rem; font-weight: 500; letter-spacing: .1em; line-height: 1.05; text-decoration: none; text-transform: uppercase; }
+.nav { display: flex; gap: 24px; margin-left: auto; }
+.nav a { font-family: "Barlow Condensed", sans-serif; font-size: .66rem; font-weight: 500; letter-spacing: .18em; text-decoration: none; text-transform: uppercase; }
+.nav a:hover { color: var(--ivory-soft); }
+.head-phone { font-family: "Barlow Condensed", sans-serif; font-size: .66rem; letter-spacing: .12em; text-decoration: none; border-bottom: 1px solid rgba(239,231,218,.4); padding-bottom: 2px; }
+.hero-inner { position: relative; z-index: 2; width: 100%; padding-top: 120px; padding-bottom: 26px; }
+.hero h1 { margin: 0 0 24px; font-size: clamp(4rem, 10.5vw, 9rem); font-weight: 300; line-height: .82; letter-spacing: -.045em; }
+.hero h1 em { display: block; color: #D8BCA5; font-style: italic; }
+.hero-foot { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(24px, 4vw, 56px); align-items: end; }
+.hero-foot p { max-width: 46ch; margin: 0; color: var(--ivory-soft); font-size: 1rem; }
+.hero-actions { display: flex; flex-wrap: wrap; justify-content: end; gap: 10px; }
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
+  display: inline-block;
   padding: 12px 20px;
-  border: 2px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .05em;
+  background: var(--ivory);
+  color: var(--black);
+  border: 1px solid var(--ivory);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .16em;
   text-decoration: none;
   text-transform: uppercase;
 }
-.btn-primary { background: var(--ink); color: var(--paper); }
-.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-.btn-ghost { background: transparent; color: var(--ink); }
-.btn-ghost:hover { background: var(--paper-2); }
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
-  margin-top: 36px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.spec-board {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(24px, 3.2vw, 38px);
-  border: 2px solid var(--ink);
-  background: var(--paper-2);
-}
-.spec-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--ink);
-  font-family: var(--mono);
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.spec-badge {
-  padding: 4px 9px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 500;
-}
-.spec-main { padding: 28px 0; }
-.spec-code {
-  margin: 0 0 8px;
-  font-family: var(--display);
-  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.03em;
-}
-.spec-sub {
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-.spec-rows {
-  display: grid;
-  gap: 10px;
-  margin: 0;
-  padding: 16px 0 0;
-  border-top: 1px solid var(--ink);
-  list-style: none;
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.spec-rows li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.spec-rows span:first-child { color: var(--muted); text-transform: uppercase; }
-.statement {
-  border-bottom: 1px solid var(--line);
-  padding: 84px 8px;
-}
-.statement-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  gap: clamp(28px, 5vw, 76px);
-  align-items: end;
-  padding-block: 14px;
-}
-.statement h2 {
-  max-width: 18ch;
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.2rem, 4.5vw, 4.1rem);
-  font-weight: 600;
-  line-height: .98;
-  letter-spacing: -.035em;
-}
-.statement-copy {
-  max-width: 40ch;
-  margin: 0;
-  padding-top: 18px;
-  border-top: 2px solid var(--ink);
-  color: var(--muted);
-  font-size: 16px;
-}
-.bays { padding-block: clamp(56px, 7.5vw, 96px); }
-.section-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: clamp(28px, 4vw, 44px);
-}
-.section-head h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.3rem, 4.5vw, 4rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.section-head p {
-  max-width: 38ch;
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-.bay-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 2px solid var(--ink);
-}
-.bay {
-  padding: 28px 26px 32px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.bay:first-child { padding-left: 0; }
-.bay:last-child { padding-right: 0; border-right: 0; }
-.bay-bar { width: 100%; height: 8px; margin-bottom: 24px; background: var(--accent); }
-.bay:nth-child(2) .bay-bar { background: var(--ink); }
-.bay:nth-child(3) .bay-bar { background: var(--muted); }
-.bay h3 {
-  margin: 0 0 10px;
-  font-family: var(--display);
-  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
-  font-weight: 600;
-  line-height: 1.05;
+.btn:hover { background: var(--oxblood); border-color: var(--oxblood); color: var(--ivory); }
+.btn-ghost { background: transparent; color: var(--ivory); border-color: rgba(239,231,218,.55); }
+.btn-ghost:hover { background: var(--ivory); border-color: var(--ivory); color: var(--black); }
+.hero-credit { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: clamp(32px, 6vw, 70px); padding-top: 12px; border-top: 1px solid rgba(239,231,218,.24); color: var(--ivory-soft); }
+
+.statement { padding-block: clamp(60px, 8vw, 110px); text-align: center; }
+.statement p {
+  max-width: 980px;
+  margin: 22px auto 0;
+  font-size: clamp(2rem, 4.7vw, 4.2rem);
+  font-weight: 300;
+  line-height: 1.1;
   letter-spacing: -.025em;
 }
-.bay p { max-width: 32ch; color: var(--muted); font-size: 16px; }
-.bay-list {
-  display: grid;
-  gap: 8px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.bay-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 8px;
-  border-top: 1px solid var(--line);
-}
-.banner {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 88px 8px;
-}
-.banner-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
-  gap: clamp(32px, 6vw, 92px);
-  align-items: end;
-  padding-block: 14px;
-}
-.banner h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.6rem, 6vw, 5.4rem);
-  font-weight: 700;
-  line-height: .9;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.banner h2 em { color: var(--accent-bright); font-style: normal; }
-.banner-side { max-width: 40ch; }
-.banner-side p {
-  color: var(--paper);
-  opacity: .84;
-  font-size: 16px;
-}
-.banner-side p.banner-mark {
-  margin: 26px 0 22px;
-  color: var(--accent-bright);
-  font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 5.8rem);
-  font-weight: 700;
-  line-height: .88;
-  letter-spacing: -.04em;
-  opacity: 1;
-}
-.banner-link {
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.banner-link:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
-.visit {
-  background: var(--paper-2);
-  border-bottom: 2px solid var(--ink);
-  padding: 88px 8px;
-}
-.visit-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-  gap: clamp(32px, 5vw, 76px);
-  align-items: start;
-  padding-block: 14px;
-}
-.visit h2 {
-  margin: 0 0 22px;
-  font-family: var(--display);
-  font-size: clamp(2.4rem, 4.8vw, 4.4rem);
-  font-weight: 700;
-  line-height: .94;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.visit address {
-  margin-bottom: 18px;
-  font-family: var(--display);
-  font-size: clamp(1.45rem, 2.3vw, 2rem);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.visit-lines {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 20px;
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.visit-lines a {
-  width: fit-content;
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--ink);
-  text-decoration: none;
-}
-.visit-lines a:hover { color: var(--accent); border-color: var(--accent); }
-.visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
-.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.map-frame {
-  min-height: 420px;
-  border: 2px solid var(--ink);
-  background: var(--paper);
-}
-.map-frame iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  border: 0;
-  filter: grayscale(.8) contrast(1.04);
-}
-.map-caption {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-.shop-list { margin-top: 32px; }
-.shop-list-title {
-  margin-bottom: 10px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.svc {
-  margin: 0;
-  padding: 0;
-  border-top: 2px solid var(--ink);
-  list-style: none;
-}
-.svc li { padding: 14px 0; border-bottom: 1px solid var(--line); }
-.svc-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-}
-.svc h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.25; }
-.svc-price {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.svc p { margin: 4px 0 0; color: var(--muted); font-size: 16px; }
-.faq { padding-block: clamp(56px, 7.5vw, 96px); }
-.faq-grid {
-  display: grid;
-  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
-  gap: clamp(28px, 5vw, 76px);
-  align-items: start;
-}
-.faq h2 {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(2.3rem, 4.5vw, 4rem);
-  font-weight: 700;
-  line-height: .95;
-  letter-spacing: -.04em;
-  text-transform: uppercase;
-}
-.faq-list details:first-child { border-top: 2px solid var(--ink); }
+.statement p em { color: #D8BCA5; }
+.statement small { display: block; margin-top: 24px; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; }
+
+.menu { background: var(--black-2); border-block: 1px solid var(--line); }
+.menu-inner { padding-block: clamp(52px, 7vw, 92px); }
+.sec-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.sec-head h2 { margin: 0; font-size: clamp(2.5rem, 5.4vw, 4.6rem); font-weight: 300; line-height: .94; letter-spacing: -.035em; }
+.sec-head p { max-width: 38ch; margin: 0; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .76rem; letter-spacing: .04em; line-height: 1.45; }
+.svc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(32px, 5vw, 70px); }
+.svc li { padding: 20px 0 22px; border-bottom: 1px solid var(--line); }
+.svc-row { display: flex; align-items: baseline; gap: 10px; }
+.svc h3 { margin: 0; font-size: 1.8rem; font-weight: 400; line-height: 1.1; }
+.svc-line { flex: 1; height: 1px; border-bottom: 1px dotted var(--muted); transform: translateY(-5px); }
+.svc-price { font-family: "Barlow Condensed", sans-serif; font-size: .66rem; font-weight: 500; letter-spacing: .14em; white-space: nowrap; text-transform: uppercase; color: var(--ivory-soft); }
+.svc p { margin: 4px 0 0; color: var(--muted); font-size: .8rem; }
+.menu-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; margin-top: 26px; }
+.menu-foot p { margin: 0; max-width: 52ch; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .72rem; letter-spacing: .04em; }
+
+.film { padding-block: clamp(48px, 6vw, 80px); }
+.film-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
+.film-head h2 { margin: 0; font-size: clamp(2.2rem, 4.4vw, 3.6rem); font-weight: 300; line-height: .96; letter-spacing: -.03em; }
+.film-head p { max-width: 42ch; margin: 0; color: var(--muted); font-size: .84rem; }
+.film-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 12px; }
+.film-fig { position: relative; margin: 0; overflow: hidden; }
+.film-fig img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(.85); }
+.film-fig:nth-child(1) { aspect-ratio: 4 / 5; }
+.film-fig:nth-child(2) { aspect-ratio: 4 / 5; margin-top: 54px; }
+.film-fig:nth-child(3) { aspect-ratio: 4 / 5; margin-top: 108px; }
+.film-fig figcaption { position: absolute; left: 10px; bottom: 8px; color: var(--ivory); font-family: "Barlow Condensed", sans-serif; font-size: .54rem; letter-spacing: .16em; text-transform: uppercase; text-shadow: 0 1px 8px #000; }
+
+.craft { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(30px, 5vw, 80px); align-items: center; padding-block: clamp(48px, 7vw, 92px); border-top: 1px solid var(--line); }
+.craft-copy h2 { margin: 0 0 20px; font-size: clamp(2.6rem, 5.4vw, 4.6rem); font-weight: 300; line-height: .94; letter-spacing: -.04em; }
+.craft-copy h2 em { color: #D8BCA5; }
+.craft-copy p { max-width: 46ch; margin: 0 0 14px; color: var(--ivory-soft); font-size: .94rem; }
+.craft-copy blockquote { margin: 26px 0; padding: 18px 0; border-block: 1px solid var(--line); font-size: 1.7rem; font-style: italic; line-height: 1.1; color: var(--ivory); }
+.craft-copy cite { display: block; margin-top: 10px; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .58rem; font-style: normal; letter-spacing: .16em; text-transform: uppercase; }
+.craft-fig { margin: 0; }
+.craft-fig img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(.82); }
+
+.trust { background: var(--black-2); border-block: 1px solid var(--line); }
+.trust-inner { padding-block: clamp(50px, 7vw, 88px); }
+.trust-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.trust-top h2 { margin: 0; font-size: clamp(2.2rem, 4.6vw, 3.8rem); font-weight: 300; line-height: .94; }
+.trust-score { text-align: right; }
+.trust-score b { display: block; color: #D8BCA5; font-size: 2.8rem; font-weight: 300; line-height: .8; }
+.trust-score span { color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; }
+.quotes { margin-top: 8px; }
+.quote { display: grid; grid-template-columns: 42px 1fr auto; gap: clamp(14px, 2.4vw, 28px); align-items: start; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.quote-mark { color: var(--oxblood); font-size: 3rem; line-height: .7; }
+.quote blockquote { margin: 0; max-width: 62ch; font-size: 1.18rem; font-style: italic; line-height: 1.35; }
+.quote cite { align-self: center; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .58rem; font-style: normal; letter-spacing: .14em; text-align: right; text-transform: uppercase; }
+.trust-note { margin: 18px 0 0; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; }
+
+.visit { padding-block: clamp(56px, 8vw, 104px); text-align: center; }
+.visit h2 { margin: 16px 0 24px; font-size: clamp(3rem, 7vw, 6rem); font-weight: 300; line-height: .9; letter-spacing: -.045em; }
+.visit address { margin: 0 0 12px; font-style: normal; font-size: 1.12rem; line-height: 1.55; }
+.contact-line { margin: 0 0 22px; color: var(--ivory-soft); font-family: "Barlow Condensed", sans-serif; font-size: .78rem; letter-spacing: .04em; overflow-wrap: anywhere; }
+.contact-line a { text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+.contact-line a:hover { border-color: var(--ivory); }
+.hours { width: min(380px, 100%); margin: 0 auto; border-collapse: collapse; font-family: "Barlow Condensed", sans-serif; font-size: .74rem; letter-spacing: .04em; }
+.hours th, .hours td { padding: 6px 0; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; }
+.hours td { text-align: right; color: var(--muted); }
+.sample-chip { display: inline-block; margin: 10px 0 0; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .54rem; letter-spacing: .14em; text-transform: uppercase; }
+.visit-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
+
+.faq { border-top: 1px solid var(--line); }
+.faq-inner { padding-block: clamp(44px, 6vw, 74px); display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(30px, 5vw, 76px); }
+.faq h2 { margin: 0; font-size: clamp(2.2rem, 4.4vw, 3.6rem); font-weight: 300; line-height: .94; }
+.faq .faq-intro { max-width: 30ch; margin: 12px 0 0; color: var(--muted); font-size: .78rem; }
+.faq-list { border-top: 1px solid var(--line); }
 .faq details { border-bottom: 1px solid var(--line); }
-.faq summary {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 18px 0;
-  cursor: pointer;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
-}
+.faq summary { display: flex; justify-content: space-between; gap: 18px; padding: 14px 0; color: var(--ivory); font-family: "Barlow Condensed", sans-serif; font-size: .78rem; letter-spacing: .08em; cursor: pointer; list-style: none; text-transform: uppercase; }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 16px;
-  line-height: 1;
-  content: "+";
+.faq summary::after { content: "+"; color: #D8BCA5; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 14px; max-width: 62ch; color: var(--muted); font-size: .8rem; }
+
+.site-foot { padding: 34px 0 22px; border-top: 1px solid var(--line); }
+.foot-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.foot-wordmark { margin: 0; font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 300; letter-spacing: .02em; text-transform: uppercase; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; font-family: "Barlow Condensed", sans-serif; font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; }
+.foot-links a { text-decoration: none; }
+.foot-links a:hover { color: #D8BCA5; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 12px; }
+.foot-bottom p { margin: 0; max-width: 58ch; color: var(--muted); font-family: "Barlow Condensed", sans-serif; font-size: .54rem; letter-spacing: .08em; line-height: 1.5; text-transform: uppercase; }
+.mobile-bar { display: none; }
+
+/* QA: legibility floors, contrast and detector-safe spacing */
+.preview-bar { font-size: 12px; letter-spacing: .03em; text-transform: none; }
+.caps { font-size: 12px; letter-spacing: .14em; }
+.hero-credit { text-transform: none; letter-spacing: .03em; }
+.statement small { font-size: 12px; letter-spacing: .12em; }
+.nav a, .head-phone, .btn, .mobile-bar a { font-size: 12px; }
+.svc-price { font-size: 12px; }
+.film-fig figcaption { font-size: 12px; letter-spacing: .1em; }
+.craft-copy cite { font-size: 12px; letter-spacing: .1em; }
+.trust-score span, .trust-note, .quote cite, .sample-chip { font-size: 12px; letter-spacing: .04em; }
+.trust-score span, .trust-note, .quote cite, .sample-chip { text-transform: none; }
+.faq summary { font-size: 14px; letter-spacing: .02em; text-transform: none; }
+.foot-links { font-size: 12px; }
+.foot-bottom p { font-size: 12px; letter-spacing: .04em; text-transform: none; }
+.menu-foot p { font-size: 12px; }
+.hours { font-size: 12.5px; }
+.head-inner { padding-top: 16px; padding-bottom: 16px; }
+.menu { padding: 12px; }
+.trust { padding: 12px; }
+.faq { padding-top: 12px; }
+.faq-list { padding-top: 12px; }
+.craft { padding-top: 72px; padding-bottom: 72px; }
+.statement p { line-height: 1.3; }
+.craft-copy blockquote { line-height: 1.3; }
+
+@media (max-width: 960px) {
+  .hero-foot { grid-template-columns: 1fr; }
+  .hero-actions { justify-content: start; }
+  .hero h1 { font-size: clamp(3.6rem, 13vw, 6.4rem); }
+  .film-grid { grid-template-columns: 1fr 1fr; }
+  .film-fig:nth-child(3) { display: none; }
+  .film-fig:nth-child(2) { margin-top: 28px; }
+  .craft { grid-template-columns: 1fr; }
+  .craft-fig { max-width: 460px; }
+  .faq-inner { grid-template-columns: 1fr; }
 }
-.faq details[open] summary::after { content: "-"; }
-.faq details p {
-  max-width: 62ch;
-  padding: 0 0 20px;
-  color: var(--muted);
-  font-size: 16px;
+@media (max-width: 700px) {
+  .hero { min-height: 780px; }
+  .head-inner { min-height: 62px; gap: 12px; }
+  .nav { display: none; }
+  .brand { max-width: 60%; font-size: .88rem; overflow-wrap: anywhere; }
+  .head-phone { margin-left: auto; font-size: 12px; }
+  .hero-inner { padding-top: 96px; }
+  .hero h1 { font-size: clamp(3.4rem, 17vw, 5rem); }
+  .hero-foot p { font-size: .9rem; }
+  .hero-credit { margin-top: 30px; }
+  .statement p { font-size: 2rem; }
+  .svc { grid-template-columns: 1fr; }
+  .film-grid { grid-template-columns: 1fr; }
+  .film-fig:nth-child(2) { margin-top: 0; }
+  .film-fig:nth-child(3) { display: block; margin-top: 0; }
+  .film-fig { aspect-ratio: 4 / 3 !important; }
+  .quote { grid-template-columns: 28px 1fr; }
+  .quote cite { grid-column: 2; text-align: left; }
+  .trust-score { text-align: left; }
+  .visit h2 { font-size: 3.4rem; }
+  body { padding-bottom: 52px; }
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; background: var(--black); border-top: 1px solid var(--line); }
+  .mobile-bar a { padding: 14px 10px; color: var(--ivory); text-align: center; font-family: "Barlow Condensed", sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .16em; text-decoration: none; text-transform: uppercase; }
+  .mobile-bar a:only-child { grid-column: 1 / -1; }
+  .mobile-call { border-right: 1px solid var(--line); }
+  .mobile-book { background: var(--oxblood); }
 }
-.site-foot { background: var(--ink); color: var(--paper); padding-block: 32px; }
-.foot-top {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, .18);
-}
-.foot-name {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.03em;
-  text-transform: uppercase;
-}
-.foot-links { display: flex; flex-wrap: wrap; gap: 18px; }
-.foot-links a {
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .04em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.foot-links a:hover { color: var(--accent-bright); }
-.foot-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px 24px;
-  padding-top: 16px;
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 12px;
-  opacity: .78;
-}
-.mobile-bar {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 50;
-  display: none;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  background: var(--ink);
-  color: var(--paper);
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.mobile-bar a {
-  display: flex;
-  min-height: 58px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  border-right: 1px solid rgba(255, 255, 255, .18);
-  text-decoration: none;
-}
-.mobile-bar a:last-child { border-right: 0; }
-.mobile-bar span {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  opacity: .76;
-}
-.mobile-bar strong {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
-@media (max-width: 920px) {
-  .nav, .head-phone { display: none; }
-  .head-inner { min-height: 72px; }
-  .brand { max-width: 100%; }
-  .hero-grid,
-  .statement-grid,
-  .banner-grid,
-  .visit-grid,
-  .faq-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .hero { padding: 36px 0 48px; }
-  .statement, .banner, .visit { padding: 60px 8px; }
-  .section-head { display: block; }
-  .section-head p { margin-top: 10px; }
-  .bay-grid { grid-template-columns: minmax(0, 1fr); }
-  .bay { padding: 22px 0 26px; border-right: 0; }
-  .map-frame, .map-frame iframe { min-height: 320px; }
-  .foot-top { display: block; }
-  .foot-links { margin-top: 16px; }
-  .mobile-bar { display: grid; }
-  body { padding-bottom: 58px; }
-}
-@media (max-width: 560px) {
-  .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
-  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
-  .foot-bottom { display: block; }
-  .foot-bottom span { display: block; margin-top: 6px; }
-}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MotorcycleRepair","name":"Croft's Motorcycles","telephone":"+447791994709","email":"croftscompetitionmotorcycles@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Healey Road","addressLocality":"Ossett","postalCode":"WF5 8LN","addressCountry":"GB"}}
+</script>
 </head>
-<body id="top">
-<a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar">Unofficial preview prepared by Plinth &middot; Not yet live</div>
-<header class="site-head">
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth · Not yet live</div>
+
+<header class="hero-head">
   <div class="wrap head-inner">
-    <a class="brand" href="#top">
-      <span class="brand-name">Croft&#39;s Motorcycles</span>
-      <span class="brand-meta">Motorcycle workshop &middot; Ossett</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#work">Workshop</a>
-      <a href="#visit">Find us</a>
-      <a href="#faq">Questions</a>
+    <a class="brand" href="#top">Croft&#39;s Motorcycles</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Workshop</a>
+      <a href="#film">Benches</a>
+      <a href="#craft">Craft</a>
+      <a href="#visit">Visit</a>
     </nav>
-    <a class="head-phone num" href="tel:+447791994709">+44 7791 994709</a>
+    <a class="head-phone num" href="tel:+447791994709">07791 994709</a>
   </div>
 </header>
+
 <main id="main">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <div>
-          <h1 id="hero-title"><span>Croft&#39;s</span><span><em>Motorcycles.</em></span></h1>
-          <p class="hero-lede">Independent motorcycle workshop on Healey Road in Ossett for servicing, mechanical sorting and competition prep.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+447791994709">Call workshop</a>
-            <a class="btn btn-ghost" href="#visit">Directions &amp; map</a>
-          </div>
-        </div>
-        <div class="hero-meta">
-          <span>Healey Road, Ossett</span>
-          <span>WF5 8LN</span>
-          <span>Motorcycle servicing, repairs &amp; prep</span>
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <img src="assets/hero.jpg" width="1200" height="800" alt="A motorcycle mechanic working on a bike in the workshop." fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <h1>Built right<br>on the<br><em>bench.</em></h1>
+      <div class="hero-foot">
+        <p>Independent motorcycle workshop on Healey Road in Ossett for routine servicing, mechanical sorting, tyres, chains and competition bike preparation.</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+447791994709">Call workshop</a>
+          <a class="btn btn-ghost" href="#menu">Workshop work</a>
         </div>
       </div>
-      <aside class="spec-board" aria-label="Workshop overview">
-        <div class="spec-top">
-          <span>Motorcycle workshop</span>
-          <span class="spec-badge">WF5</span>
-        </div>
-        <div class="spec-main">
-          <p class="spec-code">Healey Road</p>
-          <p class="spec-sub">Road, off-road and competition motorcycle work.</p>
-        </div>
-        <ul class="spec-rows">
-          <li><span>Location</span><span>Healey Road, Ossett</span></li>
-          <li><span>Postcode</span><span class="num">WF5 8LN</span></li>
-          <li><span>Bookings</span><span>Direct by phone or visit</span></li>
-        </ul>
-      </aside>
-    </div>
-  </section>
-  
-  <section class="statement" aria-labelledby="statement-title">
-    <div class="wrap statement-grid">
-      <h2 id="statement-title">Set up properly on the bench so it behaves properly on the ride.</h2>
-      <p class="statement-copy">Routine servicing, brakes, chains, bearings, suspension and focused competition bike preparation.</p>
-    </div>
-  </section>
-  
-  <section class="bays" id="work" aria-labelledby="work-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="work-title">On the bench</h2>
-        <p>Servicing, mechanical repairs and setup for road and competition bikes.</p>
-      </div>
-      <div class="bay-grid">
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>Servicing &amp; checks</h3>
-          <p>Oil, filters, plugs, valve clearances, carb and throttle bodies, and general spanner checks.</p>
-          <ul class="bay-list">
-            <li><span>Machines</span><span>Road &amp; off-road</span></li>
-            <li><span>Bench</span><span>By booking</span></li>
-          </ul>
-        </article>
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>Brakes, chains &amp; tyres</h3>
-          <p>Pads, fluid, chain and sprocket kits, wheel bearings, seals and running-gear repairs.</p>
-          <ul class="bay-list">
-            <li><span>Wear parts</span><span>Supplied &amp; fitted</span></li>
-            <li><span>Quotes</span><span>Direct</span></li>
-          </ul>
-        </article>
-        <article class="bay">
-          <div class="bay-bar"></div>
-          <h3>Competition prep</h3>
-          <p>Pre-event preparation, chassis and suspension attention, and mechanical reliability checks.</p>
-          <ul class="bay-list">
-            <li><span>Focus</span><span>Track &amp; trials</span></li>
-            <li><span>Enquiries</span><span>By phone</span></li>
-          </ul>
-        </article>
+      <div class="hero-credit caps">
+        <span>Healey Road · WF5 8LN</span>
+        <span>Road &amp; track</span>
+        <span>Scroll ↓</span>
       </div>
     </div>
   </section>
-  <section class="banner" aria-labelledby="banner-title">
-    <div class="wrap banner-grid">
-      <h2 id="banner-title">Book<br><em>bench</em><br>time.</h2>
-      <div class="banner-side">
-        <p>Call ahead before bringing a bike down to Healey Road so we can confirm bench space and parts.</p>
-        <p class="banner-mark" aria-hidden="true">WF5</p>
-        <a class="banner-link" href="#visit">Book or drop in</a>
-      </div>
-    </div>
+
+  <section class="statement wrap">
+    <p>Set up properly on the bench in Ossett so it behaves <em>properly</em> out on the road or track.</p>
+    <small>Ossett · bike workshop</small>
   </section>
-  <section class="visit" id="visit" aria-labelledby="visit-title">
-    <div class="wrap visit-grid">
-      <div class="visit-contact">
-        <h2 id="visit-title">Find the workshop.</h2>
-        <address>
-          <span>Healey Road</span><br>
-          <span>Ossett</span><br>
-          <span>WF5 8LN</span>
-        </address>
-        <div class="visit-lines">
-          <a class="num" href="tel:+447791994709">+44 7791 994709</a>
-          <a href="mailto:croftscompetitionmotorcycles@gmail.com?subject=Workshop%20enquiry">croftscompetitionmotorcycles@gmail.com</a>
-        </div>
-        <p class="visit-note">Based on Healey Road, Ossett WF5 8LN. Call first to arrange drop-off and discuss your bike.</p>
-        <div class="visit-actions">
-          <a class="btn btn-primary" href="tel:+447791994709">Call workshop</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Croft&#39;s%20Motorcycles%2C%20Healey%20Road%2C%20Ossett%20WF5%208LN" target="_blank" rel="noopener">Directions</a>
-        </div>
-        <div class="shop-list">
-          <p class="shop-list-title">Workshop work</p>
-          <ul class="svc">
-        <li>
-  <div class="svc-head"><h3>Motorcycle servicing &amp; setup</h3><span class="svc-price">Workshop</span></div>
-  <p>Routine servicing, checks and workshop prep across bikes.</p>
-</li>
-        <li>
-  <div class="svc-head"><h3>Repairs, tyres &amp; chains</h3><span class="svc-price">Workshop</span></div>
-  <p>Brakes, drive chains, tyres, bearings and mechanical sorting.</p>
-</li>
-        <li>
-  <div class="svc-head"><h3>Competition &amp; track prep</h3><span class="svc-price">Enquire</span></div>
-  <p>Focused setup and maintenance for competition and off-road machines.</p>
-</li>
+
+  <section class="menu" id="menu">
+    <div class="wrap menu-inner">
+      <div class="sec-head">
+        <h2>Workshop work</h2>
+        <p>Straightforward spanner work for road, off-road and trials/competition machines. Parts and labour discussed clearly before we start.</p>
+      </div>
+      <ul class="svc">
+        <li><div class="svc-row"><h3>Motorcycle servicing &amp; setup</h3><span class="svc-line" aria-hidden="true"></span><span class="svc-price">Workshop</span></div><p>Routine servicing, checks and workshop prep across bikes.</p></li>
+        <li><div class="svc-row"><h3>Repairs, tyres &amp; chains</h3><span class="svc-line" aria-hidden="true"></span><span class="svc-price">Workshop</span></div><p>Brakes, drive chains, tyres, bearings and mechanical sorting.</p></li>
+        <li><div class="svc-row"><h3>Competition &amp; track prep</h3><span class="svc-line" aria-hidden="true"></span><span class="svc-price">Enquire</span></div><p>Focused setup and maintenance for competition and off-road machines.</p></li>
       </ul>
-        </div>
-      </div>
-      <div>
-        <div class="map-frame">
-          <iframe title="Map showing Croft&#39;s Motorcycles at Healey Road, Ossett" src="https://www.google.com/maps?q=Croft&#39;s%20Motorcycles%2C%20Healey%20Road%2C%20Ossett%20WF5%208LN&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p class="map-caption">Healey Road &middot; Ossett WF5 8LN</p>
+      <div class="menu-foot">
+        <p>Need a specific repair, valve check or pre-event prep? Call with your bike's make, model and year.</p>
+        <a class="btn btn-ghost" href="#visit">Plan a visit</a>
       </div>
     </div>
   </section>
-  <section class="faq" id="faq" aria-labelledby="faq-title">
-    <div class="wrap faq-grid">
-      <h2 id="faq-title">Good to know.</h2>
+
+  <section class="wrap film" id="film">
+    <div class="film-head">
+      <h2>Inside the<br>workshop.</h2>
+      <p>Proper bench time, clean mechanical diagnostics and attention to the details that keep a bike reliable.</p>
+    </div>
+    <div class="film-grid">
+      <figure class="film-fig"><img src="assets/profile.jpg" width="1200" height="1500" alt="Close-up of a mechanic working on a motorcycle engine." loading="lazy"><figcaption>Frame one · the engine</figcaption></figure>
+      <figure class="film-fig"><img src="assets/hero.jpg" width="1200" height="800" alt="Motorcycle servicing in the workshop bay." loading="lazy"><figcaption>Frame two · the bench</figcaption></figure>
+      <figure class="film-fig"><img src="assets/room.jpg" width="1200" height="800" alt="Mechanic working with wrenches and engine components." loading="lazy"><figcaption>Frame three · running gear</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="wrap craft" id="craft">
+    <div class="craft-copy">
+      <h2>Sorted properly, <em>first time.</em></h2>
+      <p>From oil, filters, plugs and valve clearances to brake rebuilds, wheel bearings, fork seals and chain-and-sprocket kits, every bike gets methodical spanner work.</p>
+      <p>We also handle competition, trials and off-road bike preparation — chassis setup, suspension checks and reliability prep before race day.</p>
+      <blockquote>“Set it up right on the bench so nothing surprises you on the ride.”<cite>Healey Road Workshop</cite></blockquote>
+      <a class="btn btn-ghost" href="#visit">Book bench time</a>
+    </div>
+    <figure class="craft-fig">
+      <img src="assets/craft.jpg" width="1600" height="2400" alt="Workshop tools and wrenches at the motorcycle bench." loading="lazy">
+    </figure>
+  </section>
+
+  
+
+  <section class="wrap visit" id="visit">
+    <h2>Find the<br>workshop.</h2>
+    <address>Croft&#39;s Motorcycles<br>Healey Road<br>Ossett WF5 8LN</address>
+    <p class="contact-line"><a class="num" href="tel:+447791994709">07791 994709</a> · <a href="mailto:croftscompetitionmotorcycles@gmail.com">croftscompetitionmotorcycles@gmail.com</a></p>
+    <table class="hours">
+      <caption style="position:absolute;left:-9999px">Sample opening hours</caption>
+      <tbody>
+        <tr><th scope="row">Monday – Friday</th><td>8:30–17:30</td></tr>
+        <tr><th scope="row">Saturday</th><td>9:00–13:00</td></tr>
+        <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+      </tbody>
+    </table>
+    <span class="sample-chip">Sample hours — call before dropping a bike off</span>
+    <div class="visit-actions">
+      <a class="btn" href="tel:+447791994709">Call workshop</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Croft&#39;s%20Motorcycles%2C%20Healey%20Road%2C%20Ossett%20WF5%208LN" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-inner">
+      <div>
+        <h2>Before<br>you book.</h2>
+        <p class="faq-intro">The practical notes, kept short.</p>
+      </div>
       <div class="faq-list">
-        <details>
-          <summary>What bikes do you work on?</summary>
-          <p>Road, off-road and competition motorcycles. Call with the make, model and job to confirm.</p>
-        </details>
-        <details>
-          <summary>Where is the workshop?</summary>
-          <p>Healey Road, Ossett WF5 8LN. Use the directions link above to open the map.</p>
-        </details>
-        <details>
-          <summary>Should I book ahead?</summary>
-          <p>Calling ahead is the quickest way to check bay availability and parts before bringing your vehicle in.</p>
-        </details>
-        
-        <details>
-          <summary>How do I get a quote?</summary>
-          <p>Call the workshop on the number above or bring the vehicle by so we can look at the job properly.</p>
-        </details>
-        
+        <details><summary>How do I book my bike in?</summary><p>Call +44 7791 994709 or email with your motorcycle make, model and the work needed to check bench availability.</p></details>
+        <details><summary>What types of motorcycles do you work on?</summary><p>Road bikes, off-road/enduro machines and competition/trials motorcycles.</p></details>
+        <details><summary>Do you supply tyres, chains and service parts?</summary><p>Yes — we supply and fit tyres, brake pads, chain &amp; sprocket kits, oils, filters and OEM or quality aftermarket parts.</p></details>
+        <details><summary>Where on Healey Road are you based?</summary><p>Healey Road, Ossett WF5 8LN. Always call ahead before bringing a bike down on a van or trailer.</p></details>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="site-foot">
   <div class="wrap">
     <div class="foot-top">
-      <p class="foot-name">Croft&#39;s Motorcycles</p>
+      <p class="foot-wordmark">Croft&#39;s Motorcycles</p>
       <div class="foot-links">
-        <a href="#work">Workshop</a>
-        <a href="#visit">Find us</a>
-        <a href="#faq">Questions</a>
+        <a href="#menu">Workshop</a>
+        <a href="#craft">Craft</a>
+        <a href="#visit">Visit</a>
+        <a href="mailto:croftscompetitionmotorcycles@gmail.com">Email</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>&copy; 2026 Croft&#39;s Motorcycles</span>
-      <span>Website preview prepared by Plinth &middot; Not yet live</span>
+      <p>Unofficial preview prepared by Plinth. Not yet live. Croft&#39;s Motorcycles · Motorcycle servicing, repairs &amp; prep · Ossett.</p>
+      <p>Photography from Pexels under the free license: 3855217, 11890959, 8550638, 8550634.</p>
     </div>
   </div>
 </footer>
+
 <div class="mobile-bar">
-  <a href="tel:+447791994709"><span>Call</span><strong class="num">+44 7791 994709</strong></a>
-  <a href="#visit"><span>Visit</span><strong>Healey Road</strong></a>
+  <a class="mobile-call" href="tel:+447791994709">Call</a>
+  <a class="mobile-book" href="#visit">Book</a>
 </div>
 </body>
 </html>

@@ -21,14 +21,14 @@
 <style>
 /* theme:start */
 :root {
-  --paper: #15120f;
-  --paper-2: #1f1a15;
-  --ink: #f3e8d4;
-  --muted: #b7a78f;
-  --accent: #e0703f;
-  --accent-ink: #1a120c;
+  --paper: #131518;
+  --paper-2: #1c2025;
+  --ink: #eef1f5;
+  --muted: #a3acb8;
+  --accent: #d96b2b;
+  --accent-ink: #131518;
   --accent-bright: #9e3016;
-  --line: #3a3127;
+  --line: #30363f;
 }
 /* theme:end */
 :root {
@@ -66,7 +66,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--paper);
   padding: 12px 16px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: none;
 }
 .skip:focus { transform: translateY(0); }
@@ -80,7 +80,7 @@ a:focus-visible, summary:focus-visible {
   text-align: center;
   padding: 8px 16px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .03em;
 }
 .site-head { border-bottom: 1px solid var(--line); }
@@ -106,7 +106,7 @@ a:focus-visible, summary:focus-visible {
   margin-top: 5px;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .04em;
 }
 .nav { display: flex; gap: clamp(16px, 2.4vw, 32px); margin-left: auto; }
@@ -114,7 +114,7 @@ a:focus-visible, summary:focus-visible {
   padding: 6px 0;
   border-bottom: 1px solid transparent;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ a:focus-visible, summary:focus-visible {
   padding-bottom: 2px;
   border-bottom: 1px solid var(--ink);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -167,7 +167,7 @@ a:focus-visible, summary:focus-visible {
   padding: 13px 20px;
   border: 1px solid var(--ink);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
@@ -186,7 +186,7 @@ a:focus-visible, summary:focus-visible {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
 }
 .hero-disc {
   position: relative;
@@ -201,7 +201,7 @@ a:focus-visible, summary:focus-visible {
   width: min(100%, 540px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: repeating-radial-gradient(circle at 50% 50%, #17120d 0 1px, #251d15 1px 3px, #17120d 3px 5px);
+  background: radial-gradient(circle at 50% 50%, #251d15 0%, #17120d 34%, #251d15 35%, #17120d 67%, #251d15 68%, #17120d 100%);
   box-shadow: 0 40px 80px -30px rgba(23, 18, 13, .55), inset 0 0 0 1px rgba(255, 255, 255, .08);
   animation: spin 110s linear infinite;
 }
@@ -233,22 +233,108 @@ a:focus-visible, summary:focus-visible {
 .disc-label span:nth-child(2) {
   margin-top: 8px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
 .disc-label span:last-child {
   margin-top: 10px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   opacity: .78;
 }
 .disc-caption {
   margin: 16px 0 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .03em;
+}
+.hero-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero-photo-frame {
+  position: relative;
+  margin: 0;
+  border: 1px solid var(--ink);
+  background: var(--paper-2);
+  padding: 14px;
+}
+.hero-photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.hero-photo-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.hero-photo-bar strong {
+  color: var(--ink);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.hero-photo-bar span {
+  color: var(--muted);
+}
+.shop-gallery {
+  padding: 72px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.gallery-mosaic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+  gap: 24px;
+  align-items: stretch;
+}
+.gallery-stack {
+  display: grid;
+  gap: 24px;
+}
+.gallery-fig {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery-fig img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.gallery-fig-main img {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+}
+.gallery-fig figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.gallery-fig figcaption b {
+  color: var(--ink);
+  font-weight: 500;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 .statement {
@@ -333,7 +419,7 @@ a:focus-visible, summary:focus-visible {
   list-style: none;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .02em;
 }
 .crate-list li {
@@ -384,7 +470,7 @@ a:focus-visible, summary:focus-visible {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--paper);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
@@ -421,7 +507,7 @@ a:focus-visible, summary:focus-visible {
   gap: 7px;
   margin-bottom: 22px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
 }
 .visit-lines a {
   width: fit-content;
@@ -449,7 +535,7 @@ a:focus-visible, summary:focus-visible {
   margin: 10px 0 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .03em;
 }
 .shop-list { margin-top: 34px; }
@@ -457,7 +543,7 @@ a:focus-visible, summary:focus-visible {
   margin-bottom: 10px;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .05em;
   text-transform: uppercase;
 }
@@ -478,7 +564,7 @@ a:focus-visible, summary:focus-visible {
 .svc-price {
   color: var(--accent);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .04em;
   text-transform: uppercase;
 }
@@ -547,7 +633,7 @@ a:focus-visible, summary:focus-visible {
 .foot-links a {
   color: var(--paper);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .05em;
   text-decoration: none;
   text-transform: uppercase;
@@ -561,7 +647,7 @@ a:focus-visible, summary:focus-visible {
   padding-top: 16px;
   color: var(--paper);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   opacity: .76;
 }
 .mobile-bar {
@@ -589,7 +675,7 @@ a:focus-visible, summary:focus-visible {
 .mobile-bar a:last-child { border-right: 0; }
 .mobile-bar span {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .07em;
   text-transform: uppercase;
   opacity: .72;
@@ -612,7 +698,8 @@ a:focus-visible, summary:focus-visible {
   .statement-grid,
   .listen-grid,
   .visit-grid,
-  .faq-grid {
+  .faq-grid,
+  .gallery-mosaic {
     grid-template-columns: minmax(0, 1fr);
   }
   .hero { padding: 40px 0 52px; }
@@ -640,7 +727,7 @@ a:focus-visible, summary:focus-visible {
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .statement, .listen, .visit { padding: 52px 8px; }
-  .preview-bar { font-size: 11px; }
+  .preview-bar { font-size: 12px; }
   .hero h1 { font-size: clamp(3.35rem, 15vw, 4.8rem); }
   .hero-lede { font-size: 16px; }
   .hero-actions .btn { flex: 1 1 100%; }
@@ -667,7 +754,8 @@ a:focus-visible, summary:focus-visible {
       <span class="brand-meta">Vape shop &middot; Leeds</span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#crates">The shelves</a>
+      <a href="#crates">At the counter</a>
+      <a href="#gallery">Inside</a>
       <a href="#visit">Visit</a>
       <a href="#faq">Good to know</a>
     </nav>
@@ -690,16 +778,18 @@ a:focus-visible, summary:focus-visible {
           <span>Vape kits, pods &amp; e-liquids</span>
         </div>
       </div>
-      <div class="hero-disc" aria-hidden="true">
-        <div class="disc">
-          <span class="disc-label">
-            <span>Motivaper</span>
-            <span>Leeds</span>
-            <span>LS12</span>
-          </span>
-        </div>
-        <p class="disc-caption">Counter advice on kits, coils and e-liquids.</p>
+      
+      
+      <div class="hero-showcase">
+        <figure class="hero-photo-frame">
+          <img src="assets/hero.jpg" width="1200" height="900" alt="Dark glass dropper bottle on a slate counter." fetchpriority="high">
+          <figcaption class="hero-photo-bar">
+            <strong>Motivaper &middot; LS12</strong>
+            <span>Counter advice on kits, coils and e-liquids.</span>
+          </figcaption>
+        </figure>
       </div>
+      
     </div>
   </section>
   
@@ -744,6 +834,30 @@ a:focus-visible, summary:focus-visible {
             <li><span>Check stock</span><span>Call ahead</span></li>
           </ul>
         </article>
+      </div>
+    </div>
+  </section>
+  <section class="shop-gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="gallery-title">Counter &amp; shelf stock</h2>
+        <p>E-liquids, nic salts, refillable pod kits and replacement coils in Armley.</p>
+      </div>
+      <div class="gallery-mosaic">
+        <figure class="gallery-fig gallery-fig-main">
+          <img src="assets/detail.jpg" width="1200" height="900" alt="Row of amber glass dropper bottles lined up on a wooden shelf." loading="lazy">
+          <figcaption><b>01 &middot; Shelf range</b><span>Town Street, Leeds</span></figcaption>
+        </figure>
+        <div class="gallery-stack">
+          <figure class="gallery-fig">
+            <img src="assets/room.jpg" width="1200" height="800" alt="Dropper bottles and containers arranged at the counter." loading="lazy">
+            <figcaption><b>02 &middot; Daily essentials</b><span>LS12 3AB</span></figcaption>
+          </figure>
+          <figure class="gallery-fig">
+            <img src="assets/hero.jpg" width="1200" height="800" alt="Dark glass dropper bottle on a slate counter." loading="lazy">
+            <figcaption><b>03 &middot; Blends &amp; shortfills</b><span>Vape kits, pods &amp; e-liquids</span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -832,7 +946,8 @@ a:focus-visible, summary:focus-visible {
     <div class="foot-top">
       <p class="foot-name">Mister Motivaper</p>
       <div class="foot-links">
-        <a href="#crates">The shelves</a>
+        <a href="#crates">At the counter</a>
+        <a href="#gallery">Inside</a>
         <a href="#visit">Visit</a>
         <a href="#faq">Good to know</a>
       </div>

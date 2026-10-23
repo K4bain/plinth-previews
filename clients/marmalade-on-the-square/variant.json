@@ -1,8 +1,8 @@
 {
   "slug": "marmalade-on-the-square",
   "lead": "marmalade-on-the-square.json",
-  "template": "trade-cafe",
-  "palette": "marmalade",
-  "preview_variant": "trade-cafe@marmalade",
-  "generated_at": "2026-10-23T02:17:12.257Z"
+  "template": "salon-broadsheet",
+  "palette": "sepia",
+  "preview_variant": "salon-broadsheet@sepia",
+  "generated_at": "2026-10-23T07:31:23.038Z"
 }

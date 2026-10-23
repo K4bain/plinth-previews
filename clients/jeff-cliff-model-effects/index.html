@@ -231,6 +231,59 @@ a:focus-visible, summary:focus-visible {
   gap: 16px;
 }
 .plate-list span:first-child { color: var(--muted); text-transform: uppercase; }
+.plate-photo {
+  margin: 18px 0 4px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.plate-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.studio-gallery {
+  padding: 72px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.gallery-mosaic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  gap: 24px;
+  align-items: stretch;
+}
+.gallery-stack { display: grid; gap: 24px; }
+.gallery-fig {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery-fig img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.gallery-fig-main img {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+}
+.gallery-fig figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.gallery-fig figcaption b { color: var(--ink); font-weight: 500; }
 .statement {
   border-bottom: 1px solid var(--line);
   padding: 88px 8px;
@@ -589,7 +642,8 @@ a:focus-visible, summary:focus-visible {
   .statement-grid,
   .studio-grid,
   .visit-grid,
-  .faq-grid {
+  .faq-grid,
+  .gallery-mosaic {
     grid-template-columns: minmax(0, 1fr);
   }
   .hero { padding: 38px 0 48px; }
@@ -650,6 +704,9 @@ a:focus-visible, summary:focus-visible {
           <span>Model making &amp; effects studio</span>
           <span>BS6</span>
         </div>
+        <div class="plate-photo">
+          <img src="assets/hero.jpg" width="1200" height="750" alt="Model maker working on a detailed architectural scale model." fetchpriority="high">
+        </div>
         <div>
           <p class="plate-title">Station Road</p>
           <p class="plate-sub">Commissioned scale models and physical effects.</p>
@@ -704,6 +761,30 @@ a:focus-visible, summary:focus-visible {
             <li><span>Visits</span><span>By appointment</span></li>
           </ul>
         </article>
+      </div>
+    </div>
+  </section>
+  <section class="studio-gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="gallery-title">At the studio bench</h2>
+        <p>Architectural scale models, bespoke props and precision physical fabrication in Bristol.</p>
+      </div>
+      <div class="gallery-mosaic">
+        <figure class="gallery-fig gallery-fig-main">
+          <img src="assets/detail.jpg" width="1200" height="900" alt="Overhead view of hands assembling a scale model with precision tools on a workbench." loading="lazy">
+          <figcaption><b>01 &middot; Bench fabrication</b><span>Station Road, Bristol</span></figcaption>
+        </figure>
+        <div class="gallery-stack">
+          <figure class="gallery-fig">
+            <img src="assets/room.jpg" width="1200" height="800" alt="Checking scale model dimensions with a steel ruler at the studio desk." loading="lazy">
+            <figcaption><b>02 &middot; Precision detailing</b><span>BS6 5EE</span></figcaption>
+          </figure>
+          <figure class="gallery-fig">
+            <img src="assets/hero.jpg" width="1200" height="800" alt="Model maker working on a detailed architectural scale model." loading="lazy">
+            <figcaption><b>03 &middot; Architectural scale</b><span>Scale models, props &amp; bespoke fabrication</span></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
