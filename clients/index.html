@@ -4,86 +4,401 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Client previews - Plinth</title>
+<title>Client previews (22) — Phone &amp; Desktop Studio · Plinth</title>
 <style>
-  :root { --paper: #f4ead7; --ink: #1b1610; --muted: #6b5d4d; --accent: #bd3d24; --line: #d7c8b1; }
+  :root {
+    --paper: #eaebe4;
+    --paper-2: #dfe1d7;
+    --ink: #171614;
+    --muted: #5c574f;
+    --accent: #b53820;
+    --line: #c8c5b8;
+  }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, sans-serif; line-height: 1.6; }
-  .wrap { width: min(1040px, 100%); margin: 0 auto; padding: 56px 24px; }
-  .bar { background: var(--ink); color: var(--paper); text-align: center; padding: 8px 16px; font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: .035em; }
-  h1 { margin: 0 0 12px; font-family: Georgia, serif; font-size: clamp(2.8rem, 7vw, 4.8rem); font-weight: 400; line-height: .95; letter-spacing: -.04em; }
-  .intro { max-width: 60ch; margin: 0 0 36px; color: var(--muted); }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, sans-serif; line-height: 1.55; }
+  .wrap { width: min(1240px, 100%); margin: 0 auto; padding: 40px 20px 72px; }
+  .bar { background: var(--ink); color: var(--paper); text-align: center; padding: 8px 16px; font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: .04em; }
+  .top-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid var(--ink); }
+  h1 { margin: 0 0 8px; font-family: Georgia, serif; font-size: clamp(2.3rem, 5.5vw, 4rem); font-weight: 400; line-height: .96; letter-spacing: -.035em; }
+  .intro { max-width: 62ch; margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* Interactive Phone & Desktop Preview Studio */
+  .studio {
+    margin-top: 28px;
+    padding: 20px;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+  }
+  .studio-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .studio-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .studio-select {
+    padding: 9px 12px;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 250px;
+  }
+  .s-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 7px 13px;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .s-btn:hover { background: var(--ink); color: var(--paper); }
+  .s-btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .s-btn-accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .s-btn-accent:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  .stage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 28px 8px 12px;
+    overflow-x: auto;
+  }
+  .phone-shell {
+    position: relative;
+    width: 414px;
+    padding: 14px 12px 18px;
+    border-radius: 38px;
+    background: #141413;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .28), inset 0 0 0 2px #343330;
+    transition: width .2s ease, border-radius .2s ease, padding .2s ease;
+  }
+  .phone-shell.vp-se { width: 399px; }
+  .phone-shell.vp-desktop {
+    width: 100%;
+    max-width: 1160px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .phone-notch {
+    width: 108px;
+    height: 20px;
+    margin: 0 auto 10px;
+    border-radius: 999px;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ui-monospace, monospace;
+    font-size: 10px;
+    color: #8c8881;
+    letter-spacing: .06em;
+  }
+  .phone-shell.vp-desktop .phone-notch {
+    width: 100%;
+    height: 24px;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+  .phone-screen {
+    width: 390px;
+    height: 844px;
+    border: 0;
+    border-radius: 26px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    transition: width .2s ease, height .2s ease;
+  }
+  .phone-shell.vp-se .phone-screen { width: 375px; height: 760px; }
+  .phone-shell.vp-desktop .phone-screen { width: 100%; height: 760px; border-radius: 6px; }
+  .studio-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px 16px;
+    margin-top: 12px;
+    font-family: ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
   .group { margin-top: 40px; }
   .group-title { margin: 0 0 12px; font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 0 28px; border-top: 1px solid var(--ink); }
-  .card { display: block; padding: 20px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
-  .card h2 { margin: 0 0 4px; font-family: Georgia, serif; font-size: 1.45rem; font-weight: 400; line-height: 1.15; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; border-top: 1px solid var(--ink); padding-top: 16px; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+  }
+  .card.is-active { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .card h3 { margin: 0 0 4px; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 400; line-height: 1.15; }
   .card p { margin: 0; color: var(--muted); font-size: 14px; }
-  .card span { display: inline-block; margin-top: 10px; border-bottom: 1px solid var(--accent); color: var(--accent); font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
-  .card:hover h2 { color: var(--accent); }
-  .foot { margin-top: 36px; color: var(--muted); font-family: ui-monospace, monospace; font-size: 11px; }
+  .card-tag { display: inline-block; margin-top: 6px; font-family: ui-monospace, monospace; font-size: 11px; color: var(--muted); }
+  .card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .card-actions button, .card-actions a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 7px 10px;
+    border: 1px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .card-actions button:hover, .card-actions a:hover { background: var(--ink); color: var(--paper); }
+  .card-actions .btn-phone { background: var(--ink); color: var(--paper); }
+  .card-actions .btn-phone:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .foot { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-family: ui-monospace, monospace; font-size: 12px; }
   .foot a { color: inherit; }
+  @media (max-width: 520px) {
+    .wrap { padding: 24px 12px 56px; }
+    .studio { padding: 12px; }
+    .phone-shell, .phone-shell.vp-se { width: 100%; border-radius: 20px; padding: 8px; }
+    .phone-screen, .phone-shell.vp-se .phone-screen { width: 100%; height: 680px; border-radius: 14px; }
+  }
 </style>
 </head>
 <body>
-<div class="bar">Internal review page &middot; 22 send-ready client previews &middot; Not indexed</div>
+<div class="bar">Internal review studio &middot; 22 send-ready client previews &middot; Phone &amp; desktop viewer</div>
 <main class="wrap">
-  <h1>Client previews (22)</h1>
-  <p class="intro">All 22 verified send-ready UK Ltd businesses with zero existing website. Each preview uses real public details only and carries noindex protection.</p>
+  <div class="top-head">
+    <div>
+      <h1>Client previews (22)</h1>
+      <p class="intro">All 22 verified send-ready UK Ltd businesses. Every preview includes trade-matched photography, opening hours, live Google Map, click-to-call dock, favicon &amp; social preview metadata.</p>
+    </div>
+  </div>
 
-  <section class="group">
-    <h2 class="group-title">Retail &amp; counter shops (4)</h2>
-    <div class="grid">
-      <a class="card" href="the-centre-for-better-grooves/"><h2>The Centre For Better Grooves</h2><p>Record shop &middot; Gloucester Road, Bristol</p><span>Open preview</span></a>
-      <a class="card" href="mister-motivaper/"><h2>Mister Motivaper</h2><p>Vape shop &middot; Town Street, Leeds</p><span>Open preview</span></a>
-      <a class="card" href="aquatica/"><h2>Aquatica</h2><p>Aquatic &amp; pet shop &middot; Brook Street, Wakefield</p><span>Open preview</span></a>
-      <a class="card" href="chapel-butchers-block/"><h2>Chapel Butchers Block</h2><p>Independent butcher &middot; High Street, Chapel-en-le-Frith</p><span>Open preview</span></a>
+  <section class="studio" id="phone-studio" aria-label="Interactive device preview">
+    <div class="studio-bar">
+      <div class="studio-controls">
+        <button type="button" class="s-btn" id="prev-btn" title="Previous site">&larr; Prev</button>
+        <select id="site-picker" class="studio-select" aria-label="Choose business to preview"></select>
+        <button type="button" class="s-btn" id="next-btn" title="Next site">Next &rarr;</button>
+      </div>
+      <div class="studio-controls">
+        <button type="button" class="s-btn" data-vp="iphone" aria-pressed="true">Phone 390&times;844</button>
+        <button type="button" class="s-btn" data-vp="se" aria-pressed="false">Compact 375&times;760</button>
+        <button type="button" class="s-btn" data-vp="desktop" aria-pressed="false">Desktop</button>
+        <a class="s-btn s-btn-accent" id="open-full" href="the-centre-for-better-grooves/" target="_blank" rel="noopener">Open full tab &nearr;</a>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="phone-shell" id="device-shell">
+        <div class="phone-notch" id="device-label">390 &times; 844 &middot; MOBILE</div>
+        <iframe class="phone-screen" id="preview-frame" src="the-centre-for-better-grooves/" title="Mobile preview frame"></iframe>
+      </div>
+    </div>
+    <div class="studio-meta">
+      <span id="current-meta">1 / 22 &middot; The Centre For Better Grooves (Record shop &middot; Bristol)</span>
+      <span>Tip: click &ldquo;Preview in phone&rdquo; on any card below to load it into the mobile frame.</span>
     </div>
   </section>
 
   <section class="group">
-    <h2 class="group-title">Workshops, garages &amp; tyres (4)</h2>
+    <h2 class="group-title">Retail &amp; counter shops (4)</h2>
     <div class="grid">
-      <a class="card" href="lawsons-autos/"><h2>Lawson&#39;s Autos</h2><p>Independent garage &middot; Beech Road, High Peak</p><span>Open preview</span></a>
-      <a class="card" href="solo-automotive/"><h2>Solo Automotive</h2><p>Independent garage &middot; Healey Road, Ossett</p><span>Open preview</span></a>
-      <a class="card" href="crofts-motorcycles/"><h2>Croft&#39;s Motorcycles</h2><p>Motorcycle workshop &middot; Healey Road, Ossett</p><span>Open preview</span></a>
-      <a class="card" href="first-stop-pitchford-tyres/"><h2>First Stop Pitchford Tyres</h2><p>Tyre &amp; fitting centre &middot; Queen Street, Ossett</p><span>Open preview</span></a>
+      <article class="card" data-slug="the-centre-for-better-grooves" data-label="The Centre For Better Grooves — Record shop, Bristol">
+        <div><h3>The Centre For Better Grooves</h3><p>Record shop &middot; Gloucester Road, Bristol</p><span class="card-tag">trade-shop@sleeve &middot; vinyl + 3 photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="the-centre-for-better-grooves">Preview in phone</button><a href="the-centre-for-better-grooves/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="chapel-butchers-block" data-label="Chapel Butchers Block — Butcher, Chapel-en-le-Frith">
+        <div><h3>Chapel Butchers Block</h3><p>Independent butcher &middot; High Street, Chapel-en-le-Frith</p><span class="card-tag">trade-shop@oxide &middot; butcher block photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="chapel-butchers-block">Preview in phone</button><a href="chapel-butchers-block/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="aquatica" data-label="Aquatica — Aquatic &amp; pet shop, Wakefield">
+        <div><h3>Aquatica</h3><p>Aquatic &amp; pet shop &middot; Brook Street, Wakefield</p><span class="card-tag">trade-shop@bottle &middot; planted aquarium photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="aquatica">Preview in phone</button><a href="aquatica/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="mister-motivaper" data-label="Mister Motivaper — Vape shop, Leeds">
+        <div><h3>Mister Motivaper</h3><p>Vape shop &middot; Town Street, Leeds</p><span class="card-tag">trade-shop@night &middot; dark counter photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="mister-motivaper">Preview in phone</button><a href="mister-motivaper/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
     </div>
   </section>
 
   <section class="group">
     <h2 class="group-title">Cafes, bakery &amp; pub (6)</h2>
     <div class="grid">
-      <a class="card" href="cafe-espresso/"><h2>Cafe Espresso</h2><p>Independent cafe &middot; The Avenue, Leeds</p><span>Open preview</span></a>
-      <a class="card" href="silver-birch-cafe/"><h2>Silver Birch Cafe</h2><p>Local cafe &middot; Buxton Road, Stockport</p><span>Open preview</span></a>
-      <a class="card" href="marmalade-on-the-square/"><h2>Marmalade On The Square</h2><p>Cafe &amp; kitchen &middot; Bull Ring, Wakefield</p><span>Open preview</span></a>
-      <a class="card" href="hikari-koffee/"><h2>Hikari Koffee</h2><p>Specialty coffee bar &middot; Albert Hill Street, Manchester</p><span>Open preview</span></a>
-      <a class="card" href="aryana-cakery/"><h2>Aryana Cakery</h2><p>Cake shop &amp; bakery &middot; Stanningley Road, Leeds</p><span>Open preview</span></a>
-      <a class="card" href="the-pug-and-pudding/"><h2>The Pug and Pudding</h2><p>Traditional pub &amp; kitchen &middot; Market Street, Chapel-en-le-Frith</p><span>Open preview</span></a>
+      <article class="card" data-slug="hikari-koffee" data-label="Hikari Koffee — Japanese coffee &amp; matcha, Manchester">
+        <div><h3>Hikari Koffee</h3><p>Specialty coffee &amp; matcha &middot; Albert Hill Street, Manchester</p><span class="card-tag">salon-ma@moss &middot; matcha &amp; pour-over photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="hikari-koffee">Preview in phone</button><a href="hikari-koffee/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="the-pug-and-pudding" data-label="The Pug and Pudding — Traditional pub &amp; kitchen, Chapel-en-le-Frith">
+        <div><h3>The Pug and Pudding</h3><p>Traditional pub &amp; kitchen &middot; Market Street, Chapel-en-le-Frith</p><span class="card-tag">salon-deco@emerald &middot; cask ale &amp; pub kitchen photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="the-pug-and-pudding">Preview in phone</button><a href="the-pug-and-pudding/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="aryana-cakery" data-label="Aryana Cakery — Cake shop &amp; bakery, Leeds">
+        <div><h3>Aryana Cakery</h3><p>Cake shop &amp; bakery &middot; Stanningley Road, Leeds</p><span class="card-tag">salon-desert@dusk &middot; celebration cake photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="aryana-cakery">Preview in phone</button><a href="aryana-cakery/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="marmalade-on-the-square" data-label="Marmalade On The Square — Cafe &amp; kitchen, Wakefield">
+        <div><h3>Marmalade On The Square</h3><p>Cafe &amp; kitchen &middot; Bull Ring, Wakefield</p><span class="card-tag">salon-broadsheet@sepia &middot; latte &amp; pastry photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="marmalade-on-the-square">Preview in phone</button><a href="marmalade-on-the-square/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="cafe-espresso" data-label="Cafe Espresso — Independent cafe, Leeds">
+        <div><h3>Cafe Espresso</h3><p>Independent cafe &middot; The Avenue, Leeds</p><span class="card-tag">trade-cafe@espresso &middot; espresso bar photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="cafe-espresso">Preview in phone</button><a href="cafe-espresso/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="silver-birch-cafe" data-label="Silver Birch Cafe — Local cafe, Stockport">
+        <div><h3>Silver Birch Cafe</h3><p>Local cafe &middot; Buxton Road, Stockport</p><span class="card-tag">trade-cafe@linen &middot; breakfast &amp; lunch photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="silver-birch-cafe">Preview in phone</button><a href="silver-birch-cafe/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
     </div>
   </section>
 
   <section class="group">
-    <h2 class="group-title">Specialist studio (1)</h2>
+    <h2 class="group-title">Workshops, garages, tyres &amp; studio (5)</h2>
     <div class="grid">
-      <a class="card" href="jeff-cliff-model-effects/"><h2>Jeff Cliff Model Effects</h2><p>Model making &amp; effects studio &middot; Station Road, Bristol</p><span>Open preview</span></a>
+      <article class="card" data-slug="crofts-motorcycles" data-label="Croft's Motorcycles — Motorcycle workshop, Ossett">
+        <div><h3>Croft&#39;s Motorcycles</h3><p>Motorcycle workshop &middot; Healey Road, Ossett</p><span class="card-tag">salon-noir@oxblood &middot; bike bench photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="crofts-motorcycles">Preview in phone</button><a href="crofts-motorcycles/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="first-stop-pitchford-tyres" data-label="First Stop Pitchford Tyres — Tyre &amp; fitting centre, Ossett">
+        <div><h3>First Stop Pitchford Tyres</h3><p>Tyre &amp; fitting centre &middot; Queen Street, Ossett</p><span class="card-tag">salon-poster@toxic &middot; wheel &amp; tyre bay photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="first-stop-pitchford-tyres">Preview in phone</button><a href="first-stop-pitchford-tyres/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="lawsons-autos" data-label="Lawson's Autos — Independent garage, High Peak">
+        <div><h3>Lawson&#39;s Autos</h3><p>Independent garage &middot; Beech Road, High Peak</p><span class="card-tag">trade-workshop@tarmac &middot; engine bay photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="lawsons-autos">Preview in phone</button><a href="lawsons-autos/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="solo-automotive" data-label="Solo Automotive — Independent garage, Ossett">
+        <div><h3>Solo Automotive</h3><p>Independent garage &middot; Healey Road, Ossett</p><span class="card-tag">trade-workshop@cobalt &middot; ramp &amp; diagnostics photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="solo-automotive">Preview in phone</button><a href="solo-automotive/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="jeff-cliff-model-effects" data-label="Jeff Cliff Model Effects — Model making studio, Bristol">
+        <div><h3>Jeff Cliff Model Effects</h3><p>Model making &amp; effects studio &middot; Station Road, Bristol</p><span class="card-tag">trade-studio@drafting &middot; scale model studio photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="jeff-cliff-model-effects">Preview in phone</button><a href="jeff-cliff-model-effects/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
     </div>
   </section>
 
   <section class="group">
-    <h2 class="group-title">Hair, barber, nails &amp; beauty (7)</h2>
+    <h2 class="group-title">Hair, barber, nails &amp; aesthetics (7)</h2>
     <div class="grid">
-      <a class="card" href="maxwells-hair-salon/"><h2>Maxwell&#39;s Hair Salon</h2><p>Hairdressers &middot; South Parade, Bristol</p><span>Open preview</span></a>
-      <a class="card" href="honley-barbers/"><h2>Honley Barbers</h2><p>Barbers &middot; Moor Bottom, Holmfirth</p><span>Open preview</span></a>
-      <a class="card" href="bella-jules-beauty/"><h2>Bella Jules Beauty, Aesthetics and Training</h2><p>Beauty &amp; aesthetics &middot; Towngate, Ossett</p><span>Open preview</span></a>
-      <a class="card" href="belle-amie/"><h2>Belle Amie Hair Salon</h2><p>Hairdressers &middot; Towngate, Ossett</p><span>Open preview</span></a>
-      <a class="card" href="hollywood-nails/"><h2>Hollywood Nails</h2><p>Nail salon &middot; Northgate, Wakefield</p><span>Open preview</span></a>
-      <a class="card" href="m1-nails-and-beauty/"><h2>M1 Nails &amp; Beauty</h2><p>Nail &amp; beauty salon &middot; Trinity Walk, Wakefield</p><span>Open preview</span></a>
-      <a class="card" href="mini-nail-bar/"><h2>Mini Nail Bar</h2><p>Nail salon &middot; Westmorland Street, Wakefield</p><span>Open preview</span></a>
+      <article class="card" data-slug="honley-barbers" data-label="Honley Barbers — Barbershop, Holmfirth">
+        <div><h3>Honley Barbers</h3><p>Barbers &middot; Moor Bottom, Holmfirth</p><span class="card-tag">salon-swiss@signal &middot; barber fade &amp; chair photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="honley-barbers">Preview in phone</button><a href="honley-barbers/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="bella-jules-beauty" data-label="Bella Jules Beauty — Beauty &amp; aesthetics, Ossett">
+        <div><h3>Bella Jules Beauty, Aesthetics and Training</h3><p>Beauty &amp; aesthetics &middot; Towngate, Ossett</p><span class="card-tag">salon-desert@clay &middot; facial skincare photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="bella-jules-beauty">Preview in phone</button><a href="bella-jules-beauty/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="hollywood-nails" data-label="Hollywood Nails — Nail salon, Wakefield">
+        <div><h3>Hollywood Nails</h3><p>Nail salon &middot; Northgate, Wakefield</p><span class="card-tag">salon-pop@tomato &middot; gel manicure &amp; nail art photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="hollywood-nails">Preview in phone</button><a href="hollywood-nails/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="m1-nails-and-beauty" data-label="M1 Nails &amp; Beauty — Nail &amp; beauty salon, Wakefield">
+        <div><h3>M1 Nails &amp; Beauty</h3><p>Nail &amp; beauty salon &middot; Trinity Walk, Wakefield</p><span class="card-tag">salon-deco@rouge &middot; manicure &amp; beauty photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="m1-nails-and-beauty">Preview in phone</button><a href="m1-nails-and-beauty/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="mini-nail-bar" data-label="Mini Nail Bar — Nail studio, Wakefield">
+        <div><h3>Mini Nail Bar</h3><p>Nail salon &middot; Westmorland Street, Wakefield</p><span class="card-tag">salon-ma@vermilion &middot; calm nail care photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="mini-nail-bar">Preview in phone</button><a href="mini-nail-bar/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="maxwells-hair-salon" data-label="Maxwell's Hair Salon — Hairdressers, Bristol">
+        <div><h3>Maxwell&#39;s Hair Salon</h3><p>Hairdressers &middot; South Parade, Bristol</p><span class="card-tag">salon-coastal@salt &middot; hair salon photos</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="maxwells-hair-salon">Preview in phone</button><a href="maxwells-hair-salon/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
+      <article class="card" data-slug="belle-amie" data-label="Belle Amie Hair Salon — Hairdressers, Ossett">
+        <div><h3>Belle Amie Hair Salon</h3><p>Hairdressers &middot; Towngate, Ossett</p><span class="card-tag">salon-broadsheet@ink &middot; 5.0&#9733; Google reviews</span></div>
+        <div class="card-actions"><button type="button" class="btn-phone" data-load="belle-amie">Preview in phone</button><a href="belle-amie/" target="_blank" rel="noopener">Open tab &nearr;</a></div>
+      </article>
     </div>
   </section>
 
   <p class="foot">Prepared by Plinth &middot; <a href="../">Template gallery</a></p>
 </main>
+<script>
+(() => {
+  const cards = Array.from(document.querySelectorAll('.card[data-slug]'));
+  const picker = document.getElementById('site-picker');
+  const frame = document.getElementById('preview-frame');
+  const openFull = document.getElementById('open-full');
+  const meta = document.getElementById('current-meta');
+  const shell = document.getElementById('device-shell');
+  const label = document.getElementById('device-label');
+  let idx = 0;
+
+  cards.forEach((c, i) => {
+    const opt = document.createElement('option');
+    opt.value = String(i);
+    opt.textContent = `${i + 1}. ${c.dataset.label}`;
+    picker.appendChild(opt);
+  });
+
+  function selectIndex(nextIdx, scrollStudio) {
+    idx = (nextIdx + cards.length) % cards.length;
+    const card = cards[idx];
+    const slug = card.dataset.slug;
+    const url = slug + '/';
+    picker.value = String(idx);
+    frame.src = url;
+    openFull.href = url;
+    meta.textContent = `${idx + 1} / ${cards.length} · ${card.dataset.label}`;
+    cards.forEach((c, i) => c.classList.toggle('is-active', i === idx));
+    if (scrollStudio) {
+      document.getElementById('phone-studio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  picker.addEventListener('change', () => selectIndex(Number(picker.value), false));
+  document.getElementById('prev-btn').addEventListener('click', () => selectIndex(idx - 1, false));
+  document.getElementById('next-btn').addEventListener('click', () => selectIndex(idx + 1, false));
+
+  document.querySelectorAll('[data-load]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetIdx = cards.findIndex((c) => c.dataset.slug === btn.dataset.load);
+      if (targetIdx > -1) selectIndex(targetIdx, true);
+    });
+  });
+
+  document.querySelectorAll('[data-vp]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-vp]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      const vp = btn.dataset.vp;
+      shell.classList.remove('vp-se', 'vp-desktop');
+      if (vp === 'se') {
+        shell.classList.add('vp-se');
+        label.textContent = '375 × 760 · COMPACT PHONE';
+      } else if (vp === 'desktop') {
+        shell.classList.add('vp-desktop');
+        label.textContent = 'DESKTOP VIEWPORT';
+      } else {
+        label.textContent = '390 × 844 · MOBILE';
+      }
+    });
+  });
+
+  selectIndex(0, false);
+})();
+</script>
 </body>
 </html>

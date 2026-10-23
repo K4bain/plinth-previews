@@ -462,6 +462,35 @@ a:focus-visible, summary:focus-visible {
 }
 .visit-lines a:hover { border-color: var(--accent); }
 .visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
+.hours-box {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.hours-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+.hours-title span { color: var(--muted); font-weight: 400; }
+.hours-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.hours-list div { display: flex; justify-content: space-between; gap: 16px; }
+.hours-list dt { color: var(--muted); }
+.hours-list dd { margin: 0; font-weight: 500; }
 .visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .map-frame {
   min-height: 420px;
@@ -633,9 +662,28 @@ a:focus-visible, summary:focus-visible {
   html { scroll-behavior: auto; }
 }
 @media (max-width: 920px) {
-  .nav, .head-phone { display: none; }
-  .head-inner { min-height: 72px; }
-  .brand { max-width: 100%; }
+  .head-inner {
+    flex-wrap: wrap;
+    min-height: 64px;
+    padding-block: 10px;
+    gap: 10px 16px;
+  }
+  .brand { max-width: calc(100% - 130px); }
+  .head-phone {
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    font-size: 12px;
+  }
+  .nav {
+    order: 3;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
   .hero-grid,
   .statement-grid,
   .feature-grid,
@@ -644,8 +692,8 @@ a:focus-visible, summary:focus-visible {
   .gallery-mosaic {
     grid-template-columns: minmax(0, 1fr);
   }
-  .hero { padding: 38px 0 48px; }
-  .statement, .feature-band, .visit { padding: 60px 8px; }
+  .hero { padding: 26px 0 40px; }
+  .statement, .feature-band, .visit { padding: 56px 8px; }
   .section-head { display: block; }
   .section-head p { margin-top: 10px; }
   .board-grid { grid-template-columns: minmax(0, 1fr); }
@@ -654,13 +702,33 @@ a:focus-visible, summary:focus-visible {
   .foot-top { display: block; }
   .foot-links { margin-top: 16px; }
   .mobile-bar { display: grid; }
-  body { padding-bottom: 58px; }
+  body { padding-bottom: 64px; }
 }
 @media (max-width: 560px) {
-  .hero h1 { font-size: clamp(2.8rem, 13vw, 4.2rem); }
-  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
+  .hero { padding: 20px 0 32px; }
+  .hero h1 { font-size: clamp(2.25rem, 10.5vw, 3.2rem); }
+  .hero-actions, .visit-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px; }
+  .hero-actions .btn, .visit-actions .btn { width: 100%; }
   .foot-bottom { display: block; }
   .foot-bottom span { display: block; margin-top: 6px; }
+}
+</style>
+<meta name="description" content="Daytime cafe at 144 Buxton Road in Stockport serving hot breakfasts, sandwiches, lunches and fresh coffee.">
+<meta name="theme-color" content="#18211b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Silver Birch Cafe - Local cafe in Stockport">
+<meta property="og:description" content="Daytime cafe at 144 Buxton Road in Stockport serving hot breakfasts, sandwiches, lunches and fresh coffee.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%2318211b%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2254%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23eaefe9%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2236%22%20font-weight%3D%22600%22%3ES%3C%2Ftext%3E%3C%2Fsvg%3E">
+<style id="plinth-phone-fit">
+.plinth-map-outer{margin-top:28px;}
+.plinth-map-wrap{padding:16px;border:1px solid rgba(128,128,128,.35);}
+.plinth-map-wrap iframe{display:block;width:100%;height:320px;border:0;filter:grayscale(.78) contrast(1.03);}
+.plinth-map-cap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin:12px 0 0;padding:12px 4px 2px;border-top:1px solid rgba(128,128,128,.28);font-size:12px;line-height:1.4;}
+.plinth-map-cap a{color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+@media (max-width:640px){
+  .hero h1,h1{overflow-wrap:break-word;word-break:normal;}
+  .plinth-map-wrap iframe{height:260px;}
 }
 </style>
 </head>
@@ -675,7 +743,8 @@ a:focus-visible, summary:focus-visible {
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#board">On the board</a>
-      <a href="#visit">Visit</a>
+      <a href="#gallery">Inside</a>
+      <a href="#visit">Hours &amp; map</a>
       <a href="#faq">Good to know</a>
     </nav>
     <a class="head-phone num" href="tel:+441612106883">+44 161 210 6883</a>
@@ -808,6 +877,14 @@ a:focus-visible, summary:focus-visible {
           <a href="mailto:thesilverbirchcafe@gmail.com?subject=Enquiry">thesilverbirchcafe@gmail.com</a>
         </div>
         <p class="visit-note">At 144 Buxton Road, Stockport SK2 6PL. Call +44 161 210 6883 to check hours or place a collection order.</p>
+        <div class="hours-box">
+          <p class="hours-title">Opening hours <span>Sample &middot; confirm first</span></p>
+          <dl class="hours-list">
+            <div><dt>Mon – Fri</dt><dd class="num">08:00 – 16:00</dd></div>
+            <div><dt>Saturday</dt><dd class="num">08:30 – 16:00</dd></div>
+            <div><dt>Sunday</dt><dd class="num">09:30 – 15:30</dd></div>
+          </dl>
+        </div>
         <div class="visit-actions">
           <a class="btn btn-primary" href="tel:+441612106883">Call us</a>
           <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Silver%20Birch%20Cafe%2C%20144%20Buxton%20Road%2C%20Stockport%20SK2%206PL" target="_blank" rel="noopener">Directions</a>
@@ -881,8 +958,9 @@ a:focus-visible, summary:focus-visible {
   </div>
 </footer>
 <div class="mobile-bar">
-  <a href="tel:+441612106883"><span>Call</span><strong class="num">+44 161 210 6883</strong></a>
-  <a href="#visit"><span>Visit</span><strong>Buxton Road</strong></a>
+  <a href="tel:+441612106883"><span>Call</span><strong class="num">01612 106883</strong></a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Silver%20Birch%20Cafe%2C%20144%20Buxton%20Road%2C%20Stockport%20SK2%206PL" target="_blank" rel="noopener"><span>Directions</span><strong>SK2 6PL</strong></a>
+  <a href="#visit"><span>Hours</span><strong>Buxton Road</strong></a>
 </div>
 </body>
 </html>
