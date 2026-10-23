@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#EAEBE2">
+<title>Belle Amie Hair Salon — Hairdressers in Ossett</title>
+<meta name="description" content="Belle Amie Hair Salon — Hairdressing on Towngate, Ossett. Cuts, colour and a proper consultation, reported without the noise.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F1ECE0'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia' font-size='19' fill='%23171512'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Libre+Franklin:wght@300;400;500;600;700&display=swap">
+<style>
+/* theme:start */
+:root {
+  --paper: #EAEBE2;
+  --cream: #F5F6EE;
+  --ink: #171512;
+  --red: #A82A1E;
+  --muted: #5F594E;
+  --rule: #C3C6B8;
+  --soft: #E0E2D6;
+}
+/* theme:end */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Libre Franklin", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+::selection { background: var(--red); color: var(--cream); }
+.wrap { width: min(1240px, 100%); margin-inline: auto; padding-inline: clamp(18px, 3.4vw, 44px); }
+.num { font-variant-numeric: tabular-nums; }
+.serif { font-family: "Libre Caslon Text", Georgia, serif; }
+
+.skip-link { position: absolute; left: -9999px; z-index: 100; padding: 12px 16px; background: var(--red); color: var(--cream); }
+.skip-link:focus { left: 12px; top: 12px; }
+
+.preview-bar {
+  padding: 7px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.masthead { padding-top: 22px; }
+.mast-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ink);
+  font-size: .66rem;
+  font-weight: 500;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.mast-name {
+  margin: 18px 0 10px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(3rem, 9vw, 7.4rem);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.035em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mast-name a { text-decoration: none; }
+.mast-sub {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 16px;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mast-sub span { color: var(--red); }
+.mast-rule { height: 5px; border-block: 1px solid var(--ink); background: var(--red); background-clip: content-box; }
+
+.nav-bar { display: flex; align-items: center; gap: 26px; min-height: 48px; border-bottom: 1px solid var(--ink); }
+.nav-bar nav { display: flex; gap: 22px; }
+.nav-bar a {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-bar nav a:hover { color: var(--red); text-decoration: underline; text-underline-offset: 4px; }
+.nav-book { margin-left: auto; }
+.nav-book a { padding: 6px 10px; background: var(--ink); color: var(--paper); }
+.nav-book a:hover { background: var(--red); }
+
+.front { display: grid; grid-template-columns: minmax(0, 2.05fr) minmax(280px, .95fr); gap: 0; padding-block: 26px 0; }
+.lead-story { padding-right: clamp(22px, 3.5vw, 44px); border-right: 1px solid var(--ink); }
+.story-tag {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 3px 7px;
+  background: var(--red);
+  color: var(--cream);
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.lead-story h1 {
+  margin: 0 0 14px;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(3rem, 6.2vw, 5.7rem);
+  font-weight: 400;
+  line-height: .94;
+  letter-spacing: -.035em;
+}
+.lead-story h1 em { font-style: italic; color: var(--red); }
+.standfirst { max-width: 54ch; margin: 0 0 14px; font-family: "Libre Caslon Text", Georgia, serif; font-size: 1.03rem; line-height: 1.48; }
+.byline { margin: 0 0 20px; padding-block: 7px; border-block: 1px solid var(--rule); font-size: .6rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.byline span { color: var(--muted); }
+.lead-figure { margin: 0; }
+.lead-figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.06); }
+.lead-figure figcaption { margin-top: 8px; font-size: .66rem; line-height: 1.4; color: var(--muted); }
+.lead-figure figcaption b { color: var(--ink); font-weight: 600; }
+.lead-body { columns: 2; column-gap: 28px; margin-top: 20px; font-family: "Libre Caslon Text", Georgia, serif; font-size: .88rem; line-height: 1.58; }
+.lead-body p { margin: 0 0 12px; }
+.lead-body p:first-child::first-letter {
+  float: left;
+  padding: 3px 7px 0 0;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 3.1rem;
+  line-height: .82;
+  color: var(--red);
+}
+
+.rail { padding-left: clamp(20px, 3vw, 36px); }
+.rail-box { padding: 16px; border: 1px solid var(--ink); background: var(--cream); }
+.rail-box h2 { margin: 0 0 4px; font-family: "Libre Caslon Display", Georgia, serif; font-size: 1.5rem; font-weight: 400; line-height: 1; }
+.rail-box .small { margin: 0 0 12px; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--red); }
+.rail-box p { margin: 0 0 12px; font-size: .78rem; }
+.rail-box .btn {
+  display: block;
+  padding: 9px 12px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.rail-box .btn:hover { background: var(--red); }
+.rail-hours { width: 100%; margin-top: 10px; border-collapse: collapse; font-size: .7rem; }
+.rail-hours th, .rail-hours td { padding: 5px 0; border-bottom: 1px dotted var(--rule); text-align: left; font-weight: 400; }
+.rail-hours td { text-align: right; }
+.rail-note { margin: 8px 0 0; font-size: .58rem; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.rail-fig { margin: 18px 0 0; border-top: 3px double var(--ink); padding-top: 14px; }
+.rail-fig img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; filter: sepia(.3) grayscale(.4); }
+.rail-fig figcaption { margin-top: 7px; font-size: .64rem; color: var(--muted); line-height: 1.4; }
+.rail-quote { margin: 20px 0 0; padding-top: 14px; border-top: 1px solid var(--ink); }
+.rail-quote blockquote { margin: 0; font-family: "Libre Caslon Display", Georgia, serif; font-size: 1.25rem; font-style: italic; line-height: 1.2; }
+.rail-quote cite { display: block; margin-top: 8px; font-family: "Libre Franklin", sans-serif; font-size: .58rem; font-style: normal; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+.department { margin-top: clamp(34px, 5vw, 56px); border-top: 3px double var(--ink); }
+.dept-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 10px 0 8px; border-bottom: 1px solid var(--ink); }
+.dept-head h2 { margin: 0; font-family: "Libre Caslon Display", Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.35rem); font-weight: 400; letter-spacing: -.01em; }
+.dept-head p { margin: 0; font-size: .6rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.dept-note { max-width: 62ch; margin: 12px 0 0; font-family: "Libre Caslon Text", Georgia, serif; font-size: .82rem; }
+
+.classifieds { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(30px, 5vw, 64px); margin-top: 6px; }
+.ad { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); }
+.ad-head { display: flex; align-items: baseline; gap: 8px; }
+.ad h3 { margin: 0; font-family: "Libre Caslon Display", Georgia, serif; font-size: 1.35rem; font-weight: 400; }
+.leader { flex: 1; height: 1px; border-bottom: 1px dotted var(--muted); transform: translateY(-4px); }
+.price { font-size: .68rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--red); white-space: nowrap; }
+.ad p { margin: 4px 0 0; font-size: .74rem; color: var(--muted); }
+
+.feature { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(26px, 4vw, 54px); align-items: start; margin-top: 24px; }
+.feature h2 { margin: 0 0 16px; font-family: "Libre Caslon Display", Georgia, serif; font-size: clamp(2.3rem, 4.7vw, 3.9rem); font-weight: 400; line-height: .97; letter-spacing: -.03em; }
+.feature p { font-family: "Libre Caslon Text", Georgia, serif; font-size: .9rem; line-height: 1.6; }
+.feature p:first-of-type::first-letter {
+  float: left;
+  padding: 4px 8px 0 0;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 3.4rem;
+  line-height: .8;
+  color: var(--red);
+}
+.feature blockquote {
+  margin: 22px 0;
+  padding: 14px 0;
+  border-block: 1px solid var(--ink);
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: 1.55rem;
+  font-style: italic;
+  line-height: 1.15;
+}
+.feature blockquote cite { display: block; margin-top: 8px; font-family: "Libre Franklin", sans-serif; font-size: .6rem; font-style: normal; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.feature-fig { margin: 0; }
+.feature-fig img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.feature-fig figcaption { margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--rule); font-size: .64rem; color: var(--muted); }
+
+.letters { background: var(--cream); border-block: 1px solid var(--ink); }
+.letters-inner { padding-block: clamp(34px, 5vw, 52px); }
+.letters-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px; padding-bottom: 12px; border-bottom: 3px double var(--ink); }
+.letters-head h2 { margin: 0; font-family: "Libre Caslon Display", Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; }
+.letters-score { text-align: right; }
+.letters-score b { display: block; font-family: "Libre Caslon Display", Georgia, serif; font-size: 2.6rem; font-weight: 400; line-height: .85; }
+.letters-score span { font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.letters-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 18px; }
+.letter { padding: 0 clamp(16px, 2.4vw, 28px); border-left: 1px solid var(--rule); }
+.letter:first-child { padding-left: 0; border-left: 0; }
+.letter p { margin: 0 0 12px; font-family: "Libre Caslon Text", Georgia, serif; font-size: .84rem; font-style: italic; line-height: 1.55; }
+.letter cite { font-size: .6rem; font-style: normal; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.letter cite span { color: var(--muted); font-weight: 400; }
+.letters-note { margin: 20px 0 0; font-size: .6rem; color: var(--muted); letter-spacing: .04em; }
+
+.notice { display: grid; grid-template-columns: 1.05fr .95fr; gap: 0; margin-top: clamp(34px, 5vw, 56px); border: 1px solid var(--ink); background: var(--cream); }
+.notice-copy { padding: clamp(22px, 3.4vw, 40px); }
+.notice h2 { margin: 0 0 6px; font-family: "Libre Caslon Display", Georgia, serif; font-size: clamp(2.2rem, 4.6vw, 3.7rem); font-weight: 400; line-height: .92; }
+.notice .notice-sub { margin: 0 0 18px; font-size: .62rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+.notice address { margin: 0 0 12px; font-family: "Libre Caslon Text", Georgia, serif; font-size: .92rem; font-style: normal; line-height: 1.55; }
+.contact-line { margin: 0 0 16px; font-size: .76rem; overflow-wrap: anywhere; }
+.contact-line a { font-weight: 600; text-underline-offset: 3px; }
+.notice-hours { width: 100%; max-width: 360px; border-collapse: collapse; font-size: .74rem; }
+.notice-hours th, .notice-hours td { padding: 6px 0; border-bottom: 1px dotted var(--rule); text-align: left; font-weight: 400; }
+.notice-hours td { text-align: right; }
+.sample-chip { display: inline-block; margin: 10px 0 0; padding: 3px 6px; border: 1px solid var(--ink); font-size: .56rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
+.notice-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:hover { background: var(--red); border-color: var(--red); }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--paper); }
+.notice-fig { margin: 0; border-left: 1px solid var(--ink); }
+.notice-fig img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; filter: grayscale(1) contrast(1.08); }
+.notice-fig figcaption { padding: 8px 12px; border-top: 1px solid var(--ink); font-size: .6rem; color: var(--muted); }
+
+.questions { margin-top: clamp(34px, 5vw, 56px); }
+.questions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(34px, 5vw, 70px); }
+.q { padding: 14px 0 16px; border-bottom: 1px solid var(--rule); }
+.q h3 { margin: 0 0 5px; font-family: "Libre Caslon Display", Georgia, serif; font-size: 1.18rem; font-weight: 400; }
+.q p { margin: 0; font-size: .76rem; color: var(--muted); }
+
+.site-foot { margin-top: clamp(36px, 5vw, 56px); padding: 28px 0 22px; background: var(--ink); color: var(--paper); }
+.foot-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid #4A463E; }
+.foot-wordmark { margin: 0; font-family: "Libre Caslon Display", Georgia, serif; font-size: clamp(1.8rem, 3.6vw, 3rem); font-weight: 400; line-height: .9; text-transform: uppercase; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .64rem; letter-spacing: .08em; text-transform: uppercase; }
+.foot-links a { text-decoration: none; }
+.foot-links a:hover { color: #E7A69D; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; padding-top: 14px; }
+.foot-bottom p { margin: 0; max-width: 58ch; font-size: .58rem; line-height: 1.5; color: #B6AFA2; }
+.mobile-bar { display: none; }
+
+@media (max-width: 1020px) {
+  .front { grid-template-columns: 1fr; }
+  .lead-story { padding-right: 0; border-right: 0; }
+  .rail { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 26px; padding-left: 0; border-top: 1px solid var(--ink); padding-top: 22px; }
+  .rail-fig, .rail-quote { margin-top: 0; }
+  .feature { grid-template-columns: 1fr; }
+  .feature-fig { order: -1; }
+  .feature-fig img { aspect-ratio: 16 / 9; }
+  .notice { grid-template-columns: 1fr; }
+  .notice-fig { border-left: 0; border-top: 1px solid var(--ink); }
+  .notice-fig img { min-height: 240px; max-height: 360px; }
+}
+@media (max-width: 720px) {
+  .mast-meta { font-size: .56rem; }
+  .mast-meta span:last-child { display: none; }
+  .mast-name { font-size: clamp(2.5rem, 13vw, 4.2rem); overflow-wrap: anywhere; }
+  .mast-sub { flex-wrap: wrap; gap: 6px 10px; font-size: .56rem; }
+  .nav-bar { min-height: 44px; }
+  .nav-bar nav { display: none; }
+  .nav-book { margin-left: 0; }
+  .nav-bar::before { content: "Menu inside →"; font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .lead-body { columns: 1; }
+  .classifieds { grid-template-columns: 1fr; }
+  .letters-grid { grid-template-columns: 1fr; }
+  .letter { padding: 16px 0; border-left: 0; border-top: 1px solid var(--rule); }
+  .letter:first-child { border-top: 0; padding-top: 0; }
+  .rail { grid-template-columns: 1fr; }
+  .questions-grid { grid-template-columns: 1fr; }
+  .notice-copy { padding: 22px 18px; }
+  .foot-top { align-items: start; }
+  body { padding-bottom: 52px; }
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); border-top: 2px solid var(--red); }
+  .mobile-bar a { padding: 14px 10px; color: var(--paper); text-align: center; font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+  .mobile-bar a:only-child { grid-column: 1 / -1; }
+  .mobile-call { border-right: 1px solid #4A463E; }
+  .mobile-book { background: var(--red); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+/* legibility pass */
+.preview-bar { font-size: 12px; letter-spacing: .02em; text-transform: none; }
+.mast-meta, .mast-sub, .story-tag, .byline, .rail-note, .sample-chip, .notice-sub { font-size: 12px; }
+.nav-bar a, .rail-box .btn, .btn, .price, .foot-links, .mobile-bar a { font-size: 12.5px; }
+.rail-box p, .notice-hours, .contact-line, .q p, .ad p { font-size: 13px; }
+.lead-figure figcaption, .rail-fig figcaption, .feature-fig figcaption, .notice-fig figcaption, .letter cite, .letters-score span, .feature blockquote cite, .rail-quote cite, .dept-head p { font-size: 12px; }
+.rail-hours { font-size: 12.5px; }
+.foot-bottom p { font-size: 12px; }
+p, span, a, div, cite, figcaption, small, address, li, td, th { text-transform: none; }
+.nav-bar a, .rail-box .btn, .btn, .price, .foot-links, .foot-links a, .mobile-bar a, .mast-name, .foot-wordmark, .dept-head p, .rail-box .small, .feature blockquote cite, .rail-quote cite { text-transform: uppercase; }
+.letters-note, .notice .notice-sub { font-size: 12px; }
+.mast-meta, .mast-sub, .byline, .rail-note, .sample-chip, .notice-sub, .notice .notice-sub, .letter cite, .letters-score span, .lead-figure figcaption, .rail-fig figcaption, .feature-fig figcaption, .notice-fig figcaption, .foot-bottom p { letter-spacing: .02em; }
+.mast-meta, .mast-sub, .byline, .rail-note, .sample-chip, .notice-sub, .notice .notice-sub, .letter cite, .letters-score span, .lead-figure figcaption, .rail-fig figcaption, .feature-fig figcaption, .notice-fig figcaption, .foot-bottom p, .lead-body p, .feature p, .letter p, .q p, .rail-box p, .notice address, .contact-line, .ad p, .letters-note { text-transform: none; }
+.rail-quote blockquote, .feature blockquote { line-height: 1.4; }
+.nav-bar { padding-top: 8px; padding-bottom: 8px; }
+.letters { padding: 10px; }
+.letter { padding-top: 10px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; }
+.letter:first-child { padding-left: 12px; padding-top: 12px; }
+.story-tag, .skip-link { color: #FFFFFF; }
+.mobile-bar .mobile-book { color: #FFFFFF; }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Belle Amie Hair Salon","telephone":"+447747706506","email":"emmamartgreer@hotmail.co.uk","address":{"@type":"PostalAddress","streetAddress":"39 Towngate","addressLocality":"Ossett","postalCode":"WF5 9BL","addressCountry":"GB"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth · Not yet live</div>
+
+<header class="masthead wrap">
+  <div class="mast-meta">
+    <span>Independent salon · Ossett</span>
+    <span>Sample edition · Towngate</span>
+  </div>
+  <p class="mast-name"><a href="#top">Belle Amie Hair Salon</a></p>
+  <p class="mast-sub"><span>Hairdressing</span> · Cuts · Colour · Care</p>
+  <div class="mast-rule"></div>
+  <div class="nav-bar">
+    <nav aria-label="Primary">
+      <a href="#menu">The menu</a>
+      <a href="#craft">The craft</a>
+      <a href="#letters">Letters</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-book"><a class="num" href="tel:+447747706506">Book · 07747 706506</a></div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap front" id="top">
+    <article class="lead-story">
+      <h1>A good cut is not a <em>costume.</em></h1>
+      <p class="standfirst">It is the shape your hair falls into on a Tuesday morning, six weeks after the appointment, when nobody is watching.</p>
+      <p class="byline">Words: the salon <span>·</span> Photograph: Pexels <span>·</span> Towngate, Ossett</p>
+      <figure class="lead-figure">
+        <img src="assets/lead.jpg" width="1200" height="1500" alt="A stylist sectioning and cutting a client's hair." fetchpriority="high">
+        <figcaption><b>Above:</b> section by section, the cut is checked against the head in front of us — not a reference photo. Sample image.</figcaption>
+      </figure>
+      <div class="lead-body">
+        <p>Most bad haircuts start before the scissors. They start with a picture, a rushed answer, or a stylist who has already decided what the hair should do.</p>
+        <p>This chair works the other way around. Density, growth pattern and the amount of time you will actually spend styling decide the shape. Then the cut is built to hold it.</p>
+        <p>Colour gets the same treatment: a plan for the roots, the fade and the next appointment, rather than a shade that only works under salon lights.</p>
+      </div>
+    </article>
+
+    <aside class="rail" aria-label="Noticeboard">
+      <div class="rail-box">
+        <h2>The noticeboard</h2>
+        <p class="small">Appointments · Ossett</p>
+        <p>Contact the salon to check availability. The diary is confirmed directly, not by a form that disappears into the internet.</p>
+        <a class="btn num" href="tel:+447747706506">07747 706506</a>
+        <table class="rail-hours">
+          <caption style="position:absolute;left:-9999px">Sample opening hours</caption>
+          <tbody>
+            <tr><th scope="row">Tue – Fri</th><td>9:30–18:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>9:00–17:00</td></tr>
+            <tr><th scope="row">Sun – Mon</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <p class="rail-note">Sample hours — confirmed at booking.</p>
+      </div>
+      <figure class="rail-fig">
+        <img src="assets/floor.jpg" width="1200" height="800" alt="A quiet salon interior with chairs and mirrors." loading="lazy">
+        <figcaption>The room: one client at a time, no queue breathing down your neck.</figcaption>
+      </figure>
+      <div class="rail-quote">
+        <blockquote>“The best review we can get is a client who does not need to explain what they want next time.”</blockquote>
+        <cite>The salon · house note</cite>
+      </div>
+    </aside>
+  </div>
+
+  <section class="wrap department" id="menu">
+    <div class="dept-head">
+      <h2>The menu</h2>
+      <p>Prices on application</p>
+    </div>
+    <p class="dept-note">Starting points, not a quotation. Length, density and previous colour decide the final price, and the salon confirms it before the first section is cut.</p>
+    <ul class="svc classifieds">
+      <li class="ad"><div class="ad-head"><h3>Cuts &amp; styling</h3><span class="leader" aria-hidden="true"></span><span class="price">On request</span></div><p>Cut, wash and finish, shaped around your routine.</p></li>
+      <li class="ad"><div class="ad-head"><h3>Colour</h3><span class="leader" aria-hidden="true"></span><span class="price">On request</span></div><p>Full colour, highlights and toning, quoted in person.</p></li>
+      <li class="ad"><div class="ad-head"><h3>Blow-dries</h3><span class="leader" aria-hidden="true"></span><span class="price">On request</span></div><p>Everyday finishes and occasion hair.</p></li>
+      <li class="ad"><div class="ad-head"><h3>Treatments</h3><span class="leader" aria-hidden="true"></span><span class="price">On request</span></div><p>Conditioning and repair for hair that has been through it.</p></li>
+    </ul>
+  </section>
+
+  <section class="wrap department" id="craft">
+    <div class="dept-head">
+      <h2>The craft</h2>
+      <p>Report · two-minute read</p>
+    </div>
+    <div class="feature">
+      <div>
+        <h2>Built to survive the school run.</h2>
+        <p>A haircut that only works when a stylist blows it out is a performance, not a service. The useful version is quieter: a shape that keeps its line when it dries on its own, and grows out without a six-week emergency.</p>
+        <p>That means cutting for the real head in the chair. Fine hair gets weight removed where it collapses. Curls get shaped dry, where the spring is visible. A grown-out fringe gets a plan rather than a rescue.</p>
+        <blockquote>“If it will not work at home, it is not the right cut.”<cite>The only rule that matters</cite></blockquote>
+        <p>Colour follows the same logic. Roots, tone and shine are mapped over the next few appointments, so the colour fades into something intentional instead of something tired.</p>
+      </div>
+      <figure class="feature-fig">
+        <img src="assets/tools.jpg" width="1200" height="1200" alt="A row of hairdressing scissors and combs." loading="lazy">
+        <figcaption>Tools are only as good as the consultation. Sample image from Pexels.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  
+  <section class="letters trust" id="letters">
+    <div class="wrap letters-inner">
+      <div class="letters-head">
+        <h2>Letters from the chair</h2>
+        <p class="letters-score"><b>5.0</b><span>Google · <span class="num">12</span> reviews</span></p>
+      </div>
+      <div class="letters-grid">
+        <div class="letter"><p>“I had a last minute bouncy blowdry by Lorna and it looked fabulous, and lasted several days too!”</p><cite>Olivia B. <span>· Google</span></cite></div>
+        <div class="letter"><p>“Very friendly, fab hair products, great hairdresser, easily accessible, parking nearby, what&#39;s not to like”</p><cite>Valerie D. <span>· Google</span></cite></div>
+        <div class="letter"><p>“Brilliant hairdressers never go anywhere else”</p><cite>Lorraine H. <span>· Google</span></cite></div>
+      </div>
+      <p class="letters-note">Published reviews, reproduced as written. Sample preview.</p>
+    </div>
+  </section>
+  
+
+  <section class="wrap" id="visit">
+    <div class="notice">
+      <div class="notice-copy">
+        <h2>Visit the salon.</h2>
+        <p class="notice-sub">Notices · appointments · directions</p>
+        <address>Belle Amie Hair Salon<br>39 Towngate<br>Ossett WF5 9BL</address>
+        <p class="contact-line"><a class="num" href="tel:+447747706506">07747 706506</a> · <a href="mailto:emmamartgreer@hotmail.co.uk">emmamartgreer@hotmail.co.uk</a></p>
+        <table class="notice-hours">
+          <caption style="position:absolute;left:-9999px">Sample opening hours</caption>
+          <tbody>
+            <tr><th scope="row">Tue – Fri</th><td>9:30–18:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>9:00–17:00</td></tr>
+            <tr><th scope="row">Sun – Mon</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <span class="sample-chip">Sample hours — salon to confirm</span>
+        <div class="notice-actions">
+          <a class="btn" href="tel:+447747706506">Call to book</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <figure class="notice-fig">
+        <img src="assets/chair.jpg" width="1200" height="1200" alt="A styling chair and mirror in the salon." loading="lazy">
+        <figcaption>Inside the salon. Sample image from Pexels.</figcaption>
+      </figure>
+    </div>
+
+    <div class="questions">
+      <div class="dept-head">
+        <h2>Questions, answered</h2>
+        <p>Desk notes</p>
+      </div>
+      <div class="questions-grid">
+        <div class="q"><h3>How do I book?</h3><p>Contact the salon directly. That is the fastest way to check the diary and confirm a time.</p></div>
+        <div class="q"><h3>Can I bring a photo?</h3><p>Yes — but be ready to talk about what you like in it. Shape, length or colour is more useful than a whole look.</p></div>
+        <div class="q"><h3>Do you take walk-ins?</h3><p>When the diary allows. Booking ahead is the safe way to get the chair and time you want.</p></div>
+        <div class="q"><h3>What is the cancellation policy?</h3><p>Ask when you book. The salon confirms its own notice period and any deposit.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="foot-wordmark">Belle Amie Hair Salon</p>
+      <div class="foot-links">
+        <a href="#menu">Menu</a>
+        <a href="#craft">Craft</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Belle%20Amie%20Hair%20Salon%2C%2039%20Towngate%2C%20Ossett%20WF5%209BL" target="_blank" rel="noopener">Directions</a>
+        <a href="mailto:emmamartgreer@hotmail.co.uk">Email</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Unofficial preview prepared by Plinth. Not yet live. Belle Amie Hair Salon · Hairdressing · Ossett.</p>
+      <p>Photography from Pexels under the free license: 3992872, 705255, 1319460, 3993309.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="mobile-call" href="tel:+447747706506">Call</a>
+  <a class="mobile-book" href="#visit">Book</a>
+</div>
+</body>
+</html>

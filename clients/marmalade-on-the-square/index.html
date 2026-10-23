@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Marmalade On The Square - Cafe &amp; kitchen in Wakefield</title>
+<meta name="description" content="Marmalade On The Square - Coffee, lunches &amp; homemade bakes on Bull Ring, Wakefield. Address, phone and directions.">
+<meta property="og:title" content="Marmalade On The Square - Coffee, lunches &amp; homemade bakes in Wakefield">
+<meta property="og:description" content="Marmalade On The Square - Coffee, lunches &amp; homemade bakes on Bull Ring, Wakefield. Address, phone and directions.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#f3ebe0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23201712'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%239c3d22'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23f3ebe0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Marmalade On The Square","description":"Coffee, lunches &amp; homemade bakes in Wakefield.","telephone":"+441924200203","email":"hello@marmaladeonthesquare.co.uk","address":{"@type":"PostalAddress","streetAddress":"21 Bull Ring","addressLocality":"Wakefield","postalCode":"WF1 1HB","addressCountry":"GB"}}
+</script>
+<style>
+/* theme:start */
+:root {
+  --paper: #ecd9c4;
+  --paper-2: #dfc7ad;
+  --ink: #221810;
+  --muted: #5c4939;
+  --accent: #9e3d16;
+  --accent-ink: #fff8ee;
+  --line: #cbb296;
+}
+/* theme:end */
+:root {
+  --display: "Newsreader", Georgia, serif;
+  --text: "Archivo", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --accent-bright: #e8956b;
+  --max: 1220px;
+  --pad: clamp(20px, 4.5vw, 56px);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::selection { background: var(--accent); color: var(--accent-ink); }
+a { color: inherit; }
+h1, h2, h3, p { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+.num { font-variant-numeric: tabular-nums; }
+.wrap { width: min(var(--max), 100%); margin-inline: auto; padding-inline: var(--pad); }
+.skip {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+}
+.skip:focus { transform: translateY(0); }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.preview-bar {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: 8px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+.site-head { border-bottom: 1px solid var(--line); }
+.head-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 84px;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.05;
+  max-width: 58%;
+}
+.brand-name {
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 2.1vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.brand-meta {
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+.nav { display: flex; gap: clamp(18px, 2.5vw, 32px); margin-left: auto; }
+.nav a {
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a:hover { border-color: var(--accent); }
+.head-phone {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hero {
+  border-bottom: 1px solid var(--line);
+  padding: clamp(48px, 7vw, 92px) 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(28px, 4.5vw, 72px);
+  align-items: center;
+}
+.hero h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(3.3rem, 7.6vw, 6.8rem);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.04em;
+}
+.hero h1 span { display: block; }
+.hero h1 em { color: var(--accent); font-style: italic; }
+.hero-lede {
+  max-width: 42ch;
+  margin: 26px 0 30px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.55;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn-ghost:hover { background: var(--paper-2); }
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 38px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.menu-card {
+  padding: clamp(26px, 3.6vw, 42px);
+  border: 1px solid var(--ink);
+  background: var(--paper-2);
+}
+.menu-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.menu-card-title {
+  margin: 22px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.menu-card-sub {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.menu-card-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.menu-card-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.menu-card-list span:first-child { color: var(--muted); text-transform: uppercase; }
+.statement {
+  border-bottom: 1px solid var(--line);
+  padding: 88px 8px;
+}
+.statement-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: end;
+  padding-block: 14px;
+}
+.statement h2 {
+  max-width: 17ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.3rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.statement-copy {
+  max-width: 39ch;
+  margin: 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--ink);
+  color: var(--muted);
+  font-size: 16px;
+}
+.board { padding-block: clamp(56px, 7.5vw, 98px); }
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: clamp(28px, 4vw, 46px);
+}
+.section-head h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+.section-head p {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+}
+.board-item {
+  padding: 28px 26px 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.board-item:first-child { padding-left: 0; }
+.board-item:last-child { padding-right: 0; border-right: 0; }
+.board-mark { width: 100%; height: 8px; margin-bottom: 26px; background: var(--accent); }
+.board-item:nth-child(2) .board-mark { background: var(--muted); }
+.board-item:nth-child(3) .board-mark { background: var(--ink); }
+.board-item h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: clamp(1.85rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+.board-item p { max-width: 31ch; color: var(--muted); font-size: 16px; }
+.board-list {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.board-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.feature-band {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 92px 8px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: end;
+  padding-block: 14px;
+}
+.feature-band h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.8rem, 6.4vw, 5.8rem);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.045em;
+}
+.feature-band h2 em { color: var(--accent-bright); font-style: italic; }
+.feature-side { max-width: 38ch; }
+.feature-side p {
+  color: var(--paper);
+  opacity: .82;
+  font-size: 16px;
+}
+.feature-side p.feature-mark {
+  margin: 26px 0 22px;
+  color: var(--accent-bright);
+  font-family: var(--display);
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
+  line-height: .84;
+  letter-spacing: -.04em;
+  opacity: 1;
+}
+.feature-link {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.feature-link:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
+.visit {
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  padding: 92px 8px;
+}
+.visit-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: start;
+  padding-block: 14px;
+}
+.visit h2 {
+  margin: 0 0 22px;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  font-weight: 400;
+  line-height: .94;
+  letter-spacing: -.04em;
+}
+.visit address {
+  margin-bottom: 18px;
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-style: normal;
+  line-height: 1.15;
+}
+.visit-lines {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.visit-lines a {
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.visit-lines a:hover { border-color: var(--accent); }
+.visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.map-frame {
+  min-height: 420px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  filter: grayscale(.82) contrast(1.02);
+}
+.map-caption {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.shop-list { margin-top: 32px; }
+.shop-list-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+}
+.svc li { padding: 13px 0; border-bottom: 1px solid var(--line); }
+.svc-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.svc h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.25; }
+.svc-price {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc p { margin: 4px 0 0; color: var(--muted); font-size: 16px; }
+.faq { padding-block: clamp(56px, 7.5vw, 96px); }
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: start;
+}
+.faq h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+.faq-list details:first-child { border-top: 1px solid var(--ink); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1;
+  content: "+";
+}
+.faq details[open] summary::after { content: "-"; }
+.faq details p {
+  max-width: 62ch;
+  padding: 0 0 20px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.site-foot { background: var(--ink); color: var(--paper); padding-block: 32px; }
+.foot-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+.foot-name {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.03em;
+}
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.foot-links a {
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.foot-links a:hover { color: var(--accent-bright); }
+.foot-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  padding-top: 16px;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  opacity: .78;
+}
+.mobile-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  background: var(--ink);
+  color: var(--paper);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.mobile-bar a {
+  display: flex;
+  min-height: 58px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-right: 1px solid rgba(255, 255, 255, .18);
+  text-decoration: none;
+}
+.mobile-bar a:last-child { border-right: 0; }
+.mobile-bar span {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  opacity: .76;
+}
+.mobile-bar strong {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+@media (max-width: 920px) {
+  .nav, .head-phone { display: none; }
+  .head-inner { min-height: 72px; }
+  .brand { max-width: 100%; }
+  .hero-grid,
+  .statement-grid,
+  .feature-grid,
+  .visit-grid,
+  .faq-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero { padding: 38px 0 48px; }
+  .statement, .feature-band, .visit { padding: 60px 8px; }
+  .section-head { display: block; }
+  .section-head p { margin-top: 10px; }
+  .board-grid { grid-template-columns: minmax(0, 1fr); }
+  .board-item { padding: 22px 0 26px; border-right: 0; }
+  .map-frame, .map-frame iframe { min-height: 320px; }
+  .foot-top { display: block; }
+  .foot-links { margin-top: 16px; }
+  .mobile-bar { display: grid; }
+  body { padding-bottom: 58px; }
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: clamp(2.8rem, 13vw, 4.2rem); }
+  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
+  .foot-bottom { display: block; }
+  .foot-bottom span { display: block; margin-top: 6px; }
+}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth &middot; Not yet live</div>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">Marmalade On The Square</span>
+      <span class="brand-meta">Cafe &amp; kitchen &middot; Wakefield</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#board">On the board</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">Good to know</a>
+    </nav>
+    <a class="head-phone num" href="tel:+441924200203">+44 1924 200203</a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span>Marmalade</span><span>on the <em>Square.</em></span></h1>
+        <p class="hero-lede">Independent cafe at 21 Bull Ring in the centre of Wakefield for coffee, lunches and counter cakes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+441924200203">Call us</a>
+          <a class="btn btn-ghost" href="#visit">Find us</a>
+        </div>
+        <div class="hero-meta">
+          <span>21 Bull Ring, Wakefield</span>
+          <span>WF1 1HB</span>
+          <span>Coffee, lunches &amp; homemade bakes</span>
+        </div>
+      </div>
+      <aside class="menu-card" aria-label="House board">
+        <div class="menu-card-head">
+          <span>Cafe &amp; kitchen</span>
+          <span>WF1</span>
+        </div>
+        <p class="menu-card-title">21 Bull Ring</p>
+        <p class="menu-card-sub">Coffee, daytime plates and bakes in central Wakefield.</p>
+        <ul class="menu-card-list">
+          <li><span>Street</span><span>Bull Ring</span></li>
+          <li><span>Town</span><span>Wakefield WF1 1HB</span></li>
+          <li><span>Service</span><span>Coffee, lunches &amp; homemade bakes</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  
+  <section class="statement" aria-labelledby="statement-title">
+    <div class="wrap statement-grid">
+      <h2 id="statement-title">Right on the Bull Ring for a proper coffee and a break from town.</h2>
+      <p class="statement-copy">Whether you are meeting a friend in Wakefield or stopping between errands, the counter is set for breakfast, lunch and cake.</p>
+    </div>
+  </section>
+  
+  <section class="board" id="board" aria-labelledby="board-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="board-title">On the menu</h2>
+        <p>Coffee, daytime lunches and counter bakes at 21 Bull Ring.</p>
+      </div>
+      <div class="board-grid">
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>Coffee &amp; loose tea</h3>
+          <p>Barista espresso drinks, filter coffee, teas and iced drinks made to sit in or take out.</p>
+          <ul class="board-list">
+            <li><span>Counter</span><span>Sit in &amp; takeaway</span></li>
+            <li><span>Location</span><span>21 Bull Ring</span></li>
+          </ul>
+        </article>
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>Daytime kitchen</h3>
+          <p>Light breakfasts, sandwiches, toasties, soups and seasonal lunch plates.</p>
+          <ul class="board-list">
+            <li><span>Prepared</span><span>Fresh daily</span></li>
+            <li><span>Tables</span><span>Walk-in</span></li>
+          </ul>
+        </article>
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>Cakes &amp; scones</h3>
+          <p>Counter cakes, traybakes and afternoon treats served through the day.</p>
+          <ul class="board-list">
+            <li><span>Display</span><span>At the counter</span></li>
+            <li><span>Town</span><span>Wakefield WF1</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="feature-band" aria-labelledby="feature-title">
+    <div class="wrap feature-grid">
+      <h2 id="feature-title">Meet<br><em>on the</em><br>Bull Ring.</h2>
+      <div class="feature-side">
+        <p>Find us at 21 Bull Ring in Wakefield. Call ahead if you are checking opening hours or group space.</p>
+        <p class="feature-mark" aria-hidden="true">WF1</p>
+        <a class="feature-link" href="#visit">See location &amp; map</a>
+      </div>
+    </div>
+  </section>
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-contact">
+        <h2 id="visit-title">Visit us in town.</h2>
+        <address>
+          <span>21 Bull Ring</span><br>
+          <span>Wakefield</span><br>
+          <span>WF1 1HB</span>
+        </address>
+        <div class="visit-lines">
+          <a class="num" href="tel:+441924200203">+44 1924 200203</a>
+          <a href="mailto:hello@marmaladeonthesquare.co.uk?subject=Enquiry">hello@marmaladeonthesquare.co.uk</a>
+        </div>
+        <p class="visit-note">At 21 Bull Ring, Wakefield WF1 1HB. Call +44 1924 200203 to confirm today&#39;s opening hours.</p>
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="tel:+441924200203">Call us</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Marmalade%20On%20The%20Square%2C%2021%20Bull%20Ring%2C%20Wakefield%20WF1%201HB" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="shop-list">
+          <p class="shop-list-title">From the counter</p>
+          <ul class="svc">
+        <li>
+  <div class="svc-head"><h3>Espresso &amp; filter coffee</h3><span class="svc-price">Counter</span></div>
+  <p>Freshly pulled espresso, flat whites, lattes and tea.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>Breakfast &amp; light plates</h3><span class="svc-price">Daily</span></div>
+  <p>Morning rolls, toasties, sandwiches and simple hot plates.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>Cakes &amp; takeaway</h3><span class="svc-price">Daily</span></div>
+  <p>Counter bakes, cold drinks and coffee to sit in or take out.</p>
+</li>
+      </ul>
+        </div>
+      </div>
+      <div>
+        <div class="map-frame">
+          <iframe title="Map showing Marmalade On The Square at 21 Bull Ring, Wakefield" src="https://www.google.com/maps?q=Marmalade%20On%20The%20Square%2C%2021%20Bull%20Ring%2C%20Wakefield%20WF1%201HB&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-caption">21 Bull Ring &middot; Wakefield WF1 1HB</p>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <h2 id="faq-title">Good to know.</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Where in Wakefield are you?</summary>
+          <p>21 Bull Ring, Wakefield WF1 1HB, right in the centre of town.</p>
+        </details>
+        <details>
+          <summary>Do I need to book a table?</summary>
+          <p>Walk-ins are welcome; call ahead on +44 1924 200203 if you want to check space for a group.</p>
+        </details>
+        <details>
+          <summary>What are today's opening hours?</summary>
+          <p>Hours can shift with the week and bank holidays. Check before travelling or get in touch directly.</p>
+        </details>
+        
+        <details>
+          <summary>Can I call ahead?</summary>
+          <p>Yes. Use the phone number at the top of this page or in the visit section.</p>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="foot-name">Marmalade On The Square</p>
+      <div class="foot-links">
+        <a href="#board">On the board</a>
+        <a href="#visit">Visit</a>
+        <a href="#faq">Good to know</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Marmalade On The Square</span>
+      <span>Website preview prepared by Plinth &middot; Not yet live</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:+441924200203"><span>Call</span><strong class="num">+44 1924 200203</strong></a>
+  <a href="#visit"><span>Visit</span><strong>Bull Ring</strong></a>
+</div>
+</body>
+</html>

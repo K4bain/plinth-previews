@@ -27,6 +27,7 @@
   --muted: #6b5d4d;
   --accent: #bd3d24;
   --accent-ink: #fdf7e9;
+  --accent-bright: #f08a5f;
   --line: #d7c8b1;
 }
 /* theme:end */
@@ -34,7 +35,6 @@
   --display: "Newsreader", Georgia, serif;
   --text: "Archivo", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --accent-bright: #f08a5f;
   --max: 1240px;
   --pad: clamp(20px, 4.5vw, 56px);
 }
@@ -107,8 +107,7 @@ a:focus-visible, summary:focus-visible {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  letter-spacing: .04em;
 }
 .nav { display: flex; gap: clamp(16px, 2.4vw, 32px); margin-left: auto; }
 .nav a {
@@ -688,7 +687,7 @@ a:focus-visible, summary:focus-visible {
         <div class="hero-meta">
           <span>33 Gloucester Road, Bristol</span>
           <span>BS7 8AA</span>
-          <span>New &amp; used</span>
+          <span>New &amp; used vinyl</span>
         </div>
       </div>
       <div class="hero-disc" aria-hidden="true">
@@ -696,7 +695,7 @@ a:focus-visible, summary:focus-visible {
           <span class="disc-label">
             <span>Better Grooves</span>
             <span>Bristol</span>
-            <span>33&frac13;</span>
+            <span>33 1/3</span>
           </span>
         </div>
         <p class="disc-caption">A shop for the long way round.</p>
@@ -818,10 +817,12 @@ a:focus-visible, summary:focus-visible {
           <summary>Are you open today?</summary>
           <p>Call to confirm current hours before you travel. Shop hours can change.</p>
         </details>
+        
         <details>
           <summary>Can I call first?</summary>
           <p>Yes. The shop phone is at the top of this page and in the visit section.</p>
         </details>
+        
       </div>
     </div>
   </section>

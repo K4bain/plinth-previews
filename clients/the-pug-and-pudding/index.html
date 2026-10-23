@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Pug and Pudding - Traditional pub &amp; kitchen in Chapel-en-le-Frith</title>
+<meta name="description" content="The Pug and Pudding - Cask ales, pub food &amp; puddings on Market Street, Chapel-en-le-Frith. Address, phone and directions.">
+<meta property="og:title" content="The Pug and Pudding - Cask ales, pub food &amp; puddings in Chapel-en-le-Frith">
+<meta property="og:description" content="The Pug and Pudding - Cask ales, pub food &amp; puddings on Market Street, Chapel-en-le-Frith. Address, phone and directions.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#f3ebe0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23201712'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%239c3d22'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23f3ebe0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarOrPub","name":"The Pug and Pudding","description":"Cask ales, pub food &amp; puddings in Chapel-en-le-Frith.","telephone":"+441298816182","email":"pugandpudding@gmail.com","address":{"@type":"PostalAddress","streetAddress":"5 Market Street","addressLocality":"Chapel-en-le-Frith","postalCode":"SK23 0HH","addressCountry":"GB"}}
+</script>
+<style>
+/* theme:start */
+:root {
+  --paper: #e7d8c9;
+  --paper-2: #dac7b4;
+  --ink: #1c1612;
+  --muted: #57473c;
+  --accent: #7b3920;
+  --accent-ink: #fbf5ec;
+  --line: #c5b19c;
+}
+/* theme:end */
+:root {
+  --display: "Newsreader", Georgia, serif;
+  --text: "Archivo", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --accent-bright: #e8956b;
+  --max: 1220px;
+  --pad: clamp(20px, 4.5vw, 56px);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::selection { background: var(--accent); color: var(--accent-ink); }
+a { color: inherit; }
+h1, h2, h3, p { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+.num { font-variant-numeric: tabular-nums; }
+.wrap { width: min(var(--max), 100%); margin-inline: auto; padding-inline: var(--pad); }
+.skip {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+}
+.skip:focus { transform: translateY(0); }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.preview-bar {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: 8px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+.site-head { border-bottom: 1px solid var(--line); }
+.head-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 84px;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.05;
+  max-width: 58%;
+}
+.brand-name {
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 2.1vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.brand-meta {
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+.nav { display: flex; gap: clamp(18px, 2.5vw, 32px); margin-left: auto; }
+.nav a {
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a:hover { border-color: var(--accent); }
+.head-phone {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hero {
+  border-bottom: 1px solid var(--line);
+  padding: clamp(48px, 7vw, 92px) 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(28px, 4.5vw, 72px);
+  align-items: center;
+}
+.hero h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(3.3rem, 7.6vw, 6.8rem);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.04em;
+}
+.hero h1 span { display: block; }
+.hero h1 em { color: var(--accent); font-style: italic; }
+.hero-lede {
+  max-width: 42ch;
+  margin: 26px 0 30px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.55;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn-ghost:hover { background: var(--paper-2); }
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 38px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.menu-card {
+  padding: clamp(26px, 3.6vw, 42px);
+  border: 1px solid var(--ink);
+  background: var(--paper-2);
+}
+.menu-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.menu-card-title {
+  margin: 22px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.menu-card-sub {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.menu-card-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.menu-card-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.menu-card-list span:first-child { color: var(--muted); text-transform: uppercase; }
+.statement {
+  border-bottom: 1px solid var(--line);
+  padding: 88px 8px;
+}
+.statement-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: end;
+  padding-block: 14px;
+}
+.statement h2 {
+  max-width: 17ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.3rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.statement-copy {
+  max-width: 39ch;
+  margin: 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--ink);
+  color: var(--muted);
+  font-size: 16px;
+}
+.board { padding-block: clamp(56px, 7.5vw, 98px); }
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: clamp(28px, 4vw, 46px);
+}
+.section-head h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+.section-head p {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+}
+.board-item {
+  padding: 28px 26px 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.board-item:first-child { padding-left: 0; }
+.board-item:last-child { padding-right: 0; border-right: 0; }
+.board-mark { width: 100%; height: 8px; margin-bottom: 26px; background: var(--accent); }
+.board-item:nth-child(2) .board-mark { background: var(--muted); }
+.board-item:nth-child(3) .board-mark { background: var(--ink); }
+.board-item h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: clamp(1.85rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+.board-item p { max-width: 31ch; color: var(--muted); font-size: 16px; }
+.board-list {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.board-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.feature-band {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 92px 8px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: end;
+  padding-block: 14px;
+}
+.feature-band h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.8rem, 6.4vw, 5.8rem);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.045em;
+}
+.feature-band h2 em { color: var(--accent-bright); font-style: italic; }
+.feature-side { max-width: 38ch; }
+.feature-side p {
+  color: var(--paper);
+  opacity: .82;
+  font-size: 16px;
+}
+.feature-side p.feature-mark {
+  margin: 26px 0 22px;
+  color: var(--accent-bright);
+  font-family: var(--display);
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
+  line-height: .84;
+  letter-spacing: -.04em;
+  opacity: 1;
+}
+.feature-link {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.feature-link:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
+.visit {
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  padding: 92px 8px;
+}
+.visit-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: start;
+  padding-block: 14px;
+}
+.visit h2 {
+  margin: 0 0 22px;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  font-weight: 400;
+  line-height: .94;
+  letter-spacing: -.04em;
+}
+.visit address {
+  margin-bottom: 18px;
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-style: normal;
+  line-height: 1.15;
+}
+.visit-lines {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.visit-lines a {
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.visit-lines a:hover { border-color: var(--accent); }
+.visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.map-frame {
+  min-height: 420px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  filter: grayscale(.82) contrast(1.02);
+}
+.map-caption {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.shop-list { margin-top: 32px; }
+.shop-list-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+}
+.svc li { padding: 13px 0; border-bottom: 1px solid var(--line); }
+.svc-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.svc h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.25; }
+.svc-price {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc p { margin: 4px 0 0; color: var(--muted); font-size: 16px; }
+.faq { padding-block: clamp(56px, 7.5vw, 96px); }
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: start;
+}
+.faq h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 4.8vw, 4.4rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+.faq-list details:first-child { border-top: 1px solid var(--ink); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1;
+  content: "+";
+}
+.faq details[open] summary::after { content: "-"; }
+.faq details p {
+  max-width: 62ch;
+  padding: 0 0 20px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.site-foot { background: var(--ink); color: var(--paper); padding-block: 32px; }
+.foot-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+.foot-name {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.03em;
+}
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.foot-links a {
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.foot-links a:hover { color: var(--accent-bright); }
+.foot-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  padding-top: 16px;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  opacity: .78;
+}
+.mobile-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  background: var(--ink);
+  color: var(--paper);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.mobile-bar a {
+  display: flex;
+  min-height: 58px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-right: 1px solid rgba(255, 255, 255, .18);
+  text-decoration: none;
+}
+.mobile-bar a:last-child { border-right: 0; }
+.mobile-bar span {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  opacity: .76;
+}
+.mobile-bar strong {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+@media (max-width: 920px) {
+  .nav, .head-phone { display: none; }
+  .head-inner { min-height: 72px; }
+  .brand { max-width: 100%; }
+  .hero-grid,
+  .statement-grid,
+  .feature-grid,
+  .visit-grid,
+  .faq-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero { padding: 38px 0 48px; }
+  .statement, .feature-band, .visit { padding: 60px 8px; }
+  .section-head { display: block; }
+  .section-head p { margin-top: 10px; }
+  .board-grid { grid-template-columns: minmax(0, 1fr); }
+  .board-item { padding: 22px 0 26px; border-right: 0; }
+  .map-frame, .map-frame iframe { min-height: 320px; }
+  .foot-top { display: block; }
+  .foot-links { margin-top: 16px; }
+  .mobile-bar { display: grid; }
+  body { padding-bottom: 58px; }
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: clamp(2.8rem, 13vw, 4.2rem); }
+  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
+  .foot-bottom { display: block; }
+  .foot-bottom span { display: block; margin-top: 6px; }
+}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth &middot; Not yet live</div>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">The Pug and Pudding</span>
+      <span class="brand-meta">Traditional pub &amp; kitchen &middot; Chapel-en-le-Frith</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#board">On the board</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">Good to know</a>
+    </nav>
+    <a class="head-phone num" href="tel:+441298816182">+44 1298 816182</a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span>The Pug</span><span>&amp; <em>Pudding.</em></span></h1>
+        <p class="hero-lede">High Peak pub and kitchen at 5 Market Street in Chapel-en-le-Frith for well-kept pints, pub classics and proper puddings.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+441298816182">Call us</a>
+          <a class="btn btn-ghost" href="#visit">Find us</a>
+        </div>
+        <div class="hero-meta">
+          <span>5 Market Street, Chapel-en-le-Frith</span>
+          <span>SK23 0HH</span>
+          <span>Cask ales, pub food &amp; puddings</span>
+        </div>
+      </div>
+      <aside class="menu-card" aria-label="House board">
+        <div class="menu-card-head">
+          <span>Traditional pub &amp; kitchen</span>
+          <span>SK23</span>
+        </div>
+        <p class="menu-card-title">Market Street</p>
+        <p class="menu-card-sub">Draught beer, pub plates and warm hospitality.</p>
+        <ul class="menu-card-list">
+          <li><span>Street</span><span>Market Street</span></li>
+          <li><span>Town</span><span>Chapel-en-le-Frith SK23 0HH</span></li>
+          <li><span>Service</span><span>Cask ales, pub food &amp; puddings</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  
+  <section class="statement" aria-labelledby="statement-title">
+    <div class="wrap statement-grid">
+      <h2 id="statement-title">A proper Market Street local for a pint at the bar or a hot plate from the kitchen.</h2>
+      <p class="statement-copy">Right in the middle of Chapel-en-le-Frith — drop in after a High Peak walk or book a table with family and friends.</p>
+    </div>
+  </section>
+  
+  <section class="board" id="board" aria-labelledby="board-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="board-title">Bar &amp; kitchen</h2>
+        <p>Well-kept draught, hearty pub mains and traditional puddings.</p>
+      </div>
+      <div class="board-grid">
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>At the bar</h3>
+          <p>Cask ales, draught lagers, ciders, wines, spirits and soft drinks on Market Street.</p>
+          <ul class="board-list">
+            <li><span>Bar</span><span>Walk-ins welcome</span></li>
+            <li><span>Town</span><span>Chapel-en-le-Frith</span></li>
+          </ul>
+        </article>
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>Pub kitchen</h3>
+          <p>Traditional pub plates, comforting mains and proper hot puddings.</p>
+          <ul class="board-list">
+            <li><span>Food</span><span>Check service times</span></li>
+            <li><span>Tables</span><span>Call to book</span></li>
+          </ul>
+        </article>
+        <article class="board-item">
+          <div class="board-mark"></div>
+          <h3>Walkers &amp; groups</h3>
+          <p>A welcoming High Peak stop whether you are dropping in for one or sitting down for food.</p>
+          <ul class="board-list">
+            <li><span>Address</span><span>5 Market Street</span></li>
+            <li><span>Phone</span><span>01298 816182</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="feature-band" aria-labelledby="feature-title">
+    <div class="wrap feature-grid">
+      <h2 id="feature-title">Pull up<br><em>a chair</em><br>inside.</h2>
+      <div class="feature-side">
+        <p>Call the pub on +44 1298 816182 to check today&#39;s kitchen hours or reserve a table.</p>
+        <p class="feature-mark" aria-hidden="true">SK23</p>
+        <a class="feature-link" href="#visit">See location &amp; map</a>
+      </div>
+    </div>
+  </section>
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-contact">
+        <h2 id="visit-title">Find the pub.</h2>
+        <address>
+          <span>5 Market Street</span><br>
+          <span>Chapel-en-le-Frith</span><br>
+          <span>SK23 0HH</span>
+        </address>
+        <div class="visit-lines">
+          <a class="num" href="tel:+441298816182">+44 1298 816182</a>
+          <a href="mailto:pugandpudding@gmail.com?subject=Enquiry">pugandpudding@gmail.com</a>
+        </div>
+        <p class="visit-note">At 5 Market Street, Chapel-en-le-Frith SK23 0HH. Call ahead for table bookings and current food service times.</p>
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="tel:+441298816182">Call us</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Pug%20and%20Pudding%2C%205%20Market%20Street%2C%20Chapel-en-le-Frith%20SK23%200HH" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="shop-list">
+          <p class="shop-list-title">From the counter</p>
+          <ul class="svc">
+        <li>
+  <div class="svc-head"><h3>Cask ales, draught &amp; wine</h3><span class="svc-price">At the bar</span></div>
+  <p>Well-kept draught beer, real ale, cider, spirits and wine.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>Pub kitchen &amp; puddings</h3><span class="svc-price">Kitchen</span></div>
+  <p>Classic pub plates, hearty mains and proper puddings.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>Tables &amp; group bookings</h3><span class="svc-price">Enquire</span></div>
+  <p>Walk-in tables and bookings for family meals or evenings out.</p>
+</li>
+      </ul>
+        </div>
+      </div>
+      <div>
+        <div class="map-frame">
+          <iframe title="Map showing The Pug and Pudding at 5 Market Street, Chapel-en-le-Frith" src="https://www.google.com/maps?q=The%20Pug%20and%20Pudding%2C%205%20Market%20Street%2C%20Chapel-en-le-Frith%20SK23%200HH&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-caption">5 Market Street &middot; Chapel-en-le-Frith SK23 0HH</p>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <h2 id="faq-title">Good to know.</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Can I book a table for food?</summary>
+          <p>Yes. Call +44 1298 816182 to reserve a table and confirm current kitchen hours.</p>
+        </details>
+        <details>
+          <summary>Where is The Pug and Pudding?</summary>
+          <p>5 Market Street, Chapel-en-le-Frith SK23 0HH. Use the directions link above to open the map.</p>
+        </details>
+        <details>
+          <summary>What are today's opening hours?</summary>
+          <p>Hours can shift with the week and bank holidays. Check before travelling or get in touch directly.</p>
+        </details>
+        
+        <details>
+          <summary>Can I call ahead?</summary>
+          <p>Yes. Use the phone number at the top of this page or in the visit section.</p>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="foot-name">The Pug and Pudding</p>
+      <div class="foot-links">
+        <a href="#board">On the board</a>
+        <a href="#visit">Visit</a>
+        <a href="#faq">Good to know</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 The Pug and Pudding</span>
+      <span>Website preview prepared by Plinth &middot; Not yet live</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:+441298816182"><span>Call</span><strong class="num">+44 1298 816182</strong></a>
+  <a href="#visit"><span>Visit</span><strong>Market Street</strong></a>
+</div>
+</body>
+</html>

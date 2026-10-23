@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Solo Automotive - Independent garage in Ossett</title>
+<meta name="description" content="Solo Automotive - Servicing, diagnostics &amp; mechanical repairs on Healey Road, Ossett. Address, phone and directions.">
+<meta property="og:title" content="Solo Automotive - Servicing, diagnostics &amp; mechanical repairs in Ossett">
+<meta property="og:description" content="Solo Automotive - Servicing, diagnostics &amp; mechanical repairs on Healey Road, Ossett. Address, phone and directions.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#eeede8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141618'/%3E%3Cpath d='M16 44L44 16M20 16h24v24' stroke='%23c8431f' stroke-width='6' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Chivo:wght@600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Solo Automotive","description":"Servicing, diagnostics &amp; mechanical repairs in Ossett.","telephone":"+441924565100","email":"solo.automotive@outlook.com","address":{"@type":"PostalAddress","streetAddress":"16c Healey Road","addressLocality":"Ossett","postalCode":"WF5 8LN","addressCountry":"GB"}}
+</script>
+<style>
+/* theme:start */
+:root {
+  --paper: #eaf0f6;
+  --paper-2: #dce5ef;
+  --ink: #111822;
+  --muted: #4b5666;
+  --accent: #1e4db7;
+  --accent-ink: #f8fafc;
+  --line: #c2cddb;
+}
+/* theme:end */
+:root {
+  --display: "Chivo", "Archivo", sans-serif;
+  --text: "Archivo", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --accent-bright: #f28c68;
+  --max: 1260px;
+  --pad: clamp(20px, 4.2vw, 54px);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::selection { background: var(--accent); color: var(--accent-ink); }
+a { color: inherit; }
+h1, h2, h3, p { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+.num { font-variant-numeric: tabular-nums; }
+.wrap { width: min(var(--max), 100%); margin-inline: auto; padding-inline: var(--pad); }
+.skip {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+}
+.skip:focus { transform: translateY(0); }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.preview-bar {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: 8px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+.site-head { border-bottom: 2px solid var(--ink); }
+.head-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 82px;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.05;
+  max-width: 58%;
+}
+.brand-name {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+.brand-meta {
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+.nav { display: flex; gap: clamp(18px, 2.5vw, 32px); margin-left: auto; }
+.nav a {
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a:hover { border-color: var(--accent); }
+.head-phone {
+  padding: 9px 14px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.head-phone:hover { background: var(--ink); color: var(--paper); }
+.hero {
+  border-bottom: 2px solid var(--ink);
+  padding: clamp(44px, 6.5vw, 88px) 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(28px, 4.5vw, 68px);
+  align-items: stretch;
+}
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  font-weight: 700;
+  line-height: .9;
+  letter-spacing: -.045em;
+  text-transform: uppercase;
+}
+.hero h1 span { display: block; }
+.hero h1 em { color: var(--accent); font-style: normal; }
+.hero-lede {
+  max-width: 44ch;
+  margin: 24px 0 28px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.35vw, 19px);
+  line-height: 1.55;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 2px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: transparent; color: var(--ink); }
+.btn-ghost:hover { background: var(--paper-2); }
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.spec-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(24px, 3.2vw, 38px);
+  border: 2px solid var(--ink);
+  background: var(--paper-2);
+}
+.spec-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.spec-badge {
+  padding: 4px 9px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 500;
+}
+.spec-main { padding: 28px 0; }
+.spec-code {
+  margin: 0 0 8px;
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -.03em;
+}
+.spec-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+.spec-rows {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.spec-rows li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.spec-rows span:first-child { color: var(--muted); text-transform: uppercase; }
+.statement {
+  border-bottom: 1px solid var(--line);
+  padding: 84px 8px;
+}
+.statement-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: end;
+  padding-block: 14px;
+}
+.statement h2 {
+  max-width: 18ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 4.5vw, 4.1rem);
+  font-weight: 600;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.statement-copy {
+  max-width: 40ch;
+  margin: 0;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+  color: var(--muted);
+  font-size: 16px;
+}
+.bays { padding-block: clamp(56px, 7.5vw, 96px); }
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: clamp(28px, 4vw, 44px);
+}
+.section-head h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.3rem, 4.5vw, 4rem);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+.section-head p {
+  max-width: 38ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+.bay-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+}
+.bay {
+  padding: 28px 26px 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.bay:first-child { padding-left: 0; }
+.bay:last-child { padding-right: 0; border-right: 0; }
+.bay-bar { width: 100%; height: 8px; margin-bottom: 24px; background: var(--accent); }
+.bay:nth-child(2) .bay-bar { background: var(--ink); }
+.bay:nth-child(3) .bay-bar { background: var(--muted); }
+.bay h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -.025em;
+}
+.bay p { max-width: 32ch; color: var(--muted); font-size: 16px; }
+.bay-list {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.bay-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.banner {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 88px 8px;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(32px, 6vw, 92px);
+  align-items: end;
+  padding-block: 14px;
+}
+.banner h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  font-weight: 700;
+  line-height: .9;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+.banner h2 em { color: var(--accent-bright); font-style: normal; }
+.banner-side { max-width: 40ch; }
+.banner-side p {
+  color: var(--paper);
+  opacity: .84;
+  font-size: 16px;
+}
+.banner-side p.banner-mark {
+  margin: 26px 0 22px;
+  color: var(--accent-bright);
+  font-family: var(--display);
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 700;
+  line-height: .88;
+  letter-spacing: -.04em;
+  opacity: 1;
+}
+.banner-link {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.banner-link:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
+.visit {
+  background: var(--paper-2);
+  border-bottom: 2px solid var(--ink);
+  padding: 88px 8px;
+}
+.visit-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: start;
+  padding-block: 14px;
+}
+.visit h2 {
+  margin: 0 0 22px;
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 4.8vw, 4.4rem);
+  font-weight: 700;
+  line-height: .94;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+.visit address {
+  margin-bottom: 18px;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.visit-lines {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.visit-lines a {
+  width: fit-content;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ink);
+  text-decoration: none;
+}
+.visit-lines a:hover { color: var(--accent); border-color: var(--accent); }
+.visit-note { max-width: 44ch; color: var(--muted); font-size: 16px; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.map-frame {
+  min-height: 420px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+}
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  filter: grayscale(.8) contrast(1.04);
+}
+.map-caption {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.shop-list { margin-top: 32px; }
+.shop-list-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--ink);
+  list-style: none;
+}
+.svc li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.svc-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.svc h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.25; }
+.svc-price {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.svc p { margin: 4px 0 0; color: var(--muted); font-size: 16px; }
+.faq { padding-block: clamp(56px, 7.5vw, 96px); }
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: start;
+}
+.faq h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.3rem, 4.5vw, 4rem);
+  font-weight: 700;
+  line-height: .95;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+.faq-list details:first-child { border-top: 2px solid var(--ink); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1;
+  content: "+";
+}
+.faq details[open] summary::after { content: "-"; }
+.faq details p {
+  max-width: 62ch;
+  padding: 0 0 20px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.site-foot { background: var(--ink); color: var(--paper); padding-block: 32px; }
+.foot-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+.foot-name {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.03em;
+  text-transform: uppercase;
+}
+.foot-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.foot-links a {
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.foot-links a:hover { color: var(--accent-bright); }
+.foot-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  padding-top: 16px;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  opacity: .78;
+}
+.mobile-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  background: var(--ink);
+  color: var(--paper);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.mobile-bar a {
+  display: flex;
+  min-height: 58px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-right: 1px solid rgba(255, 255, 255, .18);
+  text-decoration: none;
+}
+.mobile-bar a:last-child { border-right: 0; }
+.mobile-bar span {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  opacity: .76;
+}
+.mobile-bar strong {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+@media (max-width: 920px) {
+  .nav, .head-phone { display: none; }
+  .head-inner { min-height: 72px; }
+  .brand { max-width: 100%; }
+  .hero-grid,
+  .statement-grid,
+  .banner-grid,
+  .visit-grid,
+  .faq-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero { padding: 36px 0 48px; }
+  .statement, .banner, .visit { padding: 60px 8px; }
+  .section-head { display: block; }
+  .section-head p { margin-top: 10px; }
+  .bay-grid { grid-template-columns: minmax(0, 1fr); }
+  .bay { padding: 22px 0 26px; border-right: 0; }
+  .map-frame, .map-frame iframe { min-height: 320px; }
+  .foot-top { display: block; }
+  .foot-links { margin-top: 16px; }
+  .mobile-bar { display: grid; }
+  body { padding-bottom: 58px; }
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: clamp(2.6rem, 12vw, 4rem); }
+  .hero-actions .btn, .visit-actions .btn { flex: 1 1 100%; }
+  .foot-bottom { display: block; }
+  .foot-bottom span { display: block; margin-top: 6px; }
+}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-bar">Unofficial preview prepared by Plinth &middot; Not yet live</div>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">Solo Automotive</span>
+      <span class="brand-meta">Independent garage &middot; Ossett</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Workshop</a>
+      <a href="#visit">Find us</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="head-phone num" href="tel:+441924565100">+44 1924 565100</a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div>
+          <h1 id="hero-title"><span>Solo</span><span><em>Automotive.</em></span></h1>
+          <p class="hero-lede">Independent garage at 16c Healey Road in Ossett handling vehicle servicing, diagnostics and mechanical repairs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+441924565100">Call workshop</a>
+            <a class="btn btn-ghost" href="#visit">Directions &amp; map</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span>16c Healey Road, Ossett</span>
+          <span>WF5 8LN</span>
+          <span>Servicing, diagnostics &amp; mechanical repairs</span>
+        </div>
+      </div>
+      <aside class="spec-board" aria-label="Workshop overview">
+        <div class="spec-top">
+          <span>Independent garage</span>
+          <span class="spec-badge">WF5</span>
+        </div>
+        <div class="spec-main">
+          <p class="spec-code">Healey Road</p>
+          <p class="spec-sub">Independent servicing and mechanical repairs.</p>
+        </div>
+        <ul class="spec-rows">
+          <li><span>Location</span><span>Healey Road, Ossett</span></li>
+          <li><span>Postcode</span><span class="num">WF5 8LN</span></li>
+          <li><span>Bookings</span><span>Direct by phone or visit</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  
+  <section class="statement" aria-labelledby="statement-title">
+    <div class="wrap statement-grid">
+      <h2 id="statement-title">Straight answers on what needs doing now and what can wait.</h2>
+      <p class="statement-copy">From scheduled servicing and brake work to fault diagnostics on Healey Road in Ossett.</p>
+    </div>
+  </section>
+  
+  <section class="bays" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work-title">Workshop services</h2>
+        <p>Mechanical servicing, wear-and-tear repairs and diagnostic checks.</p>
+      </div>
+      <div class="bay-grid">
+        <article class="bay">
+          <div class="bay-bar"></div>
+          <h3>Routine servicing</h3>
+          <p>Scheduled servicing, oil and filter changes, fluid checks and preventative maintenance.</p>
+          <ul class="bay-list">
+            <li><span>Schedule</span><span>Interim &amp; full</span></li>
+            <li><span>Booking</span><span>By phone</span></li>
+          </ul>
+        </article>
+        <article class="bay">
+          <div class="bay-bar"></div>
+          <h3>Mechanical repairs</h3>
+          <p>Brakes, suspension, steering, clutches, cooling systems and general repairs.</p>
+          <ul class="bay-list">
+            <li><span>Quotes</span><span>Confirmed first</span></li>
+            <li><span>Bay</span><span>Healey Road</span></li>
+          </ul>
+        </article>
+        <article class="bay">
+          <div class="bay-bar"></div>
+          <h3>Diagnostics &amp; MOT prep</h3>
+          <p>Engine management checks, electrical fault finding and pre-MOT inspections.</p>
+          <ul class="bay-list">
+            <li><span>Checks</span><span>Diagnostics</span></li>
+            <li><span>Contact</span><span>Direct</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="banner" aria-labelledby="banner-title">
+    <div class="wrap banner-grid">
+      <h2 id="banner-title">Speak<br><em>to the</em><br>mechanic.</h2>
+      <div class="banner-side">
+        <p>Call the workshop on Healey Road to check availability and talk through what your car is doing.</p>
+        <p class="banner-mark" aria-hidden="true">WF5</p>
+        <a class="banner-link" href="#visit">Book or drop in</a>
+      </div>
+    </div>
+  </section>
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-contact">
+        <h2 id="visit-title">Find the workshop.</h2>
+        <address>
+          <span>16c Healey Road</span><br>
+          <span>Ossett</span><br>
+          <span>WF5 8LN</span>
+        </address>
+        <div class="visit-lines">
+          <a class="num" href="tel:+441924565100">+44 1924 565100</a>
+          <a href="mailto:solo.automotive@outlook.com?subject=Workshop%20enquiry">solo.automotive@outlook.com</a>
+        </div>
+        <p class="visit-note">At 16c Healey Road, Ossett WF5 8LN. Call ahead before dropping a vehicle off.</p>
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="tel:+441924565100">Call workshop</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Solo%20Automotive%2C%2016c%20Healey%20Road%2C%20Ossett%20WF5%208LN" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="shop-list">
+          <p class="shop-list-title">Workshop work</p>
+          <ul class="svc">
+        <li>
+  <div class="svc-head"><h3>Servicing &amp; diagnostics</h3><span class="svc-price">Enquire</span></div>
+  <p>Routine servicing, fault checks and general mechanical work.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>Brakes, clutches &amp; suspension</h3><span class="svc-price">Enquire</span></div>
+  <p>Wear-and-tear repairs, pads, discs, shocks and steering.</p>
+</li>
+        <li>
+  <div class="svc-head"><h3>MOT preparation &amp; repairs</h3><span class="svc-price">Enquire</span></div>
+  <p>Pre-test checks and mechanical work to keep you on the road.</p>
+</li>
+      </ul>
+        </div>
+      </div>
+      <div>
+        <div class="map-frame">
+          <iframe title="Map showing Solo Automotive at 16c Healey Road, Ossett" src="https://www.google.com/maps?q=Solo%20Automotive%2C%2016c%20Healey%20Road%2C%20Ossett%20WF5%208LN&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-caption">16c Healey Road &middot; Ossett WF5 8LN</p>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <h2 id="faq-title">Good to know.</h2>
+      <div class="faq-list">
+        <details>
+          <summary>How do I book my car in?</summary>
+          <p>Call +44 1924 565100 or email with your registration number and the work needed.</p>
+        </details>
+        <details>
+          <summary>Where in Ossett are you?</summary>
+          <p>16c Healey Road, Ossett WF5 8LN. The directions button above opens Google Maps.</p>
+        </details>
+        <details>
+          <summary>Should I book ahead?</summary>
+          <p>Calling ahead is the quickest way to check bay availability and parts before bringing your vehicle in.</p>
+        </details>
+        
+        <details>
+          <summary>How do I get a quote?</summary>
+          <p>Call the workshop on the number above or bring the vehicle by so we can look at the job properly.</p>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <p class="foot-name">Solo Automotive</p>
+      <div class="foot-links">
+        <a href="#work">Workshop</a>
+        <a href="#visit">Find us</a>
+        <a href="#faq">Questions</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Solo Automotive</span>
+      <span>Website preview prepared by Plinth &middot; Not yet live</span>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a href="tel:+441924565100"><span>Call</span><strong class="num">+44 1924 565100</strong></a>
+  <a href="#visit"><span>Visit</span><strong>Healey Road</strong></a>
+</div>
+</body>
+</html>
